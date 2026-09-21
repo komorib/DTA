@@ -1,0 +1,15 @@
+# Tested project generation: Python 3.8.20, CUDA-capable PyTorch.
+# Install a PyTorch build matching the target CUDA driver before this file if needed.
+torch>=2.0,<2.3
+numpy>=1.23,<2
+scipy>=1.9,<2
+scikit-learn>=1.2,<2
+joblib>=1.2
+lmdb>=1.4
+rdkit>=2022.9
+transformers>=4.30,<5
+pytest>=7,<9
+
+# Optional alternative ESM backend:
+# fair-esm>=2.0
+

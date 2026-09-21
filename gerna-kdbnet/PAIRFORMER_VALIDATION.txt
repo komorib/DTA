@@ -1,0 +1,17 @@
+Pocket–Ligand Interface Pairformer v2 validation
+=================================================
+
+Command:
+  python scripts/smoke_test_interface_pairformer.py
+
+Result:
+  PASS
+  output shape: (2, 32)
+  joint rigid-transform max difference: 1.4901161193847656e-07
+  0.05 A ligand-shift max difference: 0.002768293023109436
+  0.10 A side-chain-shift max difference: 0.00020276010036468506
+
+Additional checks:
+  - protein_geometry pocket-PDB residue matching: PASS
+  - python compileall for kdbnet/ and scripts/: PASS
+  - shell syntax for fixed server/slurm launchers: PASS

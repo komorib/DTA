@@ -1,0 +1,150 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
+HOST="$(hostname -s)"
+if [[ "${HOST}" == ln* ]]; then
+  echo "refusing to run V15 extraction on login node ${HOST}" >&2
+  exit 2
+fi
+
+PYTHON="${PYTHON:-/home/user/wangzhiwen/miniconda3/envs/gernabind/bin/python}"
+GPU_ID="${GPU_ID:-7}"
+DEVICE="${DEVICE:-cuda:0}"
+RUN_ID="${RUN_ID:-msa_interface_spatial_fusion_v15_full_$(date +%Y%m%d_%H%M%S)}"
+EVALUATION_BATCH_SIZE="${EVALUATION_BATCH_SIZE:-2}"
+V9_DATA_ROOT="${V9_DATA_ROOT:-${ROOT}/data/LP_PDBBind_MSA_v9}"
+MANIFEST_ROOT="${MANIFEST_ROOT:-${ROOT}/data/PDBbind_chain_esm_residue_DTA/lp_pdbbind}"
+COMPLEX_CACHE_ROOT="${COMPLEX_CACHE_ROOT:-${V9_DATA_ROOT}/complex_cache_full}"
+ROW_CACHE="${ROW_CACHE:-${ROOT}/data/LP_PDBBind_MSA_v11/uniref30_rows_128}"
+BASE_ROOT="${BASE_ROOT:-${ROOT}/Model/LP_PDBBind_MSAPairFusion_v12/msa_pair_pretrained_v12_full_20260826_144811}"
+BENCHMARK_ROOT="${BENCHMARK_ROOT:-${ROOT}/Model/LP_PDBBind_MSAInterfaceFusion_v14/msa_interface_feature_fusion_v14_full_20260829_145451}"
+V13_PRETRAIN="${V13_PRETRAIN:-${ROOT}/Model/LP_PDBBind_MSAInterfacePretraining_v13/msa_interface_pretrained_v13_full_20260827_132414/best_pretrain.pt}"
+V13_AFFINITY="${V13_AFFINITY:-${ROOT}/Model/LP_PDBBind_MSAInterfaceExpert_v13/msa_interface_pretrained_v13_full_20260827_132414/best.pt}"
+FEATURE_OUTPUT="${FEATURE_OUTPUT:-${ROOT}/Model/LP_PDBBind_MSAInterfaceSpatialFeatures_v15/${RUN_ID}}"
+FUSION_OUTPUT="${FUSION_OUTPUT:-${ROOT}/Model/LP_PDBBind_MSAInterfaceSpatialFusion_v15/${RUN_ID}}"
+SELECTION_OUTPUT="${SELECTION_OUTPUT:-${FUSION_OUTPUT}_validation_selection}"
+
+export CUDA_VISIBLE_DEVICES="${GPU_ID}"
+export CUBLAS_WORKSPACE_CONFIG="${CUBLAS_WORKSPACE_CONFIG:-:4096:8}"
+export PYTHONUNBUFFERED=1
+export PYTORCH_CUDA_ALLOC_CONF="${PYTORCH_CUDA_ALLOC_CONF:-max_split_size_mb:128}"
+
+cd "${ROOT}"
+echo "physical_gpu=${GPU_ID} logical_device=${DEVICE} batch_size=${EVALUATION_BATCH_SIZE} memory_budget_gb=40"
+echo "v12_base=${BASE_ROOT}"
+echo "v14_benchmark=${BENCHMARK_ROOT}"
+echo "feature_output=${FEATURE_OUTPUT}"
+echo "selection_output=${SELECTION_OUTPUT}"
+echo "fusion_output=${FUSION_OUTPUT}"
+
+for required_file in \
+  "${ROW_CACHE}/row_cache_report.json" \
+  "${V13_PRETRAIN}" \
+  "${V13_AFFINITY}" \
+  "${BASE_ROOT}/valid_predictions.npz" \
+  "${BASE_ROOT}/test_predictions.npz" \
+  "${BENCHMARK_ROOT}/valid_predictions.npz" \
+  "${BENCHMARK_ROOT}/test_predictions.npz"; do
+  if [[ ! -f "${required_file}" ]]; then
+    echo "missing required V15 input: ${required_file}" >&2
+    exit 2
+  fi
+done
+
+if [[ -f "${FEATURE_OUTPUT}/valid_features.npz" && -f "${FEATURE_OUTPUT}/result.json" ]]; then
+  echo "reusing_v15_validation_features=${FEATURE_OUTPUT}/valid_features.npz"
+else
+  "${PYTHON}" -m dta.msa_interface_spatial_fusion_v15.run_features \
+    --valid-manifest "${MANIFEST_ROOT}/valid_manifest.json" \
+    --test-manifest "${MANIFEST_ROOT}/test_manifest.json" \
+    --valid-cache "${COMPLEX_CACHE_ROOT}/valid" \
+    --test-cache "${COMPLEX_CACHE_ROOT}/test" \
+    --row-cache "${ROW_CACHE}" \
+    --pretrain-checkpoint "${V13_PRETRAIN}" \
+    --affinity-checkpoint "${V13_AFFINITY}" \
+    --output "${FEATURE_OUTPUT}" \
+    --device "${DEVICE}" \
+    --evaluation-batch-size "${EVALUATION_BATCH_SIZE}" \
+    --num-workers 4 \
+    --amp-dtype bfloat16 \
+    --row-depth 64 \
+    --inference-subsets 2
+fi
+
+if [[ -f "${SELECTION_OUTPUT}/result.json" ]]; then
+  echo "reusing_v15_validation_selection=${SELECTION_OUTPUT}/result.json"
+else
+  "${PYTHON}" -m dta.msa_interface_spatial_fusion_v15.run_fusion \
+    --base-root "${BASE_ROOT}" \
+    --benchmark-root "${BENCHMARK_ROOT}" \
+    --feature-root "${FEATURE_OUTPUT}" \
+    --output "${SELECTION_OUTPUT}" \
+    --pca-components 96 \
+    --minimum-validation-ci-gain 0.001 \
+    --minimum-spearman-gain 0.0 \
+    --maximum-rmse-increase 0.005 \
+    --minimum-positive-folds 4 \
+    --oof-estimators 300 \
+    --final-estimators 900 \
+    --n-jobs 8 \
+    --seed 20260830
+fi
+
+if grep -q "\"status\": \"validation_failed\"" "${SELECTION_OUTPUT}/result.json"; then
+  echo "v15_validation_gate=failed; test features were not extracted"
+  echo "v15_feature_output=${FEATURE_OUTPUT}"
+  echo "v15_selection_result=${SELECTION_OUTPUT}/result.json"
+  exit 0
+fi
+if ! grep -q "\"status\": \"validation_passed\"" "${SELECTION_OUTPUT}/result.json"; then
+  echo "unexpected V15 validation selection status" >&2
+  exit 2
+fi
+
+if [[ -f "${FEATURE_OUTPUT}/test_features.npz" ]]; then
+  echo "reusing_v15_test_features=${FEATURE_OUTPUT}/test_features.npz"
+else
+  "${PYTHON}" -m dta.msa_interface_spatial_fusion_v15.run_features \
+    --valid-manifest "${MANIFEST_ROOT}/valid_manifest.json" \
+    --test-manifest "${MANIFEST_ROOT}/test_manifest.json" \
+    --valid-cache "${COMPLEX_CACHE_ROOT}/valid" \
+    --test-cache "${COMPLEX_CACHE_ROOT}/test" \
+    --row-cache "${ROW_CACHE}" \
+    --pretrain-checkpoint "${V13_PRETRAIN}" \
+    --affinity-checkpoint "${V13_AFFINITY}" \
+    --output "${FEATURE_OUTPUT}" \
+    --device "${DEVICE}" \
+    --evaluation-batch-size "${EVALUATION_BATCH_SIZE}" \
+    --num-workers 4 \
+    --amp-dtype bfloat16 \
+    --row-depth 64 \
+    --inference-subsets 2 \
+    --test-only \
+    --selection-result "${SELECTION_OUTPUT}/result.json"
+fi
+
+if [[ -f "${FUSION_OUTPUT}/result.json" ]]; then
+  echo "reusing_v15_final_fusion=${FUSION_OUTPUT}/result.json"
+else
+  "${PYTHON}" -m dta.msa_interface_spatial_fusion_v15.run_fusion \
+    --base-root "${BASE_ROOT}" \
+    --benchmark-root "${BENCHMARK_ROOT}" \
+    --feature-root "${FEATURE_OUTPUT}" \
+    --output "${FUSION_OUTPUT}" \
+    --pca-components 96 \
+    --minimum-validation-ci-gain 0.001 \
+    --minimum-spearman-gain 0.0 \
+    --maximum-rmse-increase 0.005 \
+    --minimum-positive-folds 4 \
+    --oof-estimators 300 \
+    --final-estimators 900 \
+    --n-jobs 8 \
+    --seed 20260830
+fi
+
+echo "v15_feature_output=${FEATURE_OUTPUT}"
+echo "v15_feature_result=${FEATURE_OUTPUT}/result.json"
+echo "v15_selection_result=${SELECTION_OUTPUT}/result.json"
+echo "v15_fusion_output=${FUSION_OUTPUT}"
+echo "v15_fusion_result=${FUSION_OUTPUT}/result.json"
