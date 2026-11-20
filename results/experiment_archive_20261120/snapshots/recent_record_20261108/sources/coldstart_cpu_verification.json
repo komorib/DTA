@@ -1,0 +1,41 @@
+{
+  "all_five_metrics_recomputed": true,
+  "annotated_test_original_fields_preserved": true,
+  "artifacts": {
+    "group_metrics.csv": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-coldstart-eval-20261106/group_metrics.csv",
+      "sha256": "88d4e43082e529a86d9b2540016fbf4265311a2ece017a31b8b66841b3d48c90"
+    },
+    "group_metrics.json": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-coldstart-eval-20261106/group_metrics.json",
+      "sha256": "e37257b35afb01c42be5e38c04dfff4407b744de06c624a9d135892508594f7e"
+    },
+    "inference.json": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-coldstart-eval-20261106/inference.json",
+      "sha256": "2f473f252f6d8da64c8f371199fda1b72c0bd7694d9c5271783b90fb6fdcf8f7"
+    },
+    "test_predictions.npz": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-coldstart-eval-20261106/test_predictions.npz",
+      "sha256": "09a34a5c318da58a682809c48c4ac6c66ca495141d9446a112442ebba1fb5770"
+    },
+    "test_predictions.npz.provenance.json": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-coldstart-eval-20261106/test_predictions.npz.provenance.json",
+      "sha256": "6d6129576e975e46b70540104f8b9c682c619fef0457d832ac87cd675f7fb35c"
+    }
+  },
+  "checkpoint_and_validation_provenance_verified": true,
+  "count": 1813,
+  "csv_matches_json": true,
+  "group_counts": {
+    "all": 1813,
+    "both_seen_unmarked": 191,
+    "cold_both": 565,
+    "cold_ligand": 804,
+    "cold_protein": 253
+  },
+  "maximum_metric_absolute_delta": 0.0,
+  "status": "completed_test_results_cpu_verified",
+  "unique_complete_test_keys": true,
+  "verification_gpu_used": false,
+  "verification_model_forward_calls": 0
+}

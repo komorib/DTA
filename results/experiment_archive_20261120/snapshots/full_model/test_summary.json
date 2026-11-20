@@ -1,0 +1,49 @@
+{
+  "checkpoint": {
+    "bytes": 105299781,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/molformer-early-kv-gpu7-20261112_222241-63318/aligned_msa/best.pt",
+    "sha256": "f5ecc499732ad62503b73b64d1488b1aa19032c052208d33ee6db4c2dee437ad"
+  },
+  "device_name": "NVIDIA A100-SXM4-40GB",
+  "labels_passed_to_model": false,
+  "metrics": {
+    "CI": 0.6912905036582229,
+    "MAE": 1.1422133237951675,
+    "Pearson": 0.5698808992456984,
+    "RMSE": 1.4427209206979648,
+    "Spearman": 0.5454493429347145
+  },
+  "model_state_unchanged": true,
+  "molecule_cache_signature": "fde0b3ba067d6cc680eb42df059724d036d05c0baa9a09ed7f843818f0cf6283",
+  "optimizer_steps": 0,
+  "peak_allocated_bytes": 381469696,
+  "peak_reserved_bytes": 1344274432,
+  "physical_gpu": "7",
+  "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/early-kv-full-model-test-gpu7-20261117/test_predictions.npz",
+  "prediction_sha256": "66136961dca14d5a16b85d0096abd12861206bdfdf2c8e83b7aee98d5cc5ea46",
+  "status": "fixed_early_kv_full_model_test_complete",
+  "test_count": 4751,
+  "test_feature_coverage": {
+    "missing_count": 0,
+    "protein_sequences": 2012,
+    "test_count": 4751
+  },
+  "test_manifest": {
+    "bytes": 298950,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/data/PDBbind_chain_esm_residue_DTA/lp_pdbbind/test_manifest.json",
+    "sha256": "f8741d40837568c552ca0bd3725e0b079ba855d56d2a663c0bb95c4bc09c95b8"
+  },
+  "test_used_for_selection": false,
+  "training_plan": {
+    "bytes": 12841,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/molformer-early-kv-gpu7-20261112_222241-63318/plan.json",
+    "sha256": "a071143d8e598c9f038e8f5bdea3fd21670dcc3e431848142366a0b4780e74c8"
+  },
+  "training_summary": {
+    "bytes": 7025,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/molformer-early-kv-gpu7-20261112_222241-63318/summary.json",
+    "sha256": "7e445c8a9465557d491cad1e3ed4c4b5028cd94ee832acd6ca6b97c7e9b9069a"
+  },
+  "version": "lp-pdbbind-early-kv-fixed-test-v1",
+  "wall_seconds": 226.29768578300718
+}

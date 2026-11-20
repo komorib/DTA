@@ -1,0 +1,258 @@
+{
+  "bootstrap": {
+    "primary_old_aligned": {
+      "aligned": {
+        "MAE": 1.0101794888769613,
+        "RMSE": 1.2985268446538838
+      },
+      "baseline": {
+        "MAE": 1.005281622284381,
+        "RMSE": 1.2988305080275355
+      },
+      "cluster_bootstrap_95ci": {
+        "mae_gain": [
+          -0.019363129064679525,
+          0.009081386339358764
+        ],
+        "mse_gain": [
+          -0.0364660672250673,
+          0.036662240714142896
+        ],
+        "rmse_gain": [
+          -0.013963469856817928,
+          0.014042786912813063
+        ]
+      },
+      "cluster_count": 1461,
+      "gain": {
+        "mae_gain": -0.004897866592580291,
+        "mse_gain": 0.0007887222962945639,
+        "rmse_gain": 0.00030366337365173024
+      },
+      "largest_cluster": 27,
+      "n": 2340,
+      "status": "computed"
+    },
+    "secondary_old_query": {
+      "aligned": {
+        "MAE": 1.0101794888769613,
+        "RMSE": 1.2985268446538838
+      },
+      "baseline": {
+        "MAE": 1.0005012356829803,
+        "RMSE": 1.2876625445154002
+      },
+      "cluster_bootstrap_95ci": {
+        "mae_gain": [
+          -0.027027733182674155,
+          0.007418099540786581
+        ],
+        "mse_gain": [
+          -0.080374522530289,
+          0.025570601137891325
+        ],
+        "rmse_gain": [
+          -0.03129501554335627,
+          0.009823208197647029
+        ]
+      },
+      "cluster_count": 1461,
+      "gain": {
+        "mae_gain": -0.009678253193980968,
+        "mse_gain": -0.028097137738896327,
+        "rmse_gain": -0.010864300138483607
+      },
+      "largest_cluster": 27,
+      "n": 2340,
+      "status": "computed"
+    }
+  },
+  "bootstrap_repetitions": 500,
+  "bootstrap_seed": 20261024,
+  "cross_archive_labels_exact": true,
+  "full_database_hash": false,
+  "gain_sign": "old minus new for RMSE/MAE; new minus old for CI/Pearson/Spearman",
+  "gains": {
+    "primary_old_aligned": {
+      "CI": 0.0025857934972775,
+      "MAE": -0.004897866592580291,
+      "Pearson": 0.004165147982259199,
+      "RMSE": 0.00030366337365173024,
+      "Spearman": 0.011401097103245772
+    },
+    "secondary_old_query": {
+      "CI": 0.0003449924402294524,
+      "MAE": -0.009678253193980968,
+      "Pearson": -0.003254802144821878,
+      "RMSE": -0.010864300138483607,
+      "Spearman": 0.003599047056137228
+    }
+  },
+  "gpu_used": false,
+  "interpretation": {
+    "automatic_additional_experiments": false,
+    "classification": "rmse_mae_tradeoff_no_unqualified_success",
+    "fullchain_esm_removal_is_same_capacity_control": false,
+    "homolog_gain_independently_tested": false,
+    "primary_rmse_interval_strictly_positive": false,
+    "uncertainty_scope": "fixed trained checkpoints and validation samples; not training-seed variance",
+    "whole_model_msa_only": false
+  },
+  "metrics": {
+    "new_aligned": {
+      "CI": 0.7060275788643187,
+      "MAE": 1.0101794888769613,
+      "Pearson": 0.604663850399937,
+      "RMSE": 1.2985268446538838,
+      "Spearman": 0.5834859289788695
+    },
+    "old_aligned": {
+      "CI": 0.7034417853670412,
+      "MAE": 1.005281622284381,
+      "Pearson": 0.6004987024176778,
+      "RMSE": 1.2988305080275355,
+      "Spearman": 0.5720848318756238
+    },
+    "old_query": {
+      "CI": 0.7056825864240892,
+      "MAE": 1.0005012356829803,
+      "Pearson": 0.6079186525447589,
+      "RMSE": 1.2876625445154002,
+      "Spearman": 0.5798868819227323
+    }
+  },
+  "model_weights_read": false,
+  "new_summary": {
+    "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-gpu6-20261104_151052/candidate/summary.json",
+    "sha256": "72fc54e85f4ebab683bd1023b721c28437bd7052eb704d72db131bfa6f49ae08"
+  },
+  "old_references": {
+    "old_aligned": {
+      "archived_summary": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-20261104/experiments/lp_pdbbind/fullchain_msa_quality_diagnostic_v1/selector_only_diversity_20261024/strict_aligned_pair_20261028/completed_run_review_20261029/baseline/summary.json",
+      "metrics": {
+        "CI": 0.7034417853670412,
+        "MAE": 1.005281622284381,
+        "Pearson": 0.6004987024176778,
+        "RMSE": 1.2988305080275355,
+        "Spearman": 0.5720848318756238
+      },
+      "old_selection_gate_was_false": true,
+      "predictions": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/selector-strict-aligned-20261028-gpu6.q3y1XH/baseline/aligned_msa/valid_predictions.npz",
+      "predictions_available": true,
+      "predictions_sha256": "77e9e366901daabcd4b8a24b60aabf06713c628233bd95fcf3e4604cb35b6abc",
+      "selected_epoch": 4,
+      "selected_variant": "ema",
+      "selection_without_v20_gate": {
+        "comparability": "same_recorded_winner",
+        "expected_epoch4_ema_confirmed": true,
+        "full_epochs": 30,
+        "history_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-20261104/experiments/lp_pdbbind/fullchain_msa_quality_diagnostic_v1/selector_only_diversity_20261024/strict_aligned_pair_20261028/completed_run_review_20261029/baseline/aligned_msa/history.json",
+        "history_sha256": "dfbb3bc3594757f34ef9efa8cf2a5073c1e7a1949be7e3cd167760725028825f",
+        "matches_recorded_selection": true,
+        "selected_epoch": 4,
+        "selected_variant": "ema",
+        "selection_policy": "ci_lexicographic_v1",
+        "validation_metrics": {
+          "CI": 0.7034417853670412,
+          "MAE": 1.005281622284381,
+          "Pearson": 0.6004987024176778,
+          "RMSE": 1.2988305080275355,
+          "Spearman": 0.5720848318756238
+        }
+      },
+      "summary": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/selector-strict-aligned-20261028-gpu6.q3y1XH/baseline/summary.json",
+      "summary_sha256": "47dfe2f996d082b3a5bfe35043496910bb5eb046902f6536fff60a04c98aa780"
+    },
+    "old_query": {
+      "archived_summary": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-20261104/experiments/lp_pdbbind/fullchain_msa_quality_diagnostic_v1/selector_only_diversity_20261024/query_only_full_anchor_20261027/completed_run_review_20261028/baseline/summary.json",
+      "metrics": {
+        "CI": 0.7056825864240892,
+        "MAE": 1.0005012356829803,
+        "Pearson": 0.6079186525447589,
+        "RMSE": 1.2876625445154002,
+        "Spearman": 0.5798868819227323
+      },
+      "old_selection_gate_was_false": true,
+      "predictions": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/query-only-full-anchor-20261027-gpu6.VuBkzc/baseline/query_only/valid_predictions.npz",
+      "predictions_available": true,
+      "predictions_sha256": "8ffd24ccd48419ca7a5dcab72de58cd7a0023f4f915538e514373981f5d42ff3",
+      "selected_epoch": 4,
+      "selected_variant": "ema",
+      "selection_without_v20_gate": {
+        "comparability": "same_recorded_winner",
+        "full_epochs": 30,
+        "history_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-20261104/experiments/lp_pdbbind/fullchain_msa_quality_diagnostic_v1/selector_only_diversity_20261024/query_only_full_anchor_20261027/completed_run_review_20261028/baseline/query_only/history.json",
+        "history_sha256": "fe1aba28c909d68e5a8f20cd3346f14e56577b1eb3082784b9285927a2fa3648",
+        "matches_recorded_selection": true,
+        "selected_epoch": 4,
+        "selected_variant": "ema",
+        "selection_policy": "ci_lexicographic_v1",
+        "validation_metrics": {
+          "CI": 0.7056825864240892,
+          "MAE": 1.0005012356829803,
+          "Pearson": 0.6079186525447589,
+          "RMSE": 1.2876625445154002,
+          "Spearman": 0.5798868819227323
+        }
+      },
+      "summary": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/query-only-full-anchor-20261027-gpu6.VuBkzc/baseline/summary.json",
+      "summary_sha256": "60995dc85d478f22db987b1a990bc0ae1d2f41ca9794e9c705741225e14ea50c"
+    }
+  },
+  "protein_connected_component_count": 1461,
+  "raw_a3m_read": false,
+  "selected_epoch": 4,
+  "selected_variant": "ema",
+  "selection_comparability": {
+    "old_aligned": {
+      "comparability": "same_recorded_winner",
+      "expected_epoch4_ema_confirmed": true,
+      "full_epochs": 30,
+      "history_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-20261104/experiments/lp_pdbbind/fullchain_msa_quality_diagnostic_v1/selector_only_diversity_20261024/strict_aligned_pair_20261028/completed_run_review_20261029/baseline/aligned_msa/history.json",
+      "history_sha256": "dfbb3bc3594757f34ef9efa8cf2a5073c1e7a1949be7e3cd167760725028825f",
+      "matches_recorded_selection": true,
+      "selected_epoch": 4,
+      "selected_variant": "ema",
+      "selection_policy": "ci_lexicographic_v1",
+      "validation_metrics": {
+        "CI": 0.7034417853670412,
+        "MAE": 1.005281622284381,
+        "Pearson": 0.6004987024176778,
+        "RMSE": 1.2988305080275355,
+        "Spearman": 0.5720848318756238
+      }
+    },
+    "old_query": {
+      "comparability": "same_recorded_winner",
+      "full_epochs": 30,
+      "history_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-20261104/experiments/lp_pdbbind/fullchain_msa_quality_diagnostic_v1/selector_only_diversity_20261024/query_only_full_anchor_20261027/completed_run_review_20261028/baseline/query_only/history.json",
+      "history_sha256": "fe1aba28c909d68e5a8f20cd3346f14e56577b1eb3082784b9285927a2fa3648",
+      "matches_recorded_selection": true,
+      "selected_epoch": 4,
+      "selected_variant": "ema",
+      "selection_policy": "ci_lexicographic_v1",
+      "validation_metrics": {
+        "CI": 0.7056825864240892,
+        "MAE": 1.0005012356829803,
+        "Pearson": 0.6079186525447589,
+        "RMSE": 1.2876625445154002,
+        "Spearman": 0.5798868819227323
+      }
+    }
+  },
+  "status": "msa_only_context_comparison_complete",
+  "test_manifest_read": false,
+  "training_resources": {
+    "resource": {
+      "device": "NVIDIA A100-SXM4-40GB",
+      "memory_fraction_cap": null,
+      "peak_allocated_bytes": 6644604928,
+      "peak_reserved_bytes": 9695133696,
+      "physical_gpu": "6"
+    },
+    "wall_seconds": 15357.697793873958
+  },
+  "valid_manifest_sha256": "dc996a2665a07a3a708b7a5b7624f27f8ba3bde881bd18fe4569a2d65e3943d8",
+  "validation_count": 2340,
+  "version": "lp-pdbbind-fullchain-msa-only-context-v1"
+}

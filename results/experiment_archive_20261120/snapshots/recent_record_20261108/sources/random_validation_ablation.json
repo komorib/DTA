@@ -1,0 +1,49 @@
+{
+  "status": "same_validation_keys_recomputed",
+  "split": "random_valid",
+  "count": 1813,
+  "metric_version": "pl-affinity-metrics-v2-average-ranks",
+  "metric_source_sha256": "07afbb0ba170157da073cb1c8ee2a17d199e3adeda3ea6ba5f61534717d4caae",
+  "metrics": {
+    "full_esm_msa": {
+      "CI": 0.7946753940281656,
+      "RMSE": 1.1497466032607064,
+      "MAE": 0.8848746379354994,
+      "Pearson": 0.7866835856774824,
+      "Spearman": 0.7797089116386995
+    },
+    "msa_context_only": {
+      "CI": 0.7886751804214156,
+      "RMSE": 1.1827660587052342,
+      "MAE": 0.8968973659330085,
+      "Pearson": 0.7739058728027706,
+      "Spearman": 0.7661767986784304
+    }
+  },
+  "full_model_gain_over_msa_context": {
+    "CI": 0.00600021360674996,
+    "RMSE": 0.03301945544452778,
+    "MAE": 0.012022727997509142,
+    "Pearson": 0.012777712874711855,
+    "Spearman": 0.013532112960269127
+  },
+  "same_keys_and_labels": true,
+  "same_training_config": true,
+  "same_shared_initial_fingerprint": true,
+  "selected_epoch": {
+    "full_esm_msa": 21,
+    "msa_context_only": 21
+  },
+  "sources": {
+    "full_esm_msa": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/internal/train/aligned_msa/valid_predictions.npz",
+      "sha256": "686c2f0d7fd8fedf6d2b50095b7eb1e118bdd4263a729f6279306eedb9bd6200"
+    },
+    "msa_context_only": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/internal/train/aligned_msa/valid_predictions.npz",
+      "sha256": "c9ac2bef7fe310547a936712ee2e79e9c1e7cf0e55b4f2898214bb8ac44a9d35"
+    }
+  },
+  "test_predictions_or_labels_read": false,
+  "gpu_used": false
+}

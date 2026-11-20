@@ -1,0 +1,320 @@
+{
+  "annotation_sha256": "8f8a9c68168df2de4d535b45a8f46791abe677a21cd280c31c66de8235e4c8a2",
+  "arms": {
+    "1d_only": {
+      "arm": "1d_only",
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-gpu7/1d_only/best.pt",
+        "sha256": "5c87b68ff202ea4170c156c69887445f69eda983b900449327ed686c6bce3a2c"
+      },
+      "count": 1813,
+      "metrics": {
+        "all": {
+          "count": 1813,
+          "metrics": {
+            "CI": 0.7804834433529285,
+            "MAE": 0.9260605879220032,
+            "Pearson": 0.7502333784927047,
+            "RMSE": 1.2492841768917697,
+            "Spearman": 0.7441966347081508
+          }
+        },
+        "both_seen_unmarked": {
+          "count": 191,
+          "metrics": {
+            "CI": 0.8492019660904623,
+            "MAE": 0.7163488328556477,
+            "Pearson": 0.8716024077307478,
+            "RMSE": 0.9999292387791603,
+            "Spearman": 0.8711955772940204
+          }
+        },
+        "cold_both": {
+          "count": 565,
+          "metrics": {
+            "CI": 0.7422966278271926,
+            "MAE": 1.0041536168506098,
+            "Pearson": 0.6645811249198076,
+            "RMSE": 1.3373465113535798,
+            "Spearman": 0.6630461612773808
+          }
+        },
+        "cold_ligand": {
+          "count": 804,
+          "metrics": {
+            "CI": 0.7929654015777378,
+            "MAE": 0.8976240275612842,
+            "Pearson": 0.7747312775638052,
+            "RMSE": 1.1961640240691036,
+            "Spearman": 0.7726368197686413
+          }
+        },
+        "cold_protein": {
+          "count": 253,
+          "metrics": {
+            "CI": 0.7696892495439391,
+            "MAE": 1.000350621135558,
+            "Pearson": 0.7246521695864458,
+            "RMSE": 1.374134285066076,
+            "Spearman": 0.709687721841094
+          }
+        }
+      },
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-coldstart-test-gpu7/1d_only/test_predictions.npz",
+      "summary_sha256": "38697cebb6b7648c4a953a9332459d0c24fce438176613c412a94512a23743b2"
+    },
+    "3d_only": {
+      "arm": "3d_only",
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-gpu7/3d_only/best.pt",
+        "sha256": "a05237a4442f7fa39dccc72559bb97b330fddcafa115159f51f8cfbf428b4f2a"
+      },
+      "count": 1813,
+      "metrics": {
+        "all": {
+          "count": 1813,
+          "metrics": {
+            "CI": 0.7424510038474308,
+            "MAE": 1.0892714010774378,
+            "Pearson": 0.6644062323161842,
+            "RMSE": 1.4085418442940831,
+            "Spearman": 0.6707560420091673
+          }
+        },
+        "both_seen_unmarked": {
+          "count": 191,
+          "metrics": {
+            "CI": 0.7866294803114817,
+            "MAE": 1.0337515200965754,
+            "Pearson": 0.7471178809595385,
+            "RMSE": 1.3608420028989934,
+            "Spearman": 0.7646803527142464
+          }
+        },
+        "cold_both": {
+          "count": 565,
+          "metrics": {
+            "CI": 0.7086032267608382,
+            "MAE": 1.1320262780170924,
+            "Pearson": 0.5741782657693093,
+            "RMSE": 1.4515637840335507,
+            "Spearman": 0.5938038460079853
+          }
+        },
+        "cold_ligand": {
+          "count": 804,
+          "metrics": {
+            "CI": 0.7566774333809554,
+            "MAE": 1.0492976755920402,
+            "Pearson": 0.6963556373646457,
+            "RMSE": 1.3587749478394031,
+            "Spearman": 0.7029048041199908
+          }
+        },
+        "cold_protein": {
+          "count": 253,
+          "metrics": {
+            "CI": 0.7298232370887588,
+            "MAE": 1.162736488376645,
+            "Pearson": 0.6457012755837338,
+            "RMSE": 1.4988615197130448,
+            "Spearman": 0.6329549715376487
+          }
+        }
+      },
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-coldstart-test-gpu7/3d_only/test_predictions.npz",
+      "summary_sha256": "5577999b378fca03d30014fd99ed7af1f948c73e9366f0e96387e0ad6fc76206"
+    },
+    "no3d_noesm": {
+      "arm": "no3d_noesm",
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-gpu7/no3d_noesm/best.pt",
+        "sha256": "039b62f0a92e3a9a91e999882b57595a32b05255bdca64265a30a413f0bf4e2e"
+      },
+      "count": 1813,
+      "metrics": {
+        "all": {
+          "count": 1813,
+          "metrics": {
+            "CI": 0.7823082876003359,
+            "MAE": 0.9194290294118772,
+            "Pearson": 0.7526745463566005,
+            "RMSE": 1.2438176635215226,
+            "Spearman": 0.7485271434915691
+          }
+        },
+        "both_seen_unmarked": {
+          "count": 191,
+          "metrics": {
+            "CI": 0.845584580548959,
+            "MAE": 0.7425308068189805,
+            "Pearson": 0.8759296138060886,
+            "RMSE": 0.9869075223106938,
+            "Spearman": 0.8690910030311381
+          }
+        },
+        "cold_both": {
+          "count": 565,
+          "metrics": {
+            "CI": 0.7390579066971339,
+            "MAE": 0.9936226547063974,
+            "Pearson": 0.6572465653689186,
+            "RMSE": 1.3443403455708642,
+            "Spearman": 0.6576162681227641
+          }
+        },
+        "cold_ligand": {
+          "count": 804,
+          "metrics": {
+            "CI": 0.799891297596124,
+            "MAE": 0.877387099548693,
+            "Pearson": 0.78425156766979,
+            "RMSE": 1.1710840807894987,
+            "Spearman": 0.7875611538772802
+          }
+        },
+        "cold_protein": {
+          "count": 253,
+          "metrics": {
+            "CI": 0.7678492797383154,
+            "MAE": 1.0208909813242864,
+            "Pearson": 0.7147773829114992,
+            "RMSE": 1.3988929212655972,
+            "Spearman": 0.7062783160010138
+          }
+        }
+      },
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-coldstart-test-gpu7/no3d_noesm/test_predictions.npz",
+      "summary_sha256": "0cf005d5444cad889401e0a18bc7770773857316e311a9c09082c53dc7665971"
+    },
+    "no3d_nomolformer": {
+      "arm": "no3d_nomolformer",
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-gpu7/no3d_nomolformer/best.pt",
+        "sha256": "80d65f732faed2e126980ccd269630e30066c1cfd94f96290e844f56f48b21a8"
+      },
+      "count": 1813,
+      "metrics": {
+        "all": {
+          "count": 1813,
+          "metrics": {
+            "CI": 0.7201238208698709,
+            "MAE": 1.1304452228848394,
+            "Pearson": 0.6065768166667372,
+            "RMSE": 1.50140118119475,
+            "Spearman": 0.6103072636150275
+          }
+        },
+        "both_seen_unmarked": {
+          "count": 191,
+          "metrics": {
+            "CI": 0.762136190423593,
+            "MAE": 1.063889479324413,
+            "Pearson": 0.7286467258022854,
+            "RMSE": 1.4030731048800402,
+            "Spearman": 0.6962110774317994
+          }
+        },
+        "cold_both": {
+          "count": 565,
+          "metrics": {
+            "CI": 0.6917486576146142,
+            "MAE": 1.1506611550114296,
+            "Pearson": 0.5216546395923829,
+            "RMSE": 1.5317185703645033,
+            "Spearman": 0.5430509250418992
+          }
+        },
+        "cold_ligand": {
+          "count": 804,
+          "metrics": {
+            "CI": 0.7305966209081309,
+            "MAE": 1.0945167761290413,
+            "Pearson": 0.6303836223161365,
+            "RMSE": 1.4635536984418094,
+            "Spearman": 0.6322872384209534
+          }
+        },
+        "cold_protein": {
+          "count": 253,
+          "metrics": {
+            "CI": 0.7107001321003963,
+            "MAE": 1.2497203871543239,
+            "Pearson": 0.5734592571250939,
+            "RMSE": 1.6189690497880656,
+            "Spearman": 0.5970543207790726
+          }
+        }
+      },
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-coldstart-test-gpu7/no3d_nomolformer/test_predictions.npz",
+      "summary_sha256": "7d9523a1fcecd3edc76602bf0eb34e6c771692b0ea830425dd873252a8b7e53e"
+    },
+    "no3d_nomsa": {
+      "arm": "no3d_nomsa",
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-gpu7/no3d_nomsa/best.pt",
+        "sha256": "933c28525997e9c7b19fde9936687afc770ce24eea195e1b26883257dede05d5"
+      },
+      "count": 1813,
+      "metrics": {
+        "all": {
+          "count": 1813,
+          "metrics": {
+            "CI": 0.783394954885456,
+            "MAE": 0.9146232574874344,
+            "Pearson": 0.7605297766406004,
+            "RMSE": 1.223845997309502,
+            "Spearman": 0.7516077058436025
+          }
+        },
+        "both_seen_unmarked": {
+          "count": 191,
+          "metrics": {
+            "CI": 0.8503341249240625,
+            "MAE": 0.7174110401603908,
+            "Pearson": 0.879219332446539,
+            "RMSE": 0.9708522009756134,
+            "Spearman": 0.8718948057316065
+          }
+        },
+        "cold_both": {
+          "count": 565,
+          "metrics": {
+            "CI": 0.7480470102417868,
+            "MAE": 0.9806045174194854,
+            "Pearson": 0.6881918119134041,
+            "RMSE": 1.2840393780795591,
+            "Spearman": 0.6779888796703688
+          }
+        },
+        "cold_ligand": {
+          "count": 804,
+          "metrics": {
+            "CI": 0.7956487980619914,
+            "MAE": 0.8845430861256938,
+            "Pearson": 0.7793616396482699,
+            "RMSE": 1.1855164326915528,
+            "Spearman": 0.7769168667464561
+          }
+        },
+        "cold_protein": {
+          "count": 253,
+          "metrics": {
+            "CI": 0.7688557589482292,
+            "MAE": 1.011748077339988,
+            "Pearson": 0.7267175131157249,
+            "RMSE": 1.3686970194927637,
+            "Spearman": 0.7123442573630865
+          }
+        }
+      },
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-coldstart-v3-coldstart-test-gpu7/no3d_nomsa/test_predictions.npz",
+      "summary_sha256": "d0215618218249a0038c02604d2a46ee319c62159a2cb960b72ed1e871242e48"
+    }
+  },
+  "protocol_sha256": "ab40709e0fd67c1d3cf8cffb015a6d0b5e1e15bc0d21a0101284851f57696c24",
+  "status": "complete",
+  "test_used_for_selection": false,
+  "training_or_optimizer_steps": 0,
+  "version": "lp-pdbbind-modality-ablation-coldstart-v3-coldstart-test"
+}

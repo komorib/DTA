@@ -1,0 +1,229 @@
+{
+  "aligned_msa": {
+    "checkpoint": {
+      "bytes": 105299781,
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/molformer-early-kv-gpu7-20261112_222241-63318/aligned_msa/best.pt",
+      "sha256": "f5ecc499732ad62503b73b64d1488b1aa19032c052208d33ee6db4c2dee437ad"
+    },
+    "checkpoint_reload_maximum_prediction_delta": 0.0,
+    "optimizer_steps": 20700,
+    "selected_epoch": 3,
+    "selected_variant": "ema",
+    "spearman_standard": 0.6088746135547582,
+    "valid_predictions": {
+      "bytes": 24836,
+      "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/molformer-early-kv-gpu7-20261112_222241-63318/aligned_msa/valid_predictions.npz",
+      "sha256": "2cb2fe645610bcd7c4629382b7ca2ecc25b76d33a6ec239bc98680c402ae7d31"
+    },
+    "validation_metrics": {
+      "CI": 0.7167773379928699,
+      "MAE": 0.9813889292436462,
+      "Pearson": 0.6310611178796132,
+      "RMSE": 1.265874673873388,
+      "Spearman": 0.6090879423794782
+    }
+  },
+  "architecture_flags": {
+    "molecule_branch_enabled": false,
+    "molecule_kv_enabled": true
+  },
+  "automatic_promotion": false,
+  "candidate_sources": {
+    "bytes": 5769,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/molformer-early-kv-cpu-ready-20261112/source_manifest.json",
+    "sha256": "f14abf8f7fbcfbd8937dc30a9b45f247ade331fa5e4e36f2f7b414c5bb3bd223"
+  },
+  "formal_training_arms": 1,
+  "initialization": {
+    "all_old_state_bitwise_equal": true,
+    "initial_weight_fingerprint": "968ac05edadea9218c7c04b73fe6c8109dd4b502a8a427d4290179816cb2044d",
+    "initialization": "random_clean_start_no_stage1_weights",
+    "late_parameter_count": 791552,
+    "late_parameters_frozen_and_bypassed": true,
+    "molecule_branch_enabled": false,
+    "molecule_kv_enabled": true,
+    "new_parameters": {
+      "early_projection.0.bias": {
+        "count": 768,
+        "shape": [
+          768
+        ],
+        "trainable": true
+      },
+      "early_projection.0.weight": {
+        "count": 768,
+        "shape": [
+          768
+        ],
+        "trainable": true
+      },
+      "early_projection.1.bias": {
+        "count": 512,
+        "shape": [
+          512
+        ],
+        "trainable": true
+      },
+      "early_projection.1.weight": {
+        "count": 393216,
+        "shape": [
+          512,
+          768
+        ],
+        "trainable": true
+      },
+      "early_projection.2.bias": {
+        "count": 512,
+        "shape": [
+          512
+        ],
+        "trainable": true
+      },
+      "early_projection.2.weight": {
+        "count": 512,
+        "shape": [
+          512
+        ],
+        "trainable": true
+      }
+    },
+    "old_initial_weight_fingerprint": "176368cc53593d58ab2e6f5d7684a9b0587ca18c36129fd8f925c0a9a925e9d7",
+    "old_rng_bitwise_equal": true,
+    "parameter_counts": {
+      "new": 396288,
+      "total": 26298135,
+      "trainable": 24969688
+    },
+    "retained_tensor_count": 325,
+    "status": "clean_start_initialization_verified",
+    "trained_checkpoint_loaded": false
+  },
+  "molecule_cache_signature": "6ce4d123d006c65cd240f8a76c10016f9a465c4ef739cc7ca5c82804c31aa2f2",
+  "plan": {
+    "bytes": 12841,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/molformer-early-kv-gpu7-20261112_222241-63318/plan.json",
+    "sha256": "a071143d8e598c9f038e8f5bdea3fd21670dcc3e431848142366a0b4780e74c8"
+  },
+  "runtime": {
+    "backend_flags": {
+      "CUBLAS_WORKSPACE_CONFIG": null,
+      "cudnn_allow_tf32": true,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "deterministic_algorithms": false,
+      "matmul_allow_tf32": false,
+      "policy": "observed; no new backend override"
+    },
+    "cuda": "12.1",
+    "device": "cuda:0",
+    "device_name": "NVIDIA A100-SXM4-40GB",
+    "peak_allocated_bytes": 5690803200,
+    "peak_reserved_bytes": 9177137152,
+    "physical_gpu": "7",
+    "python": "3.8.20",
+    "torch": "2.1.0+cu121",
+    "wall_seconds": 6037.340101054993
+  },
+  "selection_policy": "ci_lexicographic_v1",
+  "status": "single_model_training_complete",
+  "test_manifest_read": false,
+  "test_used_for_selection": false,
+  "training_config": {
+    "auxiliary_effective_scale": 0.0,
+    "early_stopping": false,
+    "historical_selection": "V20 gate false; same subsequent CI lexicographic ordering",
+    "label_mean": 6.237669656609587,
+    "label_std": 1.8774245539665635,
+    "manifests": {
+      "train": {
+        "bytes": 693925,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/data/PDBbind_chain_esm_residue_DTA/lp_pdbbind/train_manifest.json",
+        "sha256": "def47b0307750099bcd8accc17ac5c6960d4d92ffc789daac2cadb10faf55213"
+      },
+      "valid": {
+        "bytes": 147530,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/data/PDBbind_chain_esm_residue_DTA/lp_pdbbind/valid_manifest.json",
+        "sha256": "dc996a2665a07a3a708b7a5b7624f27f8ba3bde881bd18fe4569a2d65e3943d8"
+      }
+    },
+    "maximum_epochs": 30,
+    "model_config": {
+      "affinity_class_weight": 0.05,
+      "affinity_initial_checkpoint": null,
+      "amp_dtype": "bfloat16",
+      "batch_size": 16,
+      "contact_weight": 0.05,
+      "device": "cuda:0",
+      "distogram_weight": 0.02,
+      "dropout": 0.2,
+      "ema_decay": 0.995,
+      "encoder_learning_rate_scale": 0.2,
+      "evaluation_batch_size": 6,
+      "gradient_clip": 1.0,
+      "heads": 8,
+      "inference_subsets": 1,
+      "interface_blocks": 2,
+      "interface_contact_weight": 0.05,
+      "interface_distogram_weight": 0.08,
+      "interface_mask_probability": 0.15,
+      "latent_width": 1024,
+      "layers": 4,
+      "learning_rate": 0.0001,
+      "match_weight": 0.02,
+      "maximum_epochs": 30,
+      "minimum_rank_gap": 0.1,
+      "model_width": 512,
+      "msa_heads": 6,
+      "msa_layers": 4,
+      "msa_width": 192,
+      "mse_weight": 0.15,
+      "num_workers": 4,
+      "pair_factor": 8,
+      "pair_token_count": 96,
+      "pair_token_heads": 8,
+      "pair_token_layers": 2,
+      "pair_token_width": 256,
+      "pair_width": 96,
+      "patience": 14,
+      "pretrained_checkpoint": "none",
+      "rank_weight": 0.4,
+      "residue_contact_weight": 0.03,
+      "row_depth": 64,
+      "seed": 20261001,
+      "weight_decay": 0.0001
+    },
+    "model_kwargs": {
+      "dropout": 0.2,
+      "heads": 8,
+      "interface_blocks": 2,
+      "latent_width": 1024,
+      "layers": 4,
+      "model_width": 512,
+      "msa_heads": 6,
+      "msa_layers": 4,
+      "msa_width": 192,
+      "pair_factor": 8,
+      "pair_token_count": 96,
+      "pair_token_heads": 8,
+      "pair_token_layers": 2,
+      "pair_token_width": 256,
+      "pair_width": 96
+    },
+    "optimizer": {
+      "groups": 1,
+      "lr": 0.0001,
+      "name": "AdamW",
+      "weight_decay": 0.0001
+    },
+    "planned_optimizer_steps": 20700,
+    "scheduler": {
+      "cosine": true,
+      "floor": 0.05,
+      "total_steps": 20700,
+      "warmup_steps": 1656
+    },
+    "selection_policy": "ci_lexicographic_v1"
+  },
+  "v20_gate_used": false,
+  "version": "lp-pdbbind-fullchain-molformer-early-kv-v1"
+}

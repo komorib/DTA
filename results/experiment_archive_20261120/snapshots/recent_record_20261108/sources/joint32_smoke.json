@@ -1,0 +1,1709 @@
+{
+  "backend": {
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "deterministic_warn_only": false,
+    "environment": {
+      "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+      "CUDA_LAUNCH_BLOCKING": null,
+      "MKL_NUM_THREADS": null,
+      "NVIDIA_TF32_OVERRIDE": null,
+      "OMP_NUM_THREADS": null,
+      "PYTHONHASHSEED": null
+    },
+    "flash_sdp_enabled": true,
+    "float32_matmul_precision": "highest",
+    "logical_device": null,
+    "math_sdp_enabled": true,
+    "mem_efficient_sdp_enabled": true,
+    "num_threads": 56,
+    "python_version": "3.8.20",
+    "torch_cuda_version": "12.1",
+    "torch_version": "2.1.0+cu121"
+  },
+  "envelope_kind": "coordinatewise maximum of actual fixed train/valid cohort, not hypothetical lineage cap",
+  "envelope_training_probe": {
+    "ema_present": true,
+    "finite_updates": true,
+    "optimizer_moments_present": true,
+    "peak_allocated_bytes": 25255191552,
+    "peak_reserved_bytes": 29137829888,
+    "steps": 2,
+    "trace": [
+      {
+        "block_gradients": {
+          "0": {
+            "connected_nonzero": 7,
+            "connected_zero": 46,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.09065163327648296,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.05922352755060567,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.051861002075699936,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.06005724751309863,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.07687918261587595,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.021629682165654304,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.07547978485980374,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "1": {
+            "connected_nonzero": 7,
+            "connected_zero": 46,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.09042323662650292,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.05554564713763681,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.053536454188144754,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.06469186242194483,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.07790496134678576,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.020212378668872245,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.07999070776808336,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "2": {
+            "connected_nonzero": 7,
+            "connected_zero": 46,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.08847269469540489,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.05636811219589655,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.05372541916355418,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.058118278779695616,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.06617329131632993,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.020481957280319443,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.08340560857762448,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "3": {
+            "connected_nonzero": 7,
+            "connected_zero": 46,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.08431739163671594,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.05439210778065964,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.05071808320451244,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.06409697065045215,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.07954766299122518,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.02035086747732422,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.08790113637946254,
+                "status": "connected_nonzero"
+              }
+            }
+          }
+        },
+        "components": {
+          "affinity_class": 0.6984688639640808,
+          "contact": 1.3611406087875366,
+          "distogram": 2.59254789352417,
+          "interface_contact": 1.341291904449463,
+          "interface_distogram": 2.1917595863342285,
+          "match": 2.79833984375,
+          "mse": 0.4121550917625427,
+          "rank": 0.7044657468795776,
+          "residue_contact": 1.1660199165344238,
+          "smooth_l1": 0.34063225984573364
+        },
+        "keys": [
+          "synthetic_maximum_0",
+          "synthetic_maximum_1",
+          "synthetic_maximum_2",
+          "synthetic_maximum_3",
+          "synthetic_maximum_4",
+          "synthetic_maximum_5",
+          "synthetic_maximum_6",
+          "synthetic_maximum_7",
+          "synthetic_maximum_8",
+          "synthetic_maximum_9",
+          "synthetic_maximum_10",
+          "synthetic_maximum_11",
+          "synthetic_maximum_12",
+          "synthetic_maximum_13",
+          "synthetic_maximum_14",
+          "synthetic_maximum_15"
+        ],
+        "loss": 1.1724259853363037,
+        "relation_gradient": {
+          "l2": 0.0002015314727201662,
+          "status": "connected_nonzero"
+        },
+        "shape": {
+          "batch_size": 16,
+          "fullchain_residues": 2701,
+          "ligand_atoms": 177,
+          "residues": 160
+        },
+        "step": 1
+      },
+      {
+        "block_gradients": {
+          "0": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.09078068712502901,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.059389263897066925,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.05218969320003958,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.06012547917274671,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.08073785172539341,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.021807376020860407,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.07701874276579485,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "1": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.09034450818619853,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.05560455111051804,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.05389522799397984,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.06466305195456043,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.08174327113742287,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.02029451122707168,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.0814142952125764,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "2": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.08863974234700688,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.0561250698518899,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.05400827520040903,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.05811573107532685,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.06911739286050103,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.020527353312558068,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.0847798023772179,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "3": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.08422922058109215,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.05436451806904183,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.05108051866994179,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.06395748348419554,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.08321870036739988,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.020481902523789876,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.08945865063694958,
+                "status": "connected_nonzero"
+              }
+            }
+          }
+        },
+        "components": {
+          "affinity_class": 0.6943684816360474,
+          "contact": 1.3610539436340332,
+          "distogram": 2.5924577713012695,
+          "interface_contact": 1.343247652053833,
+          "interface_distogram": 2.191862106323242,
+          "match": 2.79833984375,
+          "mse": 0.3925011456012726,
+          "rank": 0.6957788467407227,
+          "residue_contact": 1.166504144668579,
+          "smooth_l1": 0.32806575298309326
+        },
+        "keys": [
+          "synthetic_maximum_0",
+          "synthetic_maximum_1",
+          "synthetic_maximum_2",
+          "synthetic_maximum_3",
+          "synthetic_maximum_4",
+          "synthetic_maximum_5",
+          "synthetic_maximum_6",
+          "synthetic_maximum_7",
+          "synthetic_maximum_8",
+          "synthetic_maximum_9",
+          "synthetic_maximum_10",
+          "synthetic_maximum_11",
+          "synthetic_maximum_12",
+          "synthetic_maximum_13",
+          "synthetic_maximum_14",
+          "synthetic_maximum_15"
+        ],
+        "loss": 1.153346061706543,
+        "relation_gradient": {
+          "l2": 0.0001985839543236428,
+          "status": "connected_nonzero"
+        },
+        "shape": {
+          "batch_size": 16,
+          "fullchain_residues": 2701,
+          "ligand_atoms": 177,
+          "residues": 160
+        },
+        "step": 2
+      }
+    ],
+    "updated_blocks": {
+      "0": [
+        "outgoing.output_projection.weight",
+        "incoming.output_projection.weight",
+        "starting_attention.output_projection.weight",
+        "ending_attention.output_projection.weight",
+        "pair_transition.output_projection.weight",
+        "single_attention.output_projection.weight",
+        "single_transition.output_projection.weight"
+      ],
+      "1": [
+        "outgoing.output_projection.weight",
+        "incoming.output_projection.weight",
+        "starting_attention.output_projection.weight",
+        "ending_attention.output_projection.weight",
+        "pair_transition.output_projection.weight",
+        "single_attention.output_projection.weight",
+        "single_transition.output_projection.weight"
+      ],
+      "2": [
+        "outgoing.output_projection.weight",
+        "incoming.output_projection.weight",
+        "starting_attention.output_projection.weight",
+        "ending_attention.output_projection.weight",
+        "pair_transition.output_projection.weight",
+        "single_attention.output_projection.weight",
+        "single_transition.output_projection.weight"
+      ],
+      "3": [
+        "outgoing.output_projection.weight",
+        "incoming.output_projection.weight",
+        "starting_attention.output_projection.weight",
+        "ending_attention.output_projection.weight",
+        "pair_transition.output_projection.weight",
+        "single_attention.output_projection.weight",
+        "single_transition.output_projection.weight"
+      ]
+    },
+    "wall_seconds": 24.495746409986168
+  },
+  "gpu_memory_fraction_cap": null,
+  "initialization": {
+    "added_parameters": 1653376,
+    "additional_residual_output_projections_zero": true,
+    "complete_initial_fingerprint": "3e7a7953740e007194c1329580d24e4314f06a346ac98afc0cee9f73c13aac61",
+    "initialization": "random_clean_start_shared_two_blocks_no_trained_checkpoint",
+    "joint_pair_blocks": 4,
+    "new_parameter_keys": [
+      "msa_pair_encoder.joint_blocks.2.ending_attention.bias_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.ending_attention.key_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.ending_attention.norm.bias",
+      "msa_pair_encoder.joint_blocks.2.ending_attention.norm.weight",
+      "msa_pair_encoder.joint_blocks.2.ending_attention.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.ending_attention.query_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.ending_attention.value_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.incoming.contraction_norm.bias",
+      "msa_pair_encoder.joint_blocks.2.incoming.contraction_norm.weight",
+      "msa_pair_encoder.joint_blocks.2.incoming.left_gate.weight",
+      "msa_pair_encoder.joint_blocks.2.incoming.left_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.incoming.norm.bias",
+      "msa_pair_encoder.joint_blocks.2.incoming.norm.weight",
+      "msa_pair_encoder.joint_blocks.2.incoming.output_gate.weight",
+      "msa_pair_encoder.joint_blocks.2.incoming.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.incoming.right_gate.weight",
+      "msa_pair_encoder.joint_blocks.2.incoming.right_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.outgoing.contraction_norm.bias",
+      "msa_pair_encoder.joint_blocks.2.outgoing.contraction_norm.weight",
+      "msa_pair_encoder.joint_blocks.2.outgoing.left_gate.weight",
+      "msa_pair_encoder.joint_blocks.2.outgoing.left_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.outgoing.norm.bias",
+      "msa_pair_encoder.joint_blocks.2.outgoing.norm.weight",
+      "msa_pair_encoder.joint_blocks.2.outgoing.output_gate.weight",
+      "msa_pair_encoder.joint_blocks.2.outgoing.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.outgoing.right_gate.weight",
+      "msa_pair_encoder.joint_blocks.2.outgoing.right_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.pair_transition.left_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.pair_transition.norm.bias",
+      "msa_pair_encoder.joint_blocks.2.pair_transition.norm.weight",
+      "msa_pair_encoder.joint_blocks.2.pair_transition.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.pair_transition.right_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.single_attention.bias_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.single_attention.key_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.single_attention.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.single_attention.pair_norm.bias",
+      "msa_pair_encoder.joint_blocks.2.single_attention.pair_norm.weight",
+      "msa_pair_encoder.joint_blocks.2.single_attention.query_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.single_attention.single_norm.bias",
+      "msa_pair_encoder.joint_blocks.2.single_attention.single_norm.weight",
+      "msa_pair_encoder.joint_blocks.2.single_attention.value_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.single_transition.left_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.single_transition.norm.bias",
+      "msa_pair_encoder.joint_blocks.2.single_transition.norm.weight",
+      "msa_pair_encoder.joint_blocks.2.single_transition.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.single_transition.right_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.starting_attention.bias_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.starting_attention.key_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.starting_attention.norm.bias",
+      "msa_pair_encoder.joint_blocks.2.starting_attention.norm.weight",
+      "msa_pair_encoder.joint_blocks.2.starting_attention.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.starting_attention.query_projection.weight",
+      "msa_pair_encoder.joint_blocks.2.starting_attention.value_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.ending_attention.bias_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.ending_attention.key_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.ending_attention.norm.bias",
+      "msa_pair_encoder.joint_blocks.3.ending_attention.norm.weight",
+      "msa_pair_encoder.joint_blocks.3.ending_attention.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.ending_attention.query_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.ending_attention.value_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.incoming.contraction_norm.bias",
+      "msa_pair_encoder.joint_blocks.3.incoming.contraction_norm.weight",
+      "msa_pair_encoder.joint_blocks.3.incoming.left_gate.weight",
+      "msa_pair_encoder.joint_blocks.3.incoming.left_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.incoming.norm.bias",
+      "msa_pair_encoder.joint_blocks.3.incoming.norm.weight",
+      "msa_pair_encoder.joint_blocks.3.incoming.output_gate.weight",
+      "msa_pair_encoder.joint_blocks.3.incoming.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.incoming.right_gate.weight",
+      "msa_pair_encoder.joint_blocks.3.incoming.right_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.outgoing.contraction_norm.bias",
+      "msa_pair_encoder.joint_blocks.3.outgoing.contraction_norm.weight",
+      "msa_pair_encoder.joint_blocks.3.outgoing.left_gate.weight",
+      "msa_pair_encoder.joint_blocks.3.outgoing.left_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.outgoing.norm.bias",
+      "msa_pair_encoder.joint_blocks.3.outgoing.norm.weight",
+      "msa_pair_encoder.joint_blocks.3.outgoing.output_gate.weight",
+      "msa_pair_encoder.joint_blocks.3.outgoing.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.outgoing.right_gate.weight",
+      "msa_pair_encoder.joint_blocks.3.outgoing.right_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.pair_transition.left_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.pair_transition.norm.bias",
+      "msa_pair_encoder.joint_blocks.3.pair_transition.norm.weight",
+      "msa_pair_encoder.joint_blocks.3.pair_transition.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.pair_transition.right_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.single_attention.bias_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.single_attention.key_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.single_attention.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.single_attention.pair_norm.bias",
+      "msa_pair_encoder.joint_blocks.3.single_attention.pair_norm.weight",
+      "msa_pair_encoder.joint_blocks.3.single_attention.query_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.single_attention.single_norm.bias",
+      "msa_pair_encoder.joint_blocks.3.single_attention.single_norm.weight",
+      "msa_pair_encoder.joint_blocks.3.single_attention.value_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.single_transition.left_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.single_transition.norm.bias",
+      "msa_pair_encoder.joint_blocks.3.single_transition.norm.weight",
+      "msa_pair_encoder.joint_blocks.3.single_transition.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.single_transition.right_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.starting_attention.bias_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.starting_attention.key_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.starting_attention.norm.bias",
+      "msa_pair_encoder.joint_blocks.3.starting_attention.norm.weight",
+      "msa_pair_encoder.joint_blocks.3.starting_attention.output_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.starting_attention.query_projection.weight",
+      "msa_pair_encoder.joint_blocks.3.starting_attention.value_projection.weight"
+    ],
+    "shared_parameters_equal": true,
+    "shared_two_block_fingerprint": "5dbfc734c45941b6ea2e9f4bac3ae1ef9a0211ad0e68e44983b20988af2b6bff",
+    "total_parameters": 40696759,
+    "trainable_parameters": 40159864,
+    "two_block_initialization": {
+      "added_parameters": 1718272,
+      "candidate_total_parameters": 39043383,
+      "canonical_initial_fingerprint": "21d4a28bc5277b8e688fb9d4f6d56e5df585b9860512a99a05ebeee58707c790",
+      "canonical_total_parameters": 37719863,
+      "complete_initial_fingerprint": "5dbfc734c45941b6ea2e9f4bac3ae1ef9a0211ad0e68e44983b20988af2b6bff",
+      "deleted_parameter_keys": [
+        "msa_pair_encoder.interface_layers.0.distance_pair.0.bias",
+        "msa_pair_encoder.interface_layers.0.distance_pair.0.weight",
+        "msa_pair_encoder.interface_layers.0.distance_pair.2.bias",
+        "msa_pair_encoder.interface_layers.0.distance_pair.2.weight",
+        "msa_pair_encoder.interface_layers.0.ligand_gate.0.bias",
+        "msa_pair_encoder.interface_layers.0.ligand_gate.0.weight",
+        "msa_pair_encoder.interface_layers.0.ligand_norm.bias",
+        "msa_pair_encoder.interface_layers.0.ligand_norm.weight",
+        "msa_pair_encoder.interface_layers.0.ligand_pair.weight",
+        "msa_pair_encoder.interface_layers.0.ligand_update.bias",
+        "msa_pair_encoder.interface_layers.0.ligand_update.weight",
+        "msa_pair_encoder.interface_layers.0.residue_gate.0.bias",
+        "msa_pair_encoder.interface_layers.0.residue_gate.0.weight",
+        "msa_pair_encoder.interface_layers.0.residue_norm.bias",
+        "msa_pair_encoder.interface_layers.0.residue_norm.weight",
+        "msa_pair_encoder.interface_layers.0.residue_pair.weight",
+        "msa_pair_encoder.interface_layers.0.residue_update.bias",
+        "msa_pair_encoder.interface_layers.0.residue_update.weight",
+        "msa_pair_encoder.interface_layers.0.transition.0.bias",
+        "msa_pair_encoder.interface_layers.0.transition.0.weight",
+        "msa_pair_encoder.interface_layers.0.transition.1.bias",
+        "msa_pair_encoder.interface_layers.0.transition.1.weight",
+        "msa_pair_encoder.interface_layers.0.transition.4.bias",
+        "msa_pair_encoder.interface_layers.0.transition.4.weight",
+        "msa_pair_encoder.interface_layers.1.distance_pair.0.bias",
+        "msa_pair_encoder.interface_layers.1.distance_pair.0.weight",
+        "msa_pair_encoder.interface_layers.1.distance_pair.2.bias",
+        "msa_pair_encoder.interface_layers.1.distance_pair.2.weight",
+        "msa_pair_encoder.interface_layers.1.ligand_gate.0.bias",
+        "msa_pair_encoder.interface_layers.1.ligand_gate.0.weight",
+        "msa_pair_encoder.interface_layers.1.ligand_norm.bias",
+        "msa_pair_encoder.interface_layers.1.ligand_norm.weight",
+        "msa_pair_encoder.interface_layers.1.ligand_pair.weight",
+        "msa_pair_encoder.interface_layers.1.ligand_update.bias",
+        "msa_pair_encoder.interface_layers.1.ligand_update.weight",
+        "msa_pair_encoder.interface_layers.1.residue_gate.0.bias",
+        "msa_pair_encoder.interface_layers.1.residue_gate.0.weight",
+        "msa_pair_encoder.interface_layers.1.residue_norm.bias",
+        "msa_pair_encoder.interface_layers.1.residue_norm.weight",
+        "msa_pair_encoder.interface_layers.1.residue_pair.weight",
+        "msa_pair_encoder.interface_layers.1.residue_update.bias",
+        "msa_pair_encoder.interface_layers.1.residue_update.weight",
+        "msa_pair_encoder.interface_layers.1.transition.0.bias",
+        "msa_pair_encoder.interface_layers.1.transition.0.weight",
+        "msa_pair_encoder.interface_layers.1.transition.1.bias",
+        "msa_pair_encoder.interface_layers.1.transition.1.weight",
+        "msa_pair_encoder.interface_layers.1.transition.4.bias",
+        "msa_pair_encoder.interface_layers.1.transition.4.weight"
+      ],
+      "deleted_parameters": 394752,
+      "initialization": "random_clean_start_explicit_retained_key_mapping_no_trained_weights",
+      "net_parameter_change": 1323520,
+      "new_parameter_keys": [
+        "msa_pair_encoder.interface_geometry.0.bias",
+        "msa_pair_encoder.interface_geometry.0.weight",
+        "msa_pair_encoder.interface_geometry.2.bias",
+        "msa_pair_encoder.interface_geometry.2.weight",
+        "msa_pair_encoder.joint_blocks.0.ending_attention.bias_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.ending_attention.key_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.ending_attention.norm.bias",
+        "msa_pair_encoder.joint_blocks.0.ending_attention.norm.weight",
+        "msa_pair_encoder.joint_blocks.0.ending_attention.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.ending_attention.query_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.ending_attention.value_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.incoming.contraction_norm.bias",
+        "msa_pair_encoder.joint_blocks.0.incoming.contraction_norm.weight",
+        "msa_pair_encoder.joint_blocks.0.incoming.left_gate.weight",
+        "msa_pair_encoder.joint_blocks.0.incoming.left_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.incoming.norm.bias",
+        "msa_pair_encoder.joint_blocks.0.incoming.norm.weight",
+        "msa_pair_encoder.joint_blocks.0.incoming.output_gate.weight",
+        "msa_pair_encoder.joint_blocks.0.incoming.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.incoming.right_gate.weight",
+        "msa_pair_encoder.joint_blocks.0.incoming.right_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.outgoing.contraction_norm.bias",
+        "msa_pair_encoder.joint_blocks.0.outgoing.contraction_norm.weight",
+        "msa_pair_encoder.joint_blocks.0.outgoing.left_gate.weight",
+        "msa_pair_encoder.joint_blocks.0.outgoing.left_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.outgoing.norm.bias",
+        "msa_pair_encoder.joint_blocks.0.outgoing.norm.weight",
+        "msa_pair_encoder.joint_blocks.0.outgoing.output_gate.weight",
+        "msa_pair_encoder.joint_blocks.0.outgoing.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.outgoing.right_gate.weight",
+        "msa_pair_encoder.joint_blocks.0.outgoing.right_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.pair_transition.left_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.pair_transition.norm.bias",
+        "msa_pair_encoder.joint_blocks.0.pair_transition.norm.weight",
+        "msa_pair_encoder.joint_blocks.0.pair_transition.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.pair_transition.right_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.single_attention.bias_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.single_attention.key_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.single_attention.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.single_attention.pair_norm.bias",
+        "msa_pair_encoder.joint_blocks.0.single_attention.pair_norm.weight",
+        "msa_pair_encoder.joint_blocks.0.single_attention.query_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.single_attention.single_norm.bias",
+        "msa_pair_encoder.joint_blocks.0.single_attention.single_norm.weight",
+        "msa_pair_encoder.joint_blocks.0.single_attention.value_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.single_transition.left_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.single_transition.norm.bias",
+        "msa_pair_encoder.joint_blocks.0.single_transition.norm.weight",
+        "msa_pair_encoder.joint_blocks.0.single_transition.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.single_transition.right_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.starting_attention.bias_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.starting_attention.key_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.starting_attention.norm.bias",
+        "msa_pair_encoder.joint_blocks.0.starting_attention.norm.weight",
+        "msa_pair_encoder.joint_blocks.0.starting_attention.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.starting_attention.query_projection.weight",
+        "msa_pair_encoder.joint_blocks.0.starting_attention.value_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.ending_attention.bias_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.ending_attention.key_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.ending_attention.norm.bias",
+        "msa_pair_encoder.joint_blocks.1.ending_attention.norm.weight",
+        "msa_pair_encoder.joint_blocks.1.ending_attention.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.ending_attention.query_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.ending_attention.value_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.incoming.contraction_norm.bias",
+        "msa_pair_encoder.joint_blocks.1.incoming.contraction_norm.weight",
+        "msa_pair_encoder.joint_blocks.1.incoming.left_gate.weight",
+        "msa_pair_encoder.joint_blocks.1.incoming.left_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.incoming.norm.bias",
+        "msa_pair_encoder.joint_blocks.1.incoming.norm.weight",
+        "msa_pair_encoder.joint_blocks.1.incoming.output_gate.weight",
+        "msa_pair_encoder.joint_blocks.1.incoming.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.incoming.right_gate.weight",
+        "msa_pair_encoder.joint_blocks.1.incoming.right_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.outgoing.contraction_norm.bias",
+        "msa_pair_encoder.joint_blocks.1.outgoing.contraction_norm.weight",
+        "msa_pair_encoder.joint_blocks.1.outgoing.left_gate.weight",
+        "msa_pair_encoder.joint_blocks.1.outgoing.left_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.outgoing.norm.bias",
+        "msa_pair_encoder.joint_blocks.1.outgoing.norm.weight",
+        "msa_pair_encoder.joint_blocks.1.outgoing.output_gate.weight",
+        "msa_pair_encoder.joint_blocks.1.outgoing.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.outgoing.right_gate.weight",
+        "msa_pair_encoder.joint_blocks.1.outgoing.right_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.pair_transition.left_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.pair_transition.norm.bias",
+        "msa_pair_encoder.joint_blocks.1.pair_transition.norm.weight",
+        "msa_pair_encoder.joint_blocks.1.pair_transition.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.pair_transition.right_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.single_attention.bias_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.single_attention.key_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.single_attention.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.single_attention.pair_norm.bias",
+        "msa_pair_encoder.joint_blocks.1.single_attention.pair_norm.weight",
+        "msa_pair_encoder.joint_blocks.1.single_attention.query_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.single_attention.single_norm.bias",
+        "msa_pair_encoder.joint_blocks.1.single_attention.single_norm.weight",
+        "msa_pair_encoder.joint_blocks.1.single_attention.value_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.single_transition.left_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.single_transition.norm.bias",
+        "msa_pair_encoder.joint_blocks.1.single_transition.norm.weight",
+        "msa_pair_encoder.joint_blocks.1.single_transition.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.single_transition.right_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.starting_attention.bias_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.starting_attention.key_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.starting_attention.norm.bias",
+        "msa_pair_encoder.joint_blocks.1.starting_attention.norm.weight",
+        "msa_pair_encoder.joint_blocks.1.starting_attention.output_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.starting_attention.query_projection.weight",
+        "msa_pair_encoder.joint_blocks.1.starting_attention.value_projection.weight",
+        "msa_pair_encoder.joint_left.weight",
+        "msa_pair_encoder.joint_norm.bias",
+        "msa_pair_encoder.joint_norm.weight",
+        "msa_pair_encoder.joint_right.weight",
+        "msa_pair_encoder.ligand_bond_pair.weight",
+        "msa_pair_encoder.ligand_distance_pair.weight",
+        "msa_pair_encoder.msa_available_projection.weight",
+        "msa_pair_encoder.msa_relation_norm.bias",
+        "msa_pair_encoder.msa_relation_norm.weight",
+        "msa_pair_encoder.msa_relation_projection.weight",
+        "msa_pair_encoder.ordered_pair_type.weight"
+      ],
+      "retained_logical_keys": [
+        "global_token",
+        "distance_centers",
+        "msa_pair_encoder.interface_distance_centers",
+        "msa_pair_encoder.fullchain_input.0.weight",
+        "msa_pair_encoder.fullchain_input.0.bias",
+        "msa_pair_encoder.fullchain_input.1.weight",
+        "msa_pair_encoder.fullchain_input.1.bias",
+        "msa_pair_encoder.fullchain_input.3.weight",
+        "msa_pair_encoder.fullchain_input.3.bias",
+        "msa_pair_encoder.outer_left.weight",
+        "msa_pair_encoder.outer_left.bias",
+        "msa_pair_encoder.outer_right.weight",
+        "msa_pair_encoder.outer_right.bias",
+        "msa_pair_encoder.pair_projection.0.weight",
+        "msa_pair_encoder.pair_projection.0.bias",
+        "msa_pair_encoder.pair_projection.1.weight",
+        "msa_pair_encoder.pair_projection.1.bias",
+        "msa_pair_encoder.pair_projection.4.weight",
+        "msa_pair_encoder.pair_projection.4.bias",
+        "msa_pair_encoder.pair_transition.0.weight",
+        "msa_pair_encoder.pair_transition.0.bias",
+        "msa_pair_encoder.pair_transition.1.weight",
+        "msa_pair_encoder.pair_transition.1.bias",
+        "msa_pair_encoder.pair_transition.3.weight",
+        "msa_pair_encoder.pair_transition.3.bias",
+        "msa_pair_encoder.residue_contact.weight",
+        "msa_pair_encoder.residue_contact.bias",
+        "msa_pair_encoder.distogram_head.weight",
+        "msa_pair_encoder.distogram_head.bias",
+        "msa_pair_encoder.atomic_number_embedding.weight",
+        "msa_pair_encoder.ligand_adapter.0.weight",
+        "msa_pair_encoder.ligand_adapter.0.bias",
+        "msa_pair_encoder.ligand_adapter.1.weight",
+        "msa_pair_encoder.ligand_adapter.1.bias",
+        "msa_pair_encoder.ligand_adapter.3.weight",
+        "msa_pair_encoder.ligand_adapter.3.bias",
+        "msa_pair_encoder.ligand_norm.weight",
+        "msa_pair_encoder.ligand_norm.bias",
+        "msa_pair_encoder.bond_adapter.0.weight",
+        "msa_pair_encoder.bond_adapter.0.bias",
+        "msa_pair_encoder.bond_adapter.2.weight",
+        "msa_pair_encoder.bond_adapter.2.bias",
+        "msa_pair_encoder.interface_distance_head.weight",
+        "msa_pair_encoder.interface_distance_head.bias",
+        "msa_pair_encoder.interface_contact_head.weight",
+        "msa_pair_encoder.interface_contact_head.bias",
+        "msa_pair_encoder.match_residue.0.weight",
+        "msa_pair_encoder.match_residue.0.bias",
+        "msa_pair_encoder.match_residue.1.weight",
+        "msa_pair_encoder.match_residue.1.bias",
+        "msa_pair_encoder.match_ligand.0.weight",
+        "msa_pair_encoder.match_ligand.0.bias",
+        "msa_pair_encoder.match_ligand.1.weight",
+        "msa_pair_encoder.match_ligand.1.bias",
+        "msa_single_adapter.0.weight",
+        "msa_single_adapter.0.bias",
+        "msa_single_adapter.1.weight",
+        "msa_single_adapter.1.bias",
+        "pair_summary_adapter.0.weight",
+        "pair_summary_adapter.0.bias",
+        "pair_summary_adapter.1.weight",
+        "pair_summary_adapter.1.bias",
+        "esm_adapter.0.weight",
+        "esm_adapter.0.bias",
+        "esm_adapter.1.weight",
+        "esm_adapter.1.bias",
+        "esm_adapter.4.weight",
+        "esm_adapter.4.bias",
+        "scalar_adapter.0.weight",
+        "scalar_adapter.0.bias",
+        "scalar_adapter.1.weight",
+        "scalar_adapter.1.bias",
+        "aa_embedding.weight",
+        "residue_norm.weight",
+        "residue_norm.bias",
+        "atomic_number_embedding.weight",
+        "ligand_adapter.0.weight",
+        "ligand_adapter.0.bias",
+        "ligand_adapter.1.weight",
+        "ligand_adapter.1.bias",
+        "ligand_adapter.3.weight",
+        "ligand_adapter.3.bias",
+        "ligand_norm.weight",
+        "ligand_norm.bias",
+        "token_type_embedding.weight",
+        "pair_type_bias.weight",
+        "distance_bias.0.weight",
+        "distance_bias.0.bias",
+        "distance_bias.2.weight",
+        "distance_bias.2.bias",
+        "bond_bias.0.weight",
+        "bond_bias.0.bias",
+        "bond_bias.2.weight",
+        "bond_bias.2.bias",
+        "sequence_bias.weight",
+        "evolutionary_pair_bias.weight",
+        "evolutionary_summary_bias.weight",
+        "evolutionary_cross_gate.0.weight",
+        "evolutionary_cross_gate.0.bias",
+        "blocks.0.pair_scale",
+        "blocks.0.attention.norm.weight",
+        "blocks.0.attention.norm.bias",
+        "blocks.0.attention.qkv.weight",
+        "blocks.0.attention.qkv.bias",
+        "blocks.0.attention.output.weight",
+        "blocks.0.attention.output.bias",
+        "blocks.0.norm.weight",
+        "blocks.0.norm.bias",
+        "blocks.0.feedforward.0.weight",
+        "blocks.0.feedforward.0.bias",
+        "blocks.0.feedforward.3.weight",
+        "blocks.0.feedforward.3.bias",
+        "blocks.1.pair_scale",
+        "blocks.1.attention.norm.weight",
+        "blocks.1.attention.norm.bias",
+        "blocks.1.attention.qkv.weight",
+        "blocks.1.attention.qkv.bias",
+        "blocks.1.attention.output.weight",
+        "blocks.1.attention.output.bias",
+        "blocks.1.norm.weight",
+        "blocks.1.norm.bias",
+        "blocks.1.feedforward.0.weight",
+        "blocks.1.feedforward.0.bias",
+        "blocks.1.feedforward.3.weight",
+        "blocks.1.feedforward.3.bias",
+        "blocks.2.pair_scale",
+        "blocks.2.attention.norm.weight",
+        "blocks.2.attention.norm.bias",
+        "blocks.2.attention.qkv.weight",
+        "blocks.2.attention.qkv.bias",
+        "blocks.2.attention.output.weight",
+        "blocks.2.attention.output.bias",
+        "blocks.2.norm.weight",
+        "blocks.2.norm.bias",
+        "blocks.2.feedforward.0.weight",
+        "blocks.2.feedforward.0.bias",
+        "blocks.2.feedforward.3.weight",
+        "blocks.2.feedforward.3.bias",
+        "blocks.3.pair_scale",
+        "blocks.3.attention.norm.weight",
+        "blocks.3.attention.norm.bias",
+        "blocks.3.attention.qkv.weight",
+        "blocks.3.attention.qkv.bias",
+        "blocks.3.attention.output.weight",
+        "blocks.3.attention.output.bias",
+        "blocks.3.norm.weight",
+        "blocks.3.norm.bias",
+        "blocks.3.feedforward.0.weight",
+        "blocks.3.feedforward.0.bias",
+        "blocks.3.feedforward.3.weight",
+        "blocks.3.feedforward.3.bias",
+        "blocks.4.pair_scale",
+        "blocks.4.attention.norm.weight",
+        "blocks.4.attention.norm.bias",
+        "blocks.4.attention.qkv.weight",
+        "blocks.4.attention.qkv.bias",
+        "blocks.4.attention.output.weight",
+        "blocks.4.attention.output.bias",
+        "blocks.4.norm.weight",
+        "blocks.4.norm.bias",
+        "blocks.4.feedforward.0.weight",
+        "blocks.4.feedforward.0.bias",
+        "blocks.4.feedforward.3.weight",
+        "blocks.4.feedforward.3.bias",
+        "blocks.5.pair_scale",
+        "blocks.5.attention.norm.weight",
+        "blocks.5.attention.norm.bias",
+        "blocks.5.attention.qkv.weight",
+        "blocks.5.attention.qkv.bias",
+        "blocks.5.attention.output.weight",
+        "blocks.5.attention.output.bias",
+        "blocks.5.norm.weight",
+        "blocks.5.norm.bias",
+        "blocks.5.feedforward.0.weight",
+        "blocks.5.feedforward.0.bias",
+        "blocks.5.feedforward.3.weight",
+        "blocks.5.feedforward.3.bias",
+        "blocks.6.pair_scale",
+        "blocks.6.attention.norm.weight",
+        "blocks.6.attention.norm.bias",
+        "blocks.6.attention.qkv.weight",
+        "blocks.6.attention.qkv.bias",
+        "blocks.6.attention.output.weight",
+        "blocks.6.attention.output.bias",
+        "blocks.6.norm.weight",
+        "blocks.6.norm.bias",
+        "blocks.6.feedforward.0.weight",
+        "blocks.6.feedforward.0.bias",
+        "blocks.6.feedforward.3.weight",
+        "blocks.6.feedforward.3.bias",
+        "blocks.7.pair_scale",
+        "blocks.7.attention.norm.weight",
+        "blocks.7.attention.norm.bias",
+        "blocks.7.attention.qkv.weight",
+        "blocks.7.attention.qkv.bias",
+        "blocks.7.attention.output.weight",
+        "blocks.7.attention.output.bias",
+        "blocks.7.norm.weight",
+        "blocks.7.norm.bias",
+        "blocks.7.feedforward.0.weight",
+        "blocks.7.feedforward.0.bias",
+        "blocks.7.feedforward.3.weight",
+        "blocks.7.feedforward.3.bias",
+        "final_norm.weight",
+        "final_norm.bias",
+        "contact_residue.weight",
+        "contact_residue.bias",
+        "contact_ligand.weight",
+        "contact_ligand.bias",
+        "contact_distance.0.weight",
+        "contact_distance.0.bias",
+        "contact_distance.2.weight",
+        "contact_distance.2.bias",
+        "latent_head.0.weight",
+        "latent_head.0.bias",
+        "latent_head.1.weight",
+        "latent_head.1.bias",
+        "latent_head.4.weight",
+        "latent_head.4.bias",
+        "latent_head.5.weight",
+        "latent_head.5.bias",
+        "affinity_head.0.weight",
+        "affinity_head.0.bias",
+        "affinity_head.3.weight",
+        "affinity_head.3.bias",
+        "affinity_class_head.0.weight",
+        "affinity_class_head.0.bias",
+        "affinity_class_head.2.weight",
+        "affinity_class_head.2.bias",
+        "interface_residue_adapter.0.weight",
+        "interface_residue_adapter.0.bias",
+        "interface_residue_adapter.1.weight",
+        "interface_residue_adapter.1.bias",
+        "interface_ligand_adapter.0.weight",
+        "interface_ligand_adapter.0.bias",
+        "interface_ligand_adapter.1.weight",
+        "interface_ligand_adapter.1.bias",
+        "interface_pair_bias.weight",
+        "pair_token_pool.distance_centers",
+        "pair_token_pool.pair_projection.0.weight",
+        "pair_token_pool.pair_projection.0.bias",
+        "pair_token_pool.pair_projection.1.weight",
+        "pair_token_pool.pair_projection.1.bias",
+        "pair_token_pool.pair_projection.3.weight",
+        "pair_token_pool.pair_projection.3.bias",
+        "pair_token_pool.distance_projection.0.weight",
+        "pair_token_pool.distance_projection.0.bias",
+        "pair_token_pool.distance_projection.2.weight",
+        "pair_token_pool.distance_projection.2.bias",
+        "pair_token_pool.residue_embedding.weight",
+        "pair_token_pool.ligand_embedding.weight",
+        "pair_token_pool.transformer.layers.0.self_attn.in_proj_weight",
+        "pair_token_pool.transformer.layers.0.self_attn.in_proj_bias",
+        "pair_token_pool.transformer.layers.0.self_attn.out_proj.weight",
+        "pair_token_pool.transformer.layers.0.self_attn.out_proj.bias",
+        "pair_token_pool.transformer.layers.0.linear1.weight",
+        "pair_token_pool.transformer.layers.0.linear1.bias",
+        "pair_token_pool.transformer.layers.0.linear2.weight",
+        "pair_token_pool.transformer.layers.0.linear2.bias",
+        "pair_token_pool.transformer.layers.0.norm1.weight",
+        "pair_token_pool.transformer.layers.0.norm1.bias",
+        "pair_token_pool.transformer.layers.0.norm2.weight",
+        "pair_token_pool.transformer.layers.0.norm2.bias",
+        "pair_token_pool.transformer.layers.1.self_attn.in_proj_weight",
+        "pair_token_pool.transformer.layers.1.self_attn.in_proj_bias",
+        "pair_token_pool.transformer.layers.1.self_attn.out_proj.weight",
+        "pair_token_pool.transformer.layers.1.self_attn.out_proj.bias",
+        "pair_token_pool.transformer.layers.1.linear1.weight",
+        "pair_token_pool.transformer.layers.1.linear1.bias",
+        "pair_token_pool.transformer.layers.1.linear2.weight",
+        "pair_token_pool.transformer.layers.1.linear2.bias",
+        "pair_token_pool.transformer.layers.1.norm1.weight",
+        "pair_token_pool.transformer.layers.1.norm1.bias",
+        "pair_token_pool.transformer.layers.1.norm2.weight",
+        "pair_token_pool.transformer.layers.1.norm2.bias",
+        "pair_token_pool.score.0.weight",
+        "pair_token_pool.score.0.bias",
+        "pair_token_pool.score.1.weight",
+        "pair_token_pool.score.1.bias",
+        "pair_token_pool.score.3.weight",
+        "pair_token_pool.score.3.bias",
+        "pair_token_pool.output.0.weight",
+        "pair_token_pool.output.0.bias",
+        "pair_token_pool.output.1.weight",
+        "pair_token_pool.output.1.bias",
+        "pair_latent_head.0.weight",
+        "pair_latent_head.0.bias",
+        "pair_latent_head.1.weight",
+        "pair_latent_head.1.bias",
+        "pair_latent_head.3.weight",
+        "pair_latent_head.3.bias",
+        "pair_affinity_head.0.weight",
+        "pair_affinity_head.0.bias",
+        "pair_affinity_head.1.weight",
+        "pair_affinity_head.1.bias",
+        "pair_affinity_head.4.weight",
+        "pair_affinity_head.4.bias",
+        "fusion_head.network.0.weight",
+        "fusion_head.network.0.bias",
+        "fusion_head.network.1.weight",
+        "fusion_head.network.1.bias",
+        "fusion_head.network.4.weight",
+        "fusion_head.network.4.bias",
+        "full_esm_projection.0.weight",
+        "full_esm_projection.0.bias",
+        "full_esm_projection.1.weight",
+        "full_esm_projection.1.bias",
+        "full_msa_projection.0.weight",
+        "full_msa_projection.0.bias",
+        "full_msa_projection.1.weight",
+        "full_msa_projection.1.bias",
+        "full_fusion_norm.weight",
+        "full_fusion_norm.bias",
+        "nonpocket_norm.weight",
+        "nonpocket_norm.bias",
+        "fullchain_attention.in_proj_weight",
+        "fullchain_attention.in_proj_bias",
+        "fullchain_attention.out_proj.weight",
+        "fullchain_attention.out_proj.bias"
+      ],
+      "retained_parameters": 37325111,
+      "shared_initial_fingerprint": "ecf837f9a21c7f0d936b741221046b7ac1afa9babc8af4fc57fb106ba27d84a5",
+      "trainable_parameters": 38506488
+    }
+  },
+  "input_audit": {
+    "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/joint-pair-d32-blocks4-single-gpu4-20261107_100909-83204/input32/audit.json",
+    "sha256": "1dd8bda85c549782b8b2de3c4e2e85eeb40b8a46d357171ad2d5f93d92ff96ed"
+  },
+  "joint_pair_blocks": 4,
+  "maximum_msa_depth": 32,
+  "output_deltas": {
+    "affinity_class_logits": 0.0,
+    "contact_logits": 0.0,
+    "distogram_logits": 0.0,
+    "fusion_features": 0.0,
+    "interface_contact_logits": 0.0,
+    "interface_distance_logits": 0.0,
+    "latent": 0.0,
+    "match_logits": 0.0,
+    "msa_gate": 0.0,
+    "prediction": 0.0,
+    "residue_contact_logits": 0.0
+  },
+  "plan_sha256": "803e6019c6ce0832fabfd54bb9fc05a68735307bf747ce5171a4557c2b2cbeb8",
+  "real_batches": {
+    "ema_present": true,
+    "finite_updates": true,
+    "optimizer_moments_present": true,
+    "peak_allocated_bytes": 22857105920,
+    "peak_reserved_bytes": 31889293312,
+    "steps": 3,
+    "trace": [
+      {
+        "block_gradients": {
+          "0": {
+            "connected_nonzero": 7,
+            "connected_zero": 46,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.11350563992544274,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.07094164584566316,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.06401423309663085,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.07803639711865418,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.12609207270678063,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.08696671620441451,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.09768839960193232,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "1": {
+            "connected_nonzero": 7,
+            "connected_zero": 46,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.11219390774657205,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.07055978865346679,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.07405003559253664,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.0820597944087784,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.1263153709343133,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.0968632346699366,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.1062360121866153,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "2": {
+            "connected_nonzero": 7,
+            "connected_zero": 46,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.11749839326290658,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.07367480158084576,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.06449756072298835,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.07470311615664445,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.12848239418457547,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.10155767149554898,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.11160006770761016,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "3": {
+            "connected_nonzero": 7,
+            "connected_zero": 46,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.10484315601604995,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.0667017200632196,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.06400542301237584,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.08370751981000646,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.11754548494977639,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.08982286974953822,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.11731289767683774,
+                "status": "connected_nonzero"
+              }
+            }
+          }
+        },
+        "components": {
+          "affinity_class": 0.692589521408081,
+          "contact": 1.2598756551742554,
+          "distogram": 2.5482265949249268,
+          "interface_contact": 1.1707497835159302,
+          "interface_distogram": 2.145432949066162,
+          "match": 2.887451171875,
+          "mse": 0.7412201762199402,
+          "rank": 0.6837509870529175,
+          "residue_contact": 1.3050717115402222,
+          "smooth_l1": 0.5035690069198608
+        },
+        "keys": [
+          "5v84_protein",
+          "2f2h_protein",
+          "1kav_protein",
+          "1izi_protein",
+          "5q0h_protein",
+          "5y20_protein",
+          "4q1s_protein",
+          "5v2q_protein",
+          "5tyl_protein",
+          "3umq_protein",
+          "4mzj_protein",
+          "2jdp_protein",
+          "6hle_protein",
+          "1evh_protein",
+          "1jqy_protein",
+          "2e7l_protein"
+        ],
+        "loss": 1.3639135360717773,
+        "relation_gradient": {
+          "l2": 0.013572605622545392,
+          "status": "connected_nonzero"
+        },
+        "shape": {
+          "batch_size": 16,
+          "fullchain_residues": 2319,
+          "ligand_atoms": 157,
+          "residues": 146
+        },
+        "step": 1
+      },
+      {
+        "block_gradients": {
+          "0": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.10670055679641331,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.06781977969924748,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.06039483114012026,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.07390251589776795,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.13772966489863034,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.07371953972433537,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.0982499634269531,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "1": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.10573164139868266,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.06685386702139776,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.07033574479108835,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.0776170446578145,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.1391089040705778,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.08345104343229037,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.10012498344862486,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "2": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.11724637921298296,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.07123789746159305,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.062185423848244985,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.07042026980476641,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.13971589861626346,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.08618707283937291,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.10988331736858979,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "3": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.09804175793335916,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.06508662830363335,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.06204000479264753,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.07910464296929266,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.12906852224382687,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.08124346187610526,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.11505075707431374,
+                "status": "connected_nonzero"
+              }
+            }
+          }
+        },
+        "components": {
+          "affinity_class": 0.6967013478279114,
+          "contact": 1.2801827192306519,
+          "distogram": 2.5429582595825195,
+          "interface_contact": 1.1973228454589844,
+          "interface_distogram": 2.1801955699920654,
+          "match": 2.81591796875,
+          "mse": 0.5961782932281494,
+          "rank": 0.6993856430053711,
+          "residue_contact": 1.2998038530349731,
+          "smooth_l1": 0.4305630922317505
+        },
+        "keys": [
+          "4tky_protein",
+          "2lkk_protein",
+          "4jnc_protein",
+          "2l8r_protein",
+          "6enm_protein",
+          "1d6s_protein",
+          "1g7v_protein",
+          "3f3c_protein",
+          "2gzl_protein",
+          "5ctb_protein",
+          "4mex_protein",
+          "3acx_protein",
+          "4prp_protein",
+          "3q6s_protein",
+          "1lhf_protein",
+          "4zt8_protein"
+        ],
+        "loss": 1.2790418863296509,
+        "relation_gradient": {
+          "l2": 0.010984010384732863,
+          "status": "connected_nonzero"
+        },
+        "shape": {
+          "batch_size": 16,
+          "fullchain_residues": 2500,
+          "ligand_atoms": 131,
+          "residues": 158
+        },
+        "step": 2
+      },
+      {
+        "block_gradients": {
+          "0": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.11046887425156061,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.06987731478792208,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.06370442006451166,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.07713779768201438,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.13558236590425846,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.08484991467091692,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.09867364204405916,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "1": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.11243098670970882,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.06802920253918682,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.07165175175840702,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.08190299097028862,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.14592344494959514,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.09026183305976274,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.10085460428555164,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "2": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.12198397368341521,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.07265222894705903,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.06501215855226943,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.07430488167265643,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.14446673295803283,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.09027133972441426,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.11040038473046171,
+                "status": "connected_nonzero"
+              }
+            }
+          },
+          "3": {
+            "connected_nonzero": 53,
+            "connected_zero": 0,
+            "disconnected": 0,
+            "output_projection_gradients": {
+              "ending_attention.output_projection.weight": {
+                "l2": 0.10175050272922578,
+                "status": "connected_nonzero"
+              },
+              "incoming.output_projection.weight": {
+                "l2": 0.06727474880475498,
+                "status": "connected_nonzero"
+              },
+              "outgoing.output_projection.weight": {
+                "l2": 0.062081278375956415,
+                "status": "connected_nonzero"
+              },
+              "pair_transition.output_projection.weight": {
+                "l2": 0.08365452669776635,
+                "status": "connected_nonzero"
+              },
+              "single_attention.output_projection.weight": {
+                "l2": 0.14317155095083461,
+                "status": "connected_nonzero"
+              },
+              "single_transition.output_projection.weight": {
+                "l2": 0.08719503028140312,
+                "status": "connected_nonzero"
+              },
+              "starting_attention.output_projection.weight": {
+                "l2": 0.11379591553420093,
+                "status": "connected_nonzero"
+              }
+            }
+          }
+        },
+        "components": {
+          "affinity_class": 0.6950011253356934,
+          "contact": 1.2870510816574097,
+          "distogram": 2.560256242752075,
+          "interface_contact": 1.2019994258880615,
+          "interface_distogram": 2.2141828536987305,
+          "match": 2.769775390625,
+          "mse": 2.0274693965911865,
+          "rank": 0.7076933979988098,
+          "residue_contact": 1.3063946962356567,
+          "smooth_l1": 0.8921350836753845
+        },
+        "keys": [
+          "5jnl_protein",
+          "3nzw_protein",
+          "6miy_protein",
+          "4ljh_protein",
+          "6bnl_protein",
+          "3p2h_protein",
+          "1lxh_protein",
+          "5ema_protein",
+          "1e66_protein",
+          "6rqk_protein",
+          "1fmb_protein",
+          "6dih_protein",
+          "2j7e_protein",
+          "3tu9_protein",
+          "4wkb_protein",
+          "1d5r_protein"
+        ],
+        "loss": 1.9614624977111816,
+        "relation_gradient": {
+          "l2": 0.013336286615803664,
+          "status": "connected_nonzero"
+        },
+        "shape": {
+          "batch_size": 16,
+          "fullchain_residues": 533,
+          "ligand_atoms": 166,
+          "residues": 155
+        },
+        "step": 3
+      }
+    ],
+    "updated_blocks": {
+      "0": [
+        "outgoing.output_projection.weight",
+        "incoming.output_projection.weight",
+        "starting_attention.output_projection.weight",
+        "ending_attention.output_projection.weight",
+        "pair_transition.output_projection.weight",
+        "single_attention.output_projection.weight",
+        "single_transition.output_projection.weight"
+      ],
+      "1": [
+        "outgoing.output_projection.weight",
+        "incoming.output_projection.weight",
+        "starting_attention.output_projection.weight",
+        "ending_attention.output_projection.weight",
+        "pair_transition.output_projection.weight",
+        "single_attention.output_projection.weight",
+        "single_transition.output_projection.weight"
+      ],
+      "2": [
+        "outgoing.output_projection.weight",
+        "incoming.output_projection.weight",
+        "starting_attention.output_projection.weight",
+        "ending_attention.output_projection.weight",
+        "pair_transition.output_projection.weight",
+        "single_attention.output_projection.weight",
+        "single_transition.output_projection.weight"
+      ],
+      "3": [
+        "outgoing.output_projection.weight",
+        "incoming.output_projection.weight",
+        "starting_attention.output_projection.weight",
+        "ending_attention.output_projection.weight",
+        "pair_transition.output_projection.weight",
+        "single_attention.output_projection.weight",
+        "single_transition.output_projection.weight"
+      ]
+    },
+    "wall_seconds": 39.29226105706766
+  },
+  "reload_maximum_prediction_delta": 0.0,
+  "status": "four_block_real_gpu_smoke_passed",
+  "strict_load": true,
+  "test_manifest_read": false,
+  "training_checkpoint_saved": false,
+  "validation_metrics_computed": false
+}

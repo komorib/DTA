@@ -1,0 +1,326 @@
+{
+  "affinity_loss_weights": {
+    "mse": 0.15,
+    "rank": 0.4,
+    "smooth_l1": 1.0
+  },
+  "affinity_only_reference": {
+    "gpu_smoke_sha256": "6cbb87eec0b4287d2c8f19a7fc86fce05b470aadd7c65ee0e50eab949a591391",
+    "initial_weight_fingerprint": "21d4a28bc5277b8e688fb9d4f6d56e5df585b9860512a99a05ebeee58707c790",
+    "summary": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainV3AffinityOnly_v1/fullchain_v3_affinity_only_b16_20261020_191527/summary.json",
+    "summary_sha256": "1e4b50f461ed7373bf120dcff3ac8b7b4f61ead26885145ffac321d5dbc62b84",
+    "valid_predictions": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainV3AffinityOnly_v1/fullchain_v3_affinity_only_b16_20261020_191527/aligned_msa/valid_predictions.npz",
+    "valid_predictions_sha256": "404d4654c63522f9d839d457cca3b8973181f040e1f147d67db177b247f3b6dd",
+    "validation_count": 2340,
+    "validation_metrics": {
+      "CI": 0.7064570779543599,
+      "MAE": 1.0019284850208012,
+      "Pearson": 0.6087386397513156,
+      "RMSE": 1.2887471956451455,
+      "Spearman": 0.5833488452763166
+    }
+  },
+  "aligned_msa": {
+    "affinity_loss_weights": {
+      "mse": 0.15,
+      "rank": 0.4,
+      "smooth_l1": 1.0
+    },
+    "aux_loss_scale": 0.0,
+    "auxiliary_effective_weights": {
+      "affinity_class": 0.0,
+      "contact": 0.0,
+      "distogram": 0.0,
+      "interface_contact": 0.0,
+      "interface_distogram": 0.0,
+      "match": 0.0,
+      "residue_contact": 0.0
+    },
+    "auxiliary_original_weights": {
+      "affinity_class": 0.05,
+      "contact": 0.05,
+      "distogram": 0.02,
+      "interface_contact": 0.05,
+      "interface_distogram": 0.08,
+      "match": 0.02,
+      "residue_contact": 0.03
+    },
+    "candidate_initial_weight_fingerprint": "8606fb8f881a7d836b247b111124591edcc6f2fe0e33f7c2a7fe56b17ab97e76",
+    "canonical_eight_layer_initial_weight_fingerprint": "21d4a28bc5277b8e688fb9d4f6d56e5df585b9860512a99a05ebeee58707c790",
+    "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainAffinityDepth4_v1/fullchain_affinity_depth4_b16_20261021_215826/aligned_msa/best.pt",
+    "checkpoint_reload_maximum_prediction_delta": 0.0,
+    "checkpoint_sha256": "9cef14c8537b10486380b156ad581e5f8cfe5dda47fde5894323329014994340",
+    "controlled_change_from_affinity_only_eight": {
+      "all_other_semantic_configuration": "matched",
+      "main_geometry_blocks": {
+        "eight": 8,
+        "four": 4
+      }
+    },
+    "encoder_weights_sha256": "b8f276f513fd8bdfcb0c8ae38371075e35f4af559449e5212374a08880a20429",
+    "four_layer_gpu_smoke_performed": false,
+    "initialization": "random_clean_start_no_stage1_weights",
+    "initialization_mapping": {
+      "removed_main_blocks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "removed_tensor_count": 52,
+      "retained_main_blocks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "retained_tensors_exactly_equal": true,
+      "strategy": "construct_random_eight_then_remove_top_level_blocks_4_to_7"
+    },
+    "local_msa_input": false,
+    "local_protein_source": "esm_only",
+    "loss_protocol": "affinity_only_v1",
+    "main_layers": 4,
+    "mode": "aligned_msa",
+    "model_dropout": 0.2,
+    "msa_context_scope": "all_fullchain_residues",
+    "old_pocket_msa_weights_transferred": false,
+    "optimizer_steps": 20700,
+    "parameter_counts": {
+      "candidate_four": {
+        "total": 25110295,
+        "trainable": 24573400
+      },
+      "canonical_eight": {
+        "total": 37719863,
+        "trainable": 37182968
+      }
+    },
+    "planned_optimizer_steps": 20700,
+    "pocket_msa_input": false,
+    "runtime": {
+      "device": "cuda:0",
+      "device_name": "NVIDIA A100-SXM4-40GB",
+      "peak_allocated_bytes": 5727272960,
+      "peak_reserved_bytes": 9256828928,
+      "python_version": "3.8.20",
+      "torch_cuda_version": "12.1",
+      "torch_version": "2.1.0+cu121",
+      "visible_physical_gpus": "6",
+      "wall_seconds": 10238.020651486935
+    },
+    "selected_epoch": 2,
+    "selected_variant": "ema",
+    "source_file_sha256": {
+      "dta/lp_pdbbind_fullchain_affinity_depth4_v1/model.py": "9c0e2508eb04aed1f7ad4d767701620ddd6c759407c1b08733c64bb90db3731e",
+      "dta/lp_pdbbind_fullchain_affinity_depth4_v1/run_training.py": "128e1d93a5b812a113cf35fd0dcf5743e372a5cefa7697299671a0c4f95992ac",
+      "dta/lp_pdbbind_fullchain_esm_msa_all_v3/affinity_only.py": "471b5904311e3c48a45fa4cde3106f8f9fbfd9d0d73a8a454560962a95e8fa5e",
+      "dta/lp_pdbbind_fullchain_esm_msa_all_v3/run_training.py": "1a4faae94675a630e2d2ca40ce8897374a65308b2017ee0ea1a0f1c3bfdf4e39",
+      "dta/lp_pdbbind_fullchain_esm_msa_cross_v1/run_training.py": "be89ca3cc574bd67f7237670c7e4552da64903ed1a477135966bf37385624423"
+    },
+    "source_manifest_sha256": "869e531e2968172545c73a95f5c6af31cc2040cd06f762c48ad02a9da8cea19d",
+    "status": "validation_failed",
+    "test_manifest_read": false,
+    "test_used_for_selection": false,
+    "train_manifest_sha256": "def47b0307750099bcd8accc17ac5c6960d4d92ffc789daac2cadb10faf55213",
+    "valid_manifest_sha256": "dc996a2665a07a3a708b7a5b7624f27f8ba3bde881bd18fe4569a2d65e3943d8",
+    "valid_predictions": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainAffinityDepth4_v1/fullchain_affinity_depth4_b16_20261021_215826/aligned_msa/valid_predictions.npz",
+    "valid_predictions_sha256": "cc23d02d1232087a4dd31330a44a36754b0fcf128e2b04866ce8eac7e0c35f8f",
+    "validation_gate": {
+      "comparisons": {
+        "CI": false,
+        "MAE": false,
+        "Pearson": false,
+        "RMSE": false,
+        "Spearman": false
+      },
+      "criteria": {
+        "metric_tolerance": 1e-06,
+        "require_no_regression_on": [
+          "CI",
+          "RMSE",
+          "MAE",
+          "Pearson",
+          "Spearman"
+        ]
+      },
+      "delta": {
+        "CI": -0.030861241914125093,
+        "MAE": 0.07963667593558954,
+        "Pearson": -0.07796032675004705,
+        "RMSE": 0.1092944369675457,
+        "Spearman": -0.07425479233717935
+      },
+      "passed": false
+    },
+    "validation_metrics": {
+      "CI": 0.7070772211133907,
+      "MAE": 0.9939707687710103,
+      "Pearson": 0.608428846377077,
+      "RMSE": 1.2815493740019956,
+      "Spearman": 0.5854714145991502
+    },
+    "validation_selected": false
+  },
+  "aux_loss_scale": 0.0,
+  "auxiliary_effective_weights": {
+    "affinity_class": 0.0,
+    "contact": 0.0,
+    "distogram": 0.0,
+    "interface_contact": 0.0,
+    "interface_distogram": 0.0,
+    "match": 0.0,
+    "residue_contact": 0.0
+  },
+  "auxiliary_original_weights": {
+    "affinity_class": 0.05,
+    "contact": 0.05,
+    "distogram": 0.02,
+    "interface_contact": 0.05,
+    "interface_distogram": 0.08,
+    "match": 0.02,
+    "residue_contact": 0.03
+  },
+  "candidate_initial_weight_fingerprint": "8606fb8f881a7d836b247b111124591edcc6f2fe0e33f7c2a7fe56b17ab97e76",
+  "canonical_eight_layer_gpu_smoke_reference": {
+    "path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainESMMSAAll_v3/fullchain_all_v3_smoke_b16_20261008_161852/result.json",
+    "sha256": "6cbb87eec0b4287d2c8f19a7fc86fce05b470aadd7c65ee0e50eab949a591391"
+  },
+  "canonical_eight_layer_initial_weight_fingerprint": "21d4a28bc5277b8e688fb9d4f6d56e5df585b9860512a99a05ebeee58707c790",
+  "controlled_change_from_affinity_only_eight": {
+    "all_other_semantic_configuration": "matched",
+    "main_geometry_blocks": {
+      "eight": 8,
+      "four": 4
+    }
+  },
+  "encoder_weights_sha256": "b8f276f513fd8bdfcb0c8ae38371075e35f4af559449e5212374a08880a20429",
+  "evaluation_batch_size": 6,
+  "four_layer_gpu_smoke_performed": false,
+  "initial_weight_fingerprint": "8606fb8f881a7d836b247b111124591edcc6f2fe0e33f7c2a7fe56b17ab97e76",
+  "initialization": "random_clean_start_no_stage1_weights",
+  "initialization_mapping": {
+    "removed_main_blocks": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "removed_tensor_count": 52,
+    "retained_main_blocks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "retained_tensors_exactly_equal": true,
+    "strategy": "construct_random_eight_then_remove_top_level_blocks_4_to_7"
+  },
+  "local_msa_input": false,
+  "local_protein_source": "esm_only",
+  "loss_protocol": "affinity_only_v1",
+  "main_layers": 4,
+  "matched_hyperparameters": {
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "maximum_epochs": 30,
+    "seed": 20261001,
+    "weight_decay": 0.0001
+  },
+  "mode": "aligned_msa",
+  "model_config": {
+    "affinity_class_weight": 0.05,
+    "affinity_initial_checkpoint": null,
+    "amp_dtype": "bfloat16",
+    "batch_size": 16,
+    "contact_weight": 0.05,
+    "device": "cuda:0",
+    "distogram_weight": 0.02,
+    "dropout": 0.2,
+    "ema_decay": 0.995,
+    "encoder_learning_rate_scale": 0.2,
+    "evaluation_batch_size": 6,
+    "gradient_clip": 1.0,
+    "heads": 8,
+    "inference_subsets": 1,
+    "interface_blocks": 2,
+    "interface_contact_weight": 0.05,
+    "interface_distogram_weight": 0.08,
+    "interface_mask_probability": 0.15,
+    "latent_width": 1024,
+    "layers": 4,
+    "learning_rate": 0.0001,
+    "match_weight": 0.02,
+    "maximum_epochs": 30,
+    "minimum_rank_gap": 0.1,
+    "model_width": 512,
+    "msa_heads": 6,
+    "msa_layers": 4,
+    "msa_width": 192,
+    "mse_weight": 0.15,
+    "num_workers": 4,
+    "pair_factor": 8,
+    "pair_token_count": 96,
+    "pair_token_heads": 8,
+    "pair_token_layers": 2,
+    "pair_token_width": 256,
+    "pair_width": 96,
+    "patience": 14,
+    "pretrained_checkpoint": "none",
+    "rank_weight": 0.4,
+    "residue_contact_weight": 0.03,
+    "row_depth": 64,
+    "seed": 20261001,
+    "weight_decay": 0.0001
+  },
+  "model_dropout": 0.2,
+  "msa_context_scope": "all_fullchain_residues",
+  "parameter_counts": {
+    "candidate_four": {
+      "total": 25110295,
+      "trainable": 24573400
+    },
+    "canonical_eight": {
+      "total": 37719863,
+      "trainable": 37182968
+    }
+  },
+  "planned_optimizer_steps": 20700,
+  "source_file_sha256": {
+    "dta/lp_pdbbind_fullchain_affinity_depth4_v1/model.py": "9c0e2508eb04aed1f7ad4d767701620ddd6c759407c1b08733c64bb90db3731e",
+    "dta/lp_pdbbind_fullchain_affinity_depth4_v1/run_training.py": "128e1d93a5b812a113cf35fd0dcf5743e372a5cefa7697299671a0c4f95992ac",
+    "dta/lp_pdbbind_fullchain_esm_msa_all_v3/affinity_only.py": "471b5904311e3c48a45fa4cde3106f8f9fbfd9d0d73a8a454560962a95e8fa5e",
+    "dta/lp_pdbbind_fullchain_esm_msa_all_v3/run_training.py": "1a4faae94675a630e2d2ca40ce8897374a65308b2017ee0ea1a0f1c3bfdf4e39",
+    "dta/lp_pdbbind_fullchain_esm_msa_cross_v1/run_training.py": "be89ca3cc574bd67f7237670c7e4552da64903ed1a477135966bf37385624423"
+  },
+  "source_manifest_sha256": "869e531e2968172545c73a95f5c6af31cc2040cd06f762c48ad02a9da8cea19d",
+  "status": "single_model_training_complete",
+  "test_manifest_read": false,
+  "test_used_for_selection": false,
+  "train_manifest_sha256": "def47b0307750099bcd8accc17ac5c6960d4d92ffc789daac2cadb10faf55213",
+  "v20_baseline_metrics": {
+    "CI": 0.7379384630275158,
+    "MAE": 0.9143340928354208,
+    "Pearson": 0.686389173127124,
+    "RMSE": 1.17225493703445,
+    "Spearman": 0.6597262069363296
+  },
+  "v20_baseline_selection": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_MSAInterfacePairLatentStabilityFusion_v20/msa_interface_pair_latent_stability_fusion_v20_full_20260902_140000_validation_selection/result.json",
+  "v2_reference": {
+    "initial_weight_fingerprint": "21d4a28bc5277b8e688fb9d4f6d56e5df585b9860512a99a05ebeee58707c790",
+    "summary": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainESMMSAAll_v2/fullchain_all_pair_b16_20261002_152353/summary.json",
+    "summary_sha256": "f9f35b795b6af6871b07800e56e07554e82b9a981281e35b247b714184aaec26",
+    "valid_predictions": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainESMMSAAll_v2/fullchain_all_pair_b16_20261002_152353/aligned_msa/valid_predictions.npz",
+    "valid_predictions_sha256": "acf3dc2b37c39eb6fc6751678ef4c1376d6df537793210c1dfe07ecb7ef65169",
+    "validation_count": 2340,
+    "validation_metrics": {
+      "CI": 0.7034502177008619,
+      "MAE": 1.010086126455351,
+      "Pearson": 0.6023506488048695,
+      "RMSE": 1.298583585566563,
+      "Spearman": 0.573856479282461
+    }
+  },
+  "valid_manifest_sha256": "dc996a2665a07a3a708b7a5b7624f27f8ba3bde881bd18fe4569a2d65e3943d8",
+  "version": "lp-pdbbind-fullchain-affinity-only-depth4-v1"
+}

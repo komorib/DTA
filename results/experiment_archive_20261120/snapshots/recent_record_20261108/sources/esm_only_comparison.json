@@ -1,0 +1,93 @@
+{
+  "status": "same_lp_validation_keys_verified",
+  "count": 2340,
+  "same_keys_and_labels": true,
+  "rows": {
+    "esm_only": {
+      "metrics": {
+        "CI": 0.7013820961755334,
+        "MAE": 1.0058073400391276,
+        "RMSE": 1.295277461473788,
+        "Pearson": 0.5973049439976029,
+        "Spearman": 0.5693010821094525
+      },
+      "dropout": 0.2,
+      "selected_epoch": 2,
+      "selected_variant": "ema",
+      "predictions": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainESMOnly_v1/fullchain_esm_only_train_b16_20261009_144435/fullchain_esm_only/valid_predictions.npz",
+        "sha256": "6cae7006cd6a606a904bdb4ed7538817edf8ad633dd075feb0d4f644e105b249"
+      }
+    },
+    "esm_msa_v3": {
+      "metrics": {
+        "CI": 0.70554583596691,
+        "MAE": 1.0013423611110386,
+        "RMSE": 1.2890220413891744,
+        "Pearson": 0.6050275586840606,
+        "Spearman": 0.580165629086706
+      },
+      "dropout": 0.2,
+      "selected_epoch": 3,
+      "selected_variant": "ema",
+      "predictions": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainESMMSAAll_v3/fullchain_all_v3_aligned_b16_20261008_191746/aligned_msa/valid_predictions.npz",
+        "sha256": "e558b7601f797e026b2cfd1833dee05f08d2e7ac6265d1339a68e8d53fd76c24"
+      }
+    },
+    "msa_context_only": {
+      "metrics": {
+        "CI": 0.7060275788643187,
+        "MAE": 1.0101794888769613,
+        "RMSE": 1.2985268446538838,
+        "Pearson": 0.604663850399937,
+        "Spearman": 0.5834859289788695
+      },
+      "dropout": 0.1,
+      "selected_epoch": 4,
+      "selected_variant": "ema",
+      "predictions": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-gpu6-20261104_151052/candidate/aligned_msa/valid_predictions.npz",
+        "sha256": "014bb0a101247af9ea92df7dba9256a3921c8f05bde0279e1559130122bf0c27"
+      }
+    },
+    "esm_msa_strict_v2": {
+      "metrics": {
+        "CI": 0.7034417853670412,
+        "MAE": 1.005281622284381,
+        "RMSE": 1.2988305080275355,
+        "Pearson": 0.6004987024176778,
+        "Spearman": 0.5720848318756238
+      },
+      "dropout": 0.1,
+      "selected_epoch": 4,
+      "selected_variant": "ema",
+      "predictions": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/selector-strict-aligned-20261028-gpu6.q3y1XH/baseline/aligned_msa/valid_predictions.npz",
+        "sha256": "77e9e366901daabcd4b8a24b60aabf06713c628233bd95fcf3e4604cb35b6abc"
+      }
+    }
+  },
+  "esm_only_vs_v3_same_training_config": true,
+  "full_v3_gain_over_esm_only": {
+    "CI": 0.0041637397913766305,
+    "RMSE": 0.006255420084613661,
+    "MAE": 0.004464978928089058,
+    "Pearson": 0.0077226146864576295,
+    "Spearman": 0.010864546977253475
+  },
+  "three_way_identical_recipe": false,
+  "random_split_esm_only_completed_run_found": false,
+  "query_only_is_not_esm_only": true,
+  "gpu_used": false,
+  "test_labels_or_predictions_read": false,
+  "metrics_function": "dta.rank_fusion_v4.metrics.affinity_metrics (original definition)",
+  "source_sha256": {
+    "sources/esm_only_history.json": "e99e66edf41418a8ab36934084e48630ed9f9cf3fab641be9988a20d7e0b43e6",
+    "sources/esm_only_selection.json": "c940670eb08623ecea83c0b4ddfa1aec363bc761e47d4a0b4d4c63ea11d933c6",
+    "sources/esm_only_summary.json": "ffaead573c5c2dd8b27139b7018b2538dc254d760682e359315ef013c72f7e50",
+    "sources/full_v3_history.json": "8f87509cbb0dedd71d9888e276ad9ee22c01a9c19a266b815ea6ff7d7933d14b",
+    "sources/full_v3_selection.json": "1a92282f74680eb4e0f6571c00b7099f398690896ce1ade87df5858a72f593c3",
+    "sources/full_v3_summary.json": "08a340d16b4dd5502d5e11ab0b7d0aa79e079d12c1720ea135537707a1e334cd"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "available_models": [
+    "fullchain_esm_msa_all_v2",
+    "3dprot",
+    "graphdta"
+  ],
+  "checkpoint_reselected": false,
+  "common_count": 1783,
+  "common_key_sha256": "426cbf6cab9773980605cc06932cc058c3c8881c712fce2eb26c41191ed2c37e",
+  "common_metrics": {
+    "3dprot": {
+      "CI": 0.7906491149579706,
+      "MAE": 0.8650782301555641,
+      "Pearson": 0.7785713802575515,
+      "RMSE": 1.1585221405935497,
+      "Spearman": 0.7662322416625166
+    },
+    "fullchain_esm_msa_all_v2": {
+      "CI": 0.7957916410839218,
+      "MAE": 0.8821690589135885,
+      "Pearson": 0.7892936520663691,
+      "RMSE": 1.1461023930140426,
+      "Spearman": 0.7817186761482736
+    },
+    "graphdta": {
+      "CI": 0.7358232679824348,
+      "MAE": 1.0682709501997112,
+      "Pearson": 0.6720668509931735,
+      "RMSE": 1.3963023445009208,
+      "Spearman": 0.6485737143949979
+    }
+  },
+  "comparison_models": [
+    "fullchain_esm_msa_all_v2",
+    "3dprot",
+    "graphdta",
+    "deepdtagen",
+    "tankbind",
+    "caster",
+    "attentionmgt"
+  ],
+  "gpu_used": false,
+  "input_strata": {
+    "attentionmgt": "native ESM2-8M 320-D plus structure",
+    "fullchain_esm_msa_all_v2": "precomputed full-chain ESM and aligned MSA plus local ESM and structure",
+    "tankbind": "native ligand pose/site"
+  },
+  "internal_model": "fullchain_esm_msa_all_v2",
+  "metric_version": "pl-affinity-metrics-v2-average-ranks",
+  "missing_models": [
+    "deepdtagen",
+    "tankbind",
+    "caster",
+    "attentionmgt"
+  ],
+  "native": {
+    "3dprot": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/3dprot/best_model.pt",
+        "sha256": "248fcad33b1831a34c59d4aa3ac608dd5d77f145529057bf58da7a62eaf8aa27"
+      },
+      "checkpoint_reselected": false,
+      "count": 1783,
+      "excluded_count": 30,
+      "historical_metric_definition": {
+        "CI": 0.7906491149579706,
+        "MAE": 0.8650782301555641,
+        "Pearson": 0.7785713802575515,
+        "RMSE": 1.1585221405935497,
+        "Spearman": 0.7662613689998633
+      },
+      "metrics": {
+        "CI": 0.7906491149579706,
+        "MAE": 0.8650782301555641,
+        "Pearson": 0.7785713802575515,
+        "RMSE": 1.1585221405935497,
+        "Spearman": 0.7662322416625166
+      },
+      "prediction_sha256": "4dab828bf743c113722fdcc37e2727169df795cb7d53b68bff29439f1e38084e",
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/3dprot/summary.json",
+        "sha256": "72c2d0402df90f2647abb9a35bde366bf6b1feaabff5b8c375c5ec696357c8b4"
+      }
+    },
+    "fullchain_esm_msa_all_v2": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/internal/train/aligned_msa/best.pt",
+        "sha256": "6a538b9e21781736955596fd956b35977c2e85680015aa8fbfb816754fd47319"
+      },
+      "checkpoint_reselected": false,
+      "count": 1813,
+      "excluded_count": 0,
+      "historical_metric_definition": {
+        "CI": 0.7946753940281656,
+        "MAE": 0.8848746308480369,
+        "Pearson": 0.7866835863027032,
+        "RMSE": 1.1497465978208654,
+        "Spearman": 0.7796693174611582
+      },
+      "metrics": {
+        "CI": 0.7946753940281656,
+        "MAE": 0.8848746308480369,
+        "Pearson": 0.7866835863027032,
+        "RMSE": 1.1497465978208654,
+        "Spearman": 0.7797089116386995
+      },
+      "prediction_sha256": "686c2f0d7fd8fedf6d2b50095b7eb1e118bdd4263a729f6279306eedb9bd6200",
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/internal/train/summary.json",
+        "sha256": "b11534a3ed3a7d21299baf1996de26232971bab51202b198642b1dfe0c8d09f7"
+      }
+    },
+    "graphdta": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/graphdta/best_model.pt",
+        "sha256": "84bab318cd0e1e90a016fb1ac6a2b570e3e1df5d274c31364ee9d89ff76c3007"
+      },
+      "checkpoint_reselected": false,
+      "count": 1783,
+      "excluded_count": 30,
+      "historical_metric_definition": {
+        "CI": 0.7358232679824348,
+        "MAE": 1.0682709501997112,
+        "Pearson": 0.6720668509931735,
+        "RMSE": 1.3963023445009208,
+        "Spearman": 0.6486280368850934
+      },
+      "metrics": {
+        "CI": 0.7358232679824348,
+        "MAE": 1.0682709501997112,
+        "Pearson": 0.6720668509931735,
+        "RMSE": 1.3963023445009208,
+        "Spearman": 0.6485737143949979
+      },
+      "prediction_sha256": "d71ac7810f0aa2a864e0a2a56cadffa0826aadc40bbcc4bd093d6ca7be2a07e8",
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/graphdta/summary.json",
+        "sha256": "f56dfe3d91d44c4c50b6ed8fc473941d0cca43bcfe7534e405f7358d6db9adf8"
+      }
+    }
+  },
+  "original_predictions_changed": false,
+  "protocol_sha256": "ab40709e0fd67c1d3cf8cffb015a6d0b5e1e15bc0d21a0101284851f57696c24",
+  "single_seed": true,
+  "split": "valid",
+  "status": "partial_validation_recomputed_not_a_seven_model_ranking",
+  "test_manifest_read": false,
+  "total_count": 1813,
+  "undefined_metric_policy": "Pearson/Spearman for constant vectors and CI without comparable labels are null"
+}

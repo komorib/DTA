@@ -1,0 +1,94 @@
+{
+  "arms": {
+    "1d_only": {
+      "arm": "1d_only",
+      "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-gpu7/1d_only/best.pt",
+      "checkpoint_sha256": "35038eaa3516d69b7a27713fb9472fac89926d2dbb9b8b1b7203c4082635baab",
+      "count": 4751,
+      "metrics": {
+        "CI": 0.6786169711467788,
+        "MAE": 1.1778217562050257,
+        "Pearson": 0.5378830489015156,
+        "RMSE": 1.4964093758253092,
+        "Spearman": 0.5105951068137422
+      },
+      "prediction_keys_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-test-gpu7/1d_only/test_predictions.npz",
+      "summary_sha256": "721af7629deabfae0fac872212d4885a50b9835d11feb98e0a819bd87552e728"
+    },
+    "3d_only": {
+      "arm": "3d_only",
+      "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-gpu7/3d_only/best.pt",
+      "checkpoint_sha256": "2286e5b9139132a913d4c6dda82d3af999e375dc1e1b7b1d49382b59a3d757f3",
+      "count": 4751,
+      "metrics": {
+        "CI": 0.6731995821408403,
+        "MAE": 1.1619368085572408,
+        "Pearson": 0.5361225329202555,
+        "RMSE": 1.4793840966647391,
+        "Spearman": 0.49596241189772744
+      },
+      "prediction_keys_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-test-gpu7/3d_only/test_predictions.npz",
+      "summary_sha256": "94a51f00dc5c0aa081fc8f71f8a66291b5d8589d733d17a752eb550f606819ad"
+    },
+    "no3d_noesm": {
+      "arm": "no3d_noesm",
+      "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-gpu7/no3d_noesm/best.pt",
+      "checkpoint_sha256": "ee37114ccb769f3c47bf3d03f886eb0e6090ff6b5e7412bcfaac34944be8f255",
+      "count": 4751,
+      "metrics": {
+        "CI": 0.6735133586771989,
+        "MAE": 1.1913726887021552,
+        "Pearson": 0.5253881090332899,
+        "RMSE": 1.508215757892959,
+        "Spearman": 0.49882334819463847
+      },
+      "prediction_keys_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-test-gpu7/no3d_noesm/test_predictions.npz",
+      "summary_sha256": "1c8307065e9a63d837e347723695370625abd173489aa1948c0a40f1f542ee41"
+    },
+    "no3d_nomolformer": {
+      "arm": "no3d_nomolformer",
+      "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-gpu7/no3d_nomolformer/best.pt",
+      "checkpoint_sha256": "58598298aae8fc216af3d46742e35b87aed997b83715cac4f021be7972d0d394",
+      "count": 4751,
+      "metrics": {
+        "CI": 0.5815183531500036,
+        "MAE": 1.3681101993280629,
+        "Pearson": 0.226600477876557,
+        "RMSE": 1.7477237802705516,
+        "Spearman": 0.2426850057924513
+      },
+      "prediction_keys_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-test-gpu7/no3d_nomolformer/test_predictions.npz",
+      "summary_sha256": "2afbc55e30b37b461fc93fc77f68fb76ef889f7e805e853b08d16a9f4c69c4b2"
+    },
+    "no3d_nomsa": {
+      "arm": "no3d_nomsa",
+      "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-gpu7/no3d_nomsa/best.pt",
+      "checkpoint_sha256": "07d91deacf29796161fe1f51e06ab8b672d091d74348cbd0d181fb9f2d4bad64",
+      "count": 4751,
+      "metrics": {
+        "CI": 0.6861560067965216,
+        "MAE": 1.1540038672805337,
+        "Pearson": 0.5582819323422212,
+        "RMSE": 1.4658699503474177,
+        "Spearman": 0.5304138333562167
+      },
+      "prediction_keys_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v1-test-gpu7/no3d_nomsa/test_predictions.npz",
+      "summary_sha256": "31bbd0e8ed7ac0330628ac2fb4a168ce7c49380aafd20207acd3a9eedcdd8b6b"
+    }
+  },
+  "split_counts": {
+    "test": 4751,
+    "train": 11037,
+    "valid": 2340
+  },
+  "split_method": "lp_pdbbind_official",
+  "status": "complete",
+  "test_used_for_selection": false,
+  "training_or_optimizer_steps": 0,
+  "version": "lp-pdbbind-modality-ablation-official-v1-test"
+}

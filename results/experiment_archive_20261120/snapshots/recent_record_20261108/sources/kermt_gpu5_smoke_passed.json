@@ -1,0 +1,38 @@
+{
+  "batch_size": 16,
+  "frozen_encoder_not_loaded_during_training": true,
+  "initial_zero_forward_equal": true,
+  "keys": [
+    "1s63_protein",
+    "3muz_protein",
+    "4de3_protein",
+    "2gvz_protein",
+    "2w6n_protein",
+    "3vgc_protein",
+    "2b1q_protein",
+    "2i0d_protein",
+    "2oc9_protein",
+    "1z4n_protein",
+    "3a2o_protein",
+    "2w08_protein",
+    "4muv_protein",
+    "2kpl_protein",
+    "5wle_protein",
+    "2wtd_protein"
+  ],
+  "peak_allocated_bytes": 2171906560,
+  "peak_reserved_bytes": 2428502016,
+  "plan": {
+    "bytes": 8110,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainKERMT2D_v1/fullchain_kermt2d_b16_gpu5_20261108_085657-16506_cuda_init_fix/training/plan.json",
+    "sha256": "eb45c7d6802937233c6fdb161a4b13c0133a35535b88230638729fc195db3d9c"
+  },
+  "projection_gradient_absolute_sum": 156.82565307617188,
+  "projection_updated": true,
+  "reload_maximum_prediction_delta": 0.0,
+  "status": "real_gpu_smoke_passed",
+  "test_manifest_read": false,
+  "validation_metrics_computed": false,
+  "version": "lp-pdbbind-fullchain-kermt2d-v1",
+  "wall_seconds": 22.951415123883635
+}

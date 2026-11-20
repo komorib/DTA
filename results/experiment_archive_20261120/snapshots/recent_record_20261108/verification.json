@@ -1,0 +1,10 @@
+{
+  "status": "archived_evidence_and_report_tables_verified",
+  "artifact_count": 39,
+  "report_tables_checked": true,
+  "source_files_modified": false,
+  "snapshot_no1d_completed_epochs": 4,
+  "model_forward_calls": 0,
+  "training_steps": 0,
+  "test_row_labels_or_predictions_read": false
+}

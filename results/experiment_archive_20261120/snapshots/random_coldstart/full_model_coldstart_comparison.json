@@ -1,0 +1,778 @@
+{
+  "annotation": {
+    "bytes": 365715,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104_coldstart_repaired_v3_20261106/test_annotated.json",
+    "sha256": "e23722b31b2fd2e0d6c0111bcfd8285f0df1f513b39b03d9c0d842ee4d372f55"
+  },
+  "calibration_or_model_output_fusion": false,
+  "checkpoint_updated": false,
+  "count": 1813,
+  "counts": {
+    "all": 1813,
+    "both_seen_unmarked": 191,
+    "cold_both": 565,
+    "cold_ligand": 804,
+    "cold_protein": 253
+  },
+  "delta_vs_full": {
+    "nn_embedding": {
+      "all": {
+        "CI": -0.010121172099291087,
+        "MAE": 0.0371553946345502,
+        "Pearson": -0.017863074187725703,
+        "RMSE": 0.019504417031826593,
+        "Spearman": -0.0169879660556449
+      },
+      "both_seen_unmarked": {
+        "CI": -0.010714088474070849,
+        "MAE": 0.09623674425017814,
+        "Pearson": -0.0299925792826663,
+        "RMSE": 0.09916749338460384,
+        "Spearman": -0.0063957098379808786
+      },
+      "cold_both": {
+        "CI": -0.0038147036050837357,
+        "MAE": -0.01866439947745091,
+        "Pearson": -0.004742194581763282,
+        "RMSE": -0.030221093329309223,
+        "Spearman": -0.0025045147092321862
+      },
+      "cold_ligand": {
+        "CI": -0.012258525374246876,
+        "MAE": 0.06523252551181125,
+        "Pearson": -0.019194665759419194,
+        "RMSE": 0.03623388272601202,
+        "Spearman": -0.020080681448667037
+      },
+      "cold_protein": {
+        "CI": -0.01536453418884065,
+        "MAE": 0.027983982268455776,
+        "Pearson": -0.031767165608956205,
+        "RMSE": 0.03679886266325516,
+        "Spearman": -0.037877459417389514
+      }
+    },
+    "no_1d": {
+      "all": {
+        "CI": -0.04505717438431345,
+        "MAE": 0.15847254640914143,
+        "Pearson": -0.09227167198885944,
+        "RMSE": 0.15681561702304347,
+        "Spearman": -0.09069208001645956
+      },
+      "both_seen_unmarked": {
+        "CI": -0.04269067211575639,
+        "MAE": 0.21390895041454727,
+        "Pearson": -0.07504599876985352,
+        "RMSE": 0.2320655081437346,
+        "Spearman": -0.0669077080002245
+      },
+      "cold_both": {
+        "CI": -0.032956898885174835,
+        "MAE": 0.05628237314958384,
+        "Pearson": -0.06497692067277971,
+        "RMSE": 0.033365362323459324,
+        "Spearman": -0.06689058879405019
+      },
+      "cold_ligand": {
+        "CI": -0.060059631032983396,
+        "MAE": 0.23408018346082937,
+        "Pearson": -0.12131801168649925,
+        "RMSE": 0.24819496892633164,
+        "Spearman": -0.12079022743486612
+      },
+      "cold_protein": {
+        "CI": -0.03374850600742274,
+        "MAE": 0.10456169477697008,
+        "Pearson": -0.08782719342155021,
+        "RMSE": 0.12575076310114408,
+        "Spearman": -0.0742401370197745
+      }
+    },
+    "no_3d": {
+      "all": {
+        "CI": -0.008551134699138707,
+        "MAE": 0.026227601704522097,
+        "Pearson": -0.01721650881315251,
+        "RMSE": 0.047742791624911574,
+        "Spearman": -0.02151188477144539
+      },
+      "both_seen_unmarked": {
+        "CI": 0.004804771635279148,
+        "MAE": -0.01634743710858111,
+        "Pearson": 0.0022906013880886755,
+        "RMSE": -0.006080362853243981,
+        "Spearman": -0.0006470297765177602
+      },
+      "cold_both": {
+        "CI": -0.0018003386651055386,
+        "MAE": -0.0020542824717937336,
+        "Pearson": -0.0031938887327986887,
+        "RMSE": 0.025348749431262307,
+        "Spearman": -0.01122640947045428
+      },
+      "cold_ligand": {
+        "CI": -0.012148270078886858,
+        "MAE": 0.0470470540723128,
+        "Pearson": -0.021366894776699175,
+        "RMSE": 0.05868833170084242,
+        "Spearman": -0.02591747517976495
+      },
+      "cold_protein": {
+        "CI": -0.01276970497578156,
+        "MAE": 0.05536695849984907,
+        "Pearson": -0.04115923740252614,
+        "RMSE": 0.0977052392353075,
+        "Spearman": -0.027462025143928148
+      }
+    },
+    "no_msa": {
+      "all": {
+        "CI": -0.003944776184989229,
+        "MAE": 0.01753818694101561,
+        "Pearson": -0.008135634691396443,
+        "RMSE": 0.033802486591961056,
+        "Spearman": -0.010833255697932698
+      },
+      "both_seen_unmarked": {
+        "CI": -0.0036449991715911123,
+        "MAE": 0.024047575143500532,
+        "Pearson": -0.008258918478720845,
+        "RMSE": 0.03652848072274684,
+        "Spearman": -0.013354489947550396
+      },
+      "cold_both": {
+        "CI": 0.001979743042572313,
+        "MAE": -0.004546087246012354,
+        "Pearson": 0.008815301620531235,
+        "RMSE": 0.008628965767008001,
+        "Spearman": 0.0019331411758883865
+      },
+      "cold_ligand": {
+        "CI": 0.0029799987576868414,
+        "MAE": 0.0025018164593534342,
+        "Pearson": 0.003826870938464233,
+        "RMSE": -0.005814687185824674,
+        "Spearman": 0.006370664193698916
+      },
+      "cold_protein": {
+        "CI": -0.031043593130779312,
+        "MAE": 0.10972618550328073,
+        "Pearson": -0.06939331209579902,
+        "RMSE": 0.1811623142577341,
+        "Spearman": -0.08167673446627266
+      }
+    },
+    "no_structure_aux": {
+      "all": {
+        "CI": 0.00011565484444264751,
+        "MAE": -0.00823797187922748,
+        "Pearson": -0.004874793339237127,
+        "RMSE": -0.00019564090963397618,
+        "Spearman": -0.0007427489488860406
+      },
+      "both_seen_unmarked": {
+        "CI": 0.0032860219804494717,
+        "MAE": -0.016905595018174124,
+        "Pearson": 0.001986574697308563,
+        "RMSE": -0.004945599213848961,
+        "Spearman": 0.008472291293619927
+      },
+      "cold_both": {
+        "CI": 0.0004437897758389209,
+        "MAE": -0.03644341797003392,
+        "Pearson": 0.0049025814312521065,
+        "RMSE": -0.03290812245450403,
+        "Spearman": 0.0011167746021030212
+      },
+      "cold_ligand": {
+        "CI": -0.0023712652959810843,
+        "MAE": 0.018333655185778452,
+        "Pearson": -0.009780983689000267,
+        "RMSE": 0.01685442145016336,
+        "Spearman": -0.0036216809438152087
+      },
+      "cold_protein": {
+        "CI": 0.001037931685223703,
+        "MAE": -0.02314704341843621,
+        "Pearson": -0.014464181248901031,
+        "RMSE": 0.028102042336274113,
+        "Spearman": -0.006780674874471093
+      }
+    },
+    "query_only": {
+      "all": {
+        "CI": 0.002878554479229689,
+        "MAE": -0.014429877492531884,
+        "Pearson": 0.005932021805328813,
+        "RMSE": -0.008366790511794786,
+        "Spearman": 0.004586018076734533
+      },
+      "both_seen_unmarked": {
+        "CI": 0.01170817915723199,
+        "MAE": -0.051217372174688136,
+        "Pearson": 0.013924344120916032,
+        "RMSE": -0.046059079561746596,
+        "Spearman": 0.013147731775238869
+      },
+      "cold_both": {
+        "CI": -0.0002045839392165183,
+        "MAE": 0.004067454963132544,
+        "Pearson": 0.0010431178837886357,
+        "RMSE": 0.017108350565104624,
+        "Spearman": -0.00013495992655310207
+      },
+      "cold_ligand": {
+        "CI": 0.005390086340766542,
+        "MAE": -0.01219226298047904,
+        "Pearson": 0.008545976024973312,
+        "RMSE": -0.022294410244474427,
+        "Spearman": 0.009222492049437037
+      },
+      "cold_protein": {
+        "CI": 0.0014468138642511619,
+        "MAE": -0.035076610381262086,
+        "Pearson": 0.0032264632045494457,
+        "RMSE": -0.008544546254044771,
+        "Spearman": -0.0007240807596308185
+      }
+    }
+  },
+  "excluded_count": 0,
+  "groups": {
+    "full": {
+      "all": {
+        "count": 1813,
+        "metrics": {
+          "CI": 0.7851590727105834,
+          "MAE": 0.9324256647026792,
+          "Pearson": 0.758795916447114,
+          "RMSE": 1.236915211311637,
+          "Spearman": 0.7586349028464866
+        }
+      },
+      "both_seen_unmarked": {
+        "count": 191,
+        "metrics": {
+          "CI": 0.8405312862428895,
+          "MAE": 0.7848482291310169,
+          "Pearson": 0.8658781978956006,
+          "RMSE": 1.022824673796169,
+          "Spearman": 0.8613975850704287
+        }
+      },
+      "cold_both": {
+        "count": 565,
+        "metrics": {
+          "CI": 0.7433636117563374,
+          "MAE": 1.0366098788635192,
+          "Pearson": 0.6595988371813113,
+          "RMSE": 1.3606089774786458,
+          "Spearman": 0.670168786140963
+        }
+      },
+      "cold_ligand": {
+        "count": 804,
+        "metrics": {
+          "CI": 0.8065609665196596,
+          "MAE": 0.8493875996625172,
+          "Pearson": 0.8012362025079677,
+          "RMSE": 1.133979403656353,
+          "Spearman": 0.8022510138499513
+        }
+      },
+      "cold_protein": {
+        "count": 253,
+        "metrics": {
+          "CI": 0.7592942064540479,
+          "MAE": 1.0750573385588167,
+          "Pearson": 0.7159406586083937,
+          "RMSE": 1.3975789605857212,
+          "Spearman": 0.7013876783554723
+        }
+      }
+    },
+    "nn_embedding": {
+      "all": {
+        "count": 1813,
+        "metrics": {
+          "CI": 0.7750379006112923,
+          "MAE": 0.9695810593372294,
+          "Pearson": 0.7409328422593883,
+          "RMSE": 1.2564196283434637,
+          "Spearman": 0.7416469367908417
+        }
+      },
+      "both_seen_unmarked": {
+        "count": 191,
+        "metrics": {
+          "CI": 0.8298171977688187,
+          "MAE": 0.8810849733811951,
+          "Pearson": 0.8358856186129343,
+          "RMSE": 1.1219921671807729,
+          "Spearman": 0.8550018752324479
+        }
+      },
+      "cold_both": {
+        "count": 565,
+        "metrics": {
+          "CI": 0.7395489081512536,
+          "MAE": 1.0179454793860683,
+          "Pearson": 0.654856642599548,
+          "RMSE": 1.3303878841493366,
+          "Spearman": 0.6676642714317308
+        }
+      },
+      "cold_ligand": {
+        "count": 804,
+        "metrics": {
+          "CI": 0.7943024411454127,
+          "MAE": 0.9146201251743284,
+          "Pearson": 0.7820415367485485,
+          "RMSE": 1.170213286382365,
+          "Spearman": 0.7821703324012843
+        }
+      },
+      "cold_protein": {
+        "count": 253,
+        "metrics": {
+          "CI": 0.7439296722652072,
+          "MAE": 1.1030413208272725,
+          "Pearson": 0.6841734929994375,
+          "RMSE": 1.4343778232489763,
+          "Spearman": 0.6635102189380828
+        }
+      }
+    },
+    "no_1d": {
+      "all": {
+        "count": 1813,
+        "metrics": {
+          "CI": 0.7401018983262699,
+          "MAE": 1.0908982111118206,
+          "Pearson": 0.6665242444582545,
+          "RMSE": 1.3937308283346805,
+          "Spearman": 0.667942822830027
+        }
+      },
+      "both_seen_unmarked": {
+        "count": 191,
+        "metrics": {
+          "CI": 0.7978406141271331,
+          "MAE": 0.9987571795455642,
+          "Pearson": 0.7908321991257471,
+          "RMSE": 1.2548901819399036,
+          "Spearman": 0.7944898770702042
+        }
+      },
+      "cold_both": {
+        "count": 565,
+        "metrics": {
+          "CI": 0.7104067128711625,
+          "MAE": 1.092892252013103,
+          "Pearson": 0.5946219165085316,
+          "RMSE": 1.3939743398021052,
+          "Spearman": 0.6032781973469128
+        }
+      },
+      "cold_ligand": {
+        "count": 804,
+        "metrics": {
+          "CI": 0.7465013354866762,
+          "MAE": 1.0834677831233466,
+          "Pearson": 0.6799181908214684,
+          "RMSE": 1.3821743725826847,
+          "Spearman": 0.6814607864150852
+        }
+      },
+      "cold_protein": {
+        "count": 253,
+        "metrics": {
+          "CI": 0.7255457004466251,
+          "MAE": 1.1796190333357868,
+          "Pearson": 0.6281134651868435,
+          "RMSE": 1.5233297236868653,
+          "Spearman": 0.6271475413356978
+        }
+      }
+    },
+    "no_3d": {
+      "all": {
+        "count": 1813,
+        "metrics": {
+          "CI": 0.7766079380114447,
+          "MAE": 0.9586532664072013,
+          "Pearson": 0.7415794076339615,
+          "RMSE": 1.2846580029365486,
+          "Spearman": 0.7371230180750412
+        }
+      },
+      "both_seen_unmarked": {
+        "count": 191,
+        "metrics": {
+          "CI": 0.8453360578781687,
+          "MAE": 0.7685007920224358,
+          "Pearson": 0.8681687992836893,
+          "RMSE": 1.016744310942925,
+          "Spearman": 0.860750555293911
+        }
+      },
+      "cold_both": {
+        "count": 565,
+        "metrics": {
+          "CI": 0.7415632730912318,
+          "MAE": 1.0345555963917255,
+          "Pearson": 0.6564049484485126,
+          "RMSE": 1.3859577269099081,
+          "Spearman": 0.6589423766705087
+        }
+      },
+      "cold_ligand": {
+        "count": 804,
+        "metrics": {
+          "CI": 0.7944126964407727,
+          "MAE": 0.89643465373483,
+          "Pearson": 0.7798693077312685,
+          "RMSE": 1.1926677353571955,
+          "Spearman": 0.7763335386701864
+        }
+      },
+      "cold_protein": {
+        "count": 253,
+        "metrics": {
+          "CI": 0.7465245014782663,
+          "MAE": 1.1304242970586658,
+          "Pearson": 0.6747814212058676,
+          "RMSE": 1.4952841998210287,
+          "Spearman": 0.6739256532115442
+        }
+      }
+    },
+    "no_msa": {
+      "all": {
+        "count": 1813,
+        "metrics": {
+          "CI": 0.7812142965255942,
+          "MAE": 0.9499638516436948,
+          "Pearson": 0.7506602817557175,
+          "RMSE": 1.2707176979035981,
+          "Spearman": 0.7478016471485539
+        }
+      },
+      "both_seen_unmarked": {
+        "count": 191,
+        "metrics": {
+          "CI": 0.8368862870712984,
+          "MAE": 0.8088958042745175,
+          "Pearson": 0.8576192794168798,
+          "RMSE": 1.0593531545189159,
+          "Spearman": 0.8480430951228783
+        }
+      },
+      "cold_both": {
+        "count": 565,
+        "metrics": {
+          "CI": 0.7453433547989097,
+          "MAE": 1.0320637916175068,
+          "Pearson": 0.6684141388018425,
+          "RMSE": 1.3692379432456538,
+          "Spearman": 0.6721019273168514
+        }
+      },
+      "cold_ligand": {
+        "count": 804,
+        "metrics": {
+          "CI": 0.8095409652773464,
+          "MAE": 0.8518894161218706,
+          "Pearson": 0.8050630734464319,
+          "RMSE": 1.1281647164705284,
+          "Spearman": 0.8086216780436503
+        }
+      },
+      "cold_protein": {
+        "count": 253,
+        "metrics": {
+          "CI": 0.7282506133232686,
+          "MAE": 1.1847835240620974,
+          "Pearson": 0.6465473465125947,
+          "RMSE": 1.5787412748434553,
+          "Spearman": 0.6197109438891997
+        }
+      }
+    },
+    "no_structure_aux": {
+      "all": {
+        "count": 1813,
+        "metrics": {
+          "CI": 0.785274727555026,
+          "MAE": 0.9241876928234517,
+          "Pearson": 0.7539211231078768,
+          "RMSE": 1.236719570402003,
+          "Spearman": 0.7578921538976006
+        }
+      },
+      "both_seen_unmarked": {
+        "count": 191,
+        "metrics": {
+          "CI": 0.843817308223339,
+          "MAE": 0.7679426341128428,
+          "Pearson": 0.8678647725929092,
+          "RMSE": 1.01787907458232,
+          "Spearman": 0.8698698763640487
+        }
+      },
+      "cold_both": {
+        "count": 565,
+        "metrics": {
+          "CI": 0.7438074015321763,
+          "MAE": 1.0001664608934853,
+          "Pearson": 0.6645014186125634,
+          "RMSE": 1.3277008550241418,
+          "Spearman": 0.671285560743066
+        }
+      },
+      "cold_ligand": {
+        "count": 804,
+        "metrics": {
+          "CI": 0.8041897012236785,
+          "MAE": 0.8677212548482957,
+          "Pearson": 0.7914552188189674,
+          "RMSE": 1.1508338251065164,
+          "Spearman": 0.7986293329061361
+        }
+      },
+      "cold_protein": {
+        "count": 253,
+        "metrics": {
+          "CI": 0.7603321381392716,
+          "MAE": 1.0519102951403805,
+          "Pearson": 0.7014764773594927,
+          "RMSE": 1.4256810029219953,
+          "Spearman": 0.6946070034810012
+        }
+      }
+    },
+    "query_only": {
+      "all": {
+        "count": 1813,
+        "metrics": {
+          "CI": 0.7880376271898131,
+          "MAE": 0.9179957872101473,
+          "Pearson": 0.7647279382524428,
+          "RMSE": 1.2285484207998423,
+          "Spearman": 0.7632209209232211
+        }
+      },
+      "both_seen_unmarked": {
+        "count": 191,
+        "metrics": {
+          "CI": 0.8522394654001215,
+          "MAE": 0.7336308569563288,
+          "Pearson": 0.8798025420165166,
+          "RMSE": 0.9767655942344224,
+          "Spearman": 0.8745453168456676
+        }
+      },
+      "cold_both": {
+        "count": 565,
+        "metrics": {
+          "CI": 0.7431590278171208,
+          "MAE": 1.0406773338266517,
+          "Pearson": 0.6606419550650999,
+          "RMSE": 1.3777173280437505,
+          "Spearman": 0.6700338262144099
+        }
+      },
+      "cold_ligand": {
+        "count": 804,
+        "metrics": {
+          "CI": 0.8119510528604261,
+          "MAE": 0.8371953366820382,
+          "Pearson": 0.809782178532941,
+          "RMSE": 1.1116849934118787,
+          "Spearman": 0.8114735058993884
+        }
+      },
+      "cold_protein": {
+        "count": 253,
+        "metrics": {
+          "CI": 0.760741020318299,
+          "MAE": 1.0399807281775546,
+          "Pearson": 0.7191671218129432,
+          "RMSE": 1.3890344143316764,
+          "Spearman": 0.7006635975958415
+        }
+      }
+    }
+  },
+  "metric_version": "pl-affinity-metrics-v2-average-ranks",
+  "model_selection": "validation only; exact frozen raw/EMA best checkpoint",
+  "optimizer_steps": 0,
+  "ordinary_test_comparison": {
+    "bytes": 6764,
+    "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/test_comparison.json",
+    "sha256": "00a433bb3152a2a4292a13c9233256e6c8fc8dfda1d98ad1d81b74a31d5625b0"
+  },
+  "provenance": {
+    "full": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/internal/train/aligned_msa/best.pt",
+        "sha256": "6a538b9e21781736955596fd956b35977c2e85680015aa8fbfb816754fd47319"
+      },
+      "optimizer_steps": 0,
+      "prediction": {
+        "bytes": 18044,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/full/test_predictions.npz",
+        "sha256": "09a34a5c318da58a682809c48c4ac6c66ca495141d9446a112442ebba1fb5770"
+      },
+      "result": {
+        "bytes": 1281,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/full/result.json",
+        "sha256": "3881d894d23acd7663848ef21eba6d784f4a7a337213aa7aa8975aaf872e03f8"
+      },
+      "test_used_for_selection": false,
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/internal/train/summary.json",
+        "sha256": "b11534a3ed3a7d21299baf1996de26232971bab51202b198642b1dfe0c8d09f7"
+      }
+    },
+    "nn_embedding": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-sequence-ablations-v2-gpu7-20261108_164405-83204/nn_embedding/train/best.pt",
+        "sha256": "8b09773bc6dfbb5c5da8f4917bcbe46878c07f4feda2fc698ff2f2968221965d"
+      },
+      "optimizer_steps": 0,
+      "prediction": {
+        "bytes": 18006,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/nn_embedding/test_predictions.npz",
+        "sha256": "aa9c09bc2281a8d10fa9027af1d5c919a04609295081608676428e927faae391"
+      },
+      "result": {
+        "bytes": 1329,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/nn_embedding/result.json",
+        "sha256": "3e835ade0210db5cf95b5c7df4e9c8b7e2b186ba78c11485c2a8cdd2f9bf3161"
+      },
+      "test_used_for_selection": false,
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-sequence-ablations-v2-gpu7-20261108_164405-83204/nn_embedding/train/summary.json",
+        "sha256": "ffb1cbc031bf0531f47a0d95923944aff712ff62608dd6f9bfbf8d88eb8cd67b"
+      }
+    },
+    "no_1d": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-sequence-ablations-v2-gpu7-20261108_164405-83204/no_1d/train/best.pt",
+        "sha256": "2179836491282512f63b9ee4154497a20385a9580344eb1eb34b0816bff0f400"
+      },
+      "optimizer_steps": 0,
+      "prediction": {
+        "bytes": 18182,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/no_1d/test_predictions.npz",
+        "sha256": "4adb7477d705a98611e147e89ecdaee7df19e1712b7e560ff7ed443f619c4c7c"
+      },
+      "result": {
+        "bytes": 1301,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/no_1d/result.json",
+        "sha256": "d0a9aca7d214a5838eeadd80fb151da3715710970f56fc705df7f45f56b60da7"
+      },
+      "test_used_for_selection": false,
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-sequence-ablations-v2-gpu7-20261108_164405-83204/no_1d/train/summary.json",
+        "sha256": "98d857c672ed37724138d36adf55587cc0a4b9a98d0efc2919cd948f5300dfe6"
+      }
+    },
+    "no_3d": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-modality-ablations-v3-gpu7-20261109_094334-83204/no_3d/train/best.pt",
+        "sha256": "c908828cf1bccbf346556d9a451107a83f6495ec95569c9ef2abb9b14132a624"
+      },
+      "optimizer_steps": 0,
+      "prediction": {
+        "bytes": 18231,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/no_3d/test_predictions.npz",
+        "sha256": "882968c16f2db29c3a3084a4c0d5069d49e42e461045e7ec21888108a6e99c50"
+      },
+      "result": {
+        "bytes": 1301,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/no_3d/result.json",
+        "sha256": "27b7940a4ddf807cd7ab9878d880c1993335ea4c1ae37c65eb404ce7923f89a5"
+      },
+      "test_used_for_selection": false,
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-modality-ablations-v3-gpu7-20261109_094334-83204/no_3d/train/summary.json",
+        "sha256": "af3d1fd56e746c11c295c691af11179c2680e9145b17ff70c27f36871f09abf4"
+      }
+    },
+    "no_msa": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-mechanism-ablations-v4-gpu7-20261109_165018-83204/no_msa/train/best.pt",
+        "sha256": "ba52590e3ee41198c55c12aeba1703b1acefcbdb7895a8d8fbd44f2c77b68b69"
+      },
+      "optimizer_steps": 0,
+      "prediction": {
+        "bytes": 18158,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/no_msa/test_predictions.npz",
+        "sha256": "2154e0c04c44def93eb0f11ef35033ba944361421de09c252df588e013db7368"
+      },
+      "result": {
+        "bytes": 1307,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/no_msa/result.json",
+        "sha256": "f08346e9e348c63ba9df02d852daa2e446077ff85d64b369d3d72c9293e883e1"
+      },
+      "test_used_for_selection": false,
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-mechanism-ablations-v4-gpu7-20261109_165018-83204/no_msa/train/summary.json",
+        "sha256": "596ea25c16598eff8d60fa0bdb903f7be6f31ccc348d5a6ad842aa517c1ae906"
+      }
+    },
+    "no_structure_aux": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-mechanism-ablations-v4-gpu7-20261109_165018-83204/no_structure_aux/train/best.pt",
+        "sha256": "04c85672a31a5a4c8d181e6d6eaa48939f8e06f7efc9c31acb108d6ba593a367"
+      },
+      "optimizer_steps": 0,
+      "prediction": {
+        "bytes": 18169,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/no_structure_aux/test_predictions.npz",
+        "sha256": "b2ac426771b7ce5507934078725e71b4028dd26347ec549fd2d269337dd797d1"
+      },
+      "result": {
+        "bytes": 1347,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/no_structure_aux/result.json",
+        "sha256": "ce0899ab99d3ebc344e0c8ecf91454003c203c0d25e32d6634197517233324c3"
+      },
+      "test_used_for_selection": false,
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-mechanism-ablations-v4-gpu7-20261109_165018-83204/no_structure_aux/train/summary.json",
+        "sha256": "d7d7e570d2918ef1b8b87569ec5cbe847f9f36ac274097deb4a2ee3f75941f7e"
+      }
+    },
+    "query_only": {
+      "checkpoint": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-mechanism-ablations-v4-gpu7-20261109_165018-83204/query_only/train/best.pt",
+        "sha256": "dc4a2df9d71c824c5137fbc5d59eb5f03d57ea49507e251590022cb523080348"
+      },
+      "optimizer_steps": 0,
+      "prediction": {
+        "bytes": 18211,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/query_only/test_predictions.npz",
+        "sha256": "6455ef7df00bb0ab6ce244ebdadb953c115f9281b3b4406ef1087e4a3817e536"
+      },
+      "result": {
+        "bytes": 1780,
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-test-v1-gpu7-20261110_102206-16506/query_only/result.json",
+        "sha256": "eceb43eeb46aac8fd7e604c5cc4997882518863d85333d7607fa030e6da7cb39"
+      },
+      "test_used_for_selection": false,
+      "training_summary": {
+        "path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-mechanism-ablations-v4-gpu7-20261109_165018-83204/query_only/train/summary.json",
+        "sha256": "45f2542906bb4b5c4b617eeedbbb6913fb6aab5f9e578975fe69af45cbec055e"
+      }
+    }
+  },
+  "split": "test",
+  "status": "seven_ablation_coldstart_test_comparison_complete",
+  "test_used_for_selection": false,
+  "training_or_optimizer_steps": 0,
+  "undefined_policy": "Pearson/Spearman for constant vectors and CI without comparable labels are null",
+  "version": "lp-pdbbind-random-full-v2-seven-ablation-coldstart-test-v1"
+}

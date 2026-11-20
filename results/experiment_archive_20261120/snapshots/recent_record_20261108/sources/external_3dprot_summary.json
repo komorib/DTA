@@ -1,0 +1,43 @@
+{
+  "adapter_sha256": "31c367b445c79a35c8990e44bfc4be3bfb72809510ef428f44105af0dfa6c731",
+  "model": "3dprot",
+  "new_test_manifest_read": false,
+  "output": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/3dprot",
+  "pretrained_task_checkpoint_loaded": false,
+  "protocol_sha256": "ab40709e0fd67c1d3cf8cffb015a6d0b5e1e15bc0d21a0101284851f57696c24",
+  "selection": {
+    "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/3dprot/best_model.pt",
+    "checkpoint_sha256": "248fcad33b1831a34c59d4aa3ac608dd5d77f145529057bf58da7a62eaf8aa27",
+    "epoch": 670,
+    "valid_predictions": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/3dprot/valid_predictions.npz",
+    "valid_predictions_sha256": "4dab828bf743c113722fdcc37e2727169df795cb7d53b68bff29439f1e38084e",
+    "variant": "raw"
+  },
+  "split_seed": 42,
+  "status": "random_external_training_complete",
+  "test_used_for_selection": false,
+  "training_budget_args": [
+    "--epochs",
+    "700",
+    "--batch-size",
+    "32",
+    "--lr",
+    "0.0001",
+    "--val-nth-epoch",
+    "10",
+    "--protein-cutoff",
+    "10"
+  ],
+  "training_seed": 42,
+  "training_source": {
+    "new_test_manifest_read": false,
+    "protocol_sha256": "ab40709e0fd67c1d3cf8cffb015a6d0b5e1e15bc0d21a0101284851f57696c24",
+    "protocol_version": "lp-pdbbind-random-v1",
+    "random_split_seed": 42,
+    "source_sha256": "e91bc3fb04242d2c7d2624e8ad118fb03dc4428a1bd368c90fc0bc89361c07e4",
+    "test_used_for_selection": false,
+    "train_count": 14502,
+    "val_count": 1813
+  },
+  "version": "lp-pdbbind-random-external-run-v1"
+}

@@ -1,0 +1,1502 @@
+[
+  {
+    "epoch": 0,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6934059319288834,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.1759447131467902,
+        "distogram": 2.3350950182348056,
+        "interface_contact": 1.1709018903366033,
+        "interface_distogram": 2.2117620205533677,
+        "loss_affinity": 0.8551953128289324,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.47159438807722426,
+        "loss_total": 0.8551953128289324,
+        "match": 2.8530057872551073,
+        "mse": 0.8077644921137371,
+        "rank": 0.589248997102613,
+        "residue_contact": 1.2959594517514326,
+        "smooth_l1": 0.4983310304204191
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.8551953128289324,
+    "validation_metrics": {
+      "CI": 0.6704962905063653,
+      "MAE": 1.1049115960508857,
+      "Pearson": 0.49400089695039523,
+      "RMSE": 1.4259760384708873,
+      "Spearman": 0.4942893024592214
+    }
+  },
+  {
+    "epoch": 1,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6919749457767044,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.164205234033474,
+        "distogram": 2.3304425830426423,
+        "interface_contact": 1.1988839007806087,
+        "interface_distogram": 2.2367604926012565,
+        "loss_affinity": 0.7300634149677944,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.47477226117382965,
+        "loss_total": 0.7300634149677944,
+        "match": 2.8809636316437652,
+        "mse": 0.6586877109192689,
+        "rank": 0.5208326425241387,
+        "residue_contact": 1.2950031147486922,
+        "smooth_l1": 0.422927192259121
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.7300634149677944,
+    "validation_metrics": {
+      "CI": 0.6899346530791217,
+      "MAE": 1.0459901720155136,
+      "Pearson": 0.5611180290612453,
+      "RMSE": 1.3454327795843166,
+      "Spearman": 0.5434665246622988
+    }
+  },
+  {
+    "epoch": 2,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6902113875617152,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.1637609553509864,
+        "distogram": 2.3251977436784386,
+        "interface_contact": 1.2152910412221716,
+        "interface_distogram": 2.315391049868819,
+        "loss_affinity": 0.6836819933322461,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.4827198740623997,
+        "loss_total": 0.6836819933322461,
+        "match": 2.933364796984023,
+        "mse": 0.5964656912343765,
+        "rank": 0.49941903927187986,
+        "residue_contact": 1.2951390017633853,
+        "smooth_l1": 0.3944445151903167
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.6836819933322461,
+    "validation_metrics": {
+      "CI": 0.7070772211133907,
+      "MAE": 0.9939707687710103,
+      "Pearson": 0.608428846377077,
+      "RMSE": 1.2815493740019956,
+      "Spearman": 0.5854714145991502
+    }
+  },
+  {
+    "epoch": 3,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6886209864547287,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2220256275024968,
+        "distogram": 2.3212804573169654,
+        "interface_contact": 1.2568599294925082,
+        "interface_distogram": 2.4292980315028756,
+        "loss_affinity": 0.650416706776098,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.49849006065942164,
+        "loss_total": 0.650416706776098,
+        "match": 3.025383739195008,
+        "mse": 0.5528013774969925,
+        "rank": 0.4876982545075209,
+        "residue_contact": 1.2945869012155395,
+        "smooth_l1": 0.3724171908741034
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.650416706776098,
+    "validation_metrics": {
+      "CI": 0.7033112675044252,
+      "MAE": 1.0126981022661057,
+      "Pearson": 0.6022514699136869,
+      "RMSE": 1.2954436945056493,
+      "Spearman": 0.575891545241127
+    }
+  },
+  {
+    "epoch": 4,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6873427535312763,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2558379523995993,
+        "distogram": 2.320338199449622,
+        "interface_contact": 1.2531706638958142,
+        "interface_distogram": 2.472971004679583,
+        "loss_affinity": 0.6167533692579878,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5044488294150515,
+        "loss_total": 0.6167533692579878,
+        "match": 3.0765507079552914,
+        "mse": 0.5154511035544852,
+        "rank": 0.47080866599428484,
+        "residue_contact": 1.2951934133750804,
+        "smooth_l1": 0.35111222964461786
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.6167533692579878,
+    "validation_metrics": {
+      "CI": 0.7066891504460338,
+      "MAE": 1.001073085618861,
+      "Pearson": 0.6082532085311623,
+      "RMSE": 1.2891369870076588,
+      "Spearman": 0.5837302595827463
+    }
+  },
+  {
+    "epoch": 5,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6854151985783508,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2048616682273754,
+        "distogram": 2.322021704134734,
+        "interface_contact": 1.2423150478929714,
+        "interface_distogram": 2.5028084267740662,
+        "loss_affinity": 0.5788121182522129,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5049663824145344,
+        "loss_total": 0.5788121182522129,
+        "match": 3.1393213583075483,
+        "mse": 0.4697216647305944,
+        "rank": 0.4545681125011997,
+        "residue_contact": 1.2961750429609546,
+        "smooth_l1": 0.32652661633488816
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.5788121182522129,
+    "validation_metrics": {
+      "CI": 0.7028141264322135,
+      "MAE": 1.0086198753274374,
+      "Pearson": 0.604339711161386,
+      "RMSE": 1.2897757315341374,
+      "Spearman": 0.5739104904673091
+    }
+  },
+  {
+    "epoch": 6,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6840934731822083,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2077057939508686,
+        "distogram": 2.3226655113524286,
+        "interface_contact": 1.2513734188632688,
+        "interface_distogram": 2.5431564002797225,
+        "loss_affinity": 0.5507097050723067,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5101093643178113,
+        "loss_total": 0.5507097050723067,
+        "match": 3.2069109982338504,
+        "mse": 0.44033505050667926,
+        "rank": 0.44325105249881747,
+        "residue_contact": 1.2968895934630131,
+        "smooth_l1": 0.3073590199051398
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.5507097050723067,
+    "validation_metrics": {
+      "CI": 0.6966137947115335,
+      "MAE": 1.029673173105287,
+      "Pearson": 0.5878106186726735,
+      "RMSE": 1.3166798501530048,
+      "Spearman": 0.5581673445857073
+    }
+  },
+  {
+    "epoch": 7,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.684493835421576,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.1950874013313348,
+        "distogram": 2.324671446413234,
+        "interface_contact": 1.2374965532966282,
+        "interface_distogram": 2.5535182780113774,
+        "loss_affinity": 0.5302463090074235,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5106850643287536,
+        "loss_total": 0.5302463090074235,
+        "match": 3.256064244284146,
+        "mse": 0.41544846218362774,
+        "rank": 0.4353312553702921,
+        "residue_contact": 1.2978332923806233,
+        "smooth_l1": 0.2937965322697562
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.5302463090074235,
+    "validation_metrics": {
+      "CI": 0.6961304020096818,
+      "MAE": 1.0344257810267605,
+      "Pearson": 0.592401109762864,
+      "RMSE": 1.318715321688272,
+      "Spearman": 0.5567379962237219
+    }
+  },
+  {
+    "epoch": 8,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6830690544584523,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2500067975210107,
+        "distogram": 2.3249191602071124,
+        "interface_contact": 1.2584930800009464,
+        "interface_distogram": 2.5622071362923884,
+        "loss_affinity": 0.5020720499851133,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5155530656800754,
+        "loss_total": 0.5020720499851133,
+        "match": 3.2797033337579258,
+        "mse": 0.3836126186415904,
+        "rank": 0.4227106719345286,
+        "residue_contact": 1.2968532766121021,
+        "smooth_l1": 0.275445882050469
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.5020720499851133,
+    "validation_metrics": {
+      "CI": 0.694746949328273,
+      "MAE": 1.0341365634331898,
+      "Pearson": 0.5891256365704989,
+      "RMSE": 1.3236285197376731,
+      "Spearman": 0.5532271680605406
+    }
+  },
+  {
+    "epoch": 9,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6836306981418444,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2619310408398725,
+        "distogram": 2.339210456350575,
+        "interface_contact": 1.2578864871591762,
+        "interface_distogram": 2.6106825047645015,
+        "loss_affinity": 0.48071509322448486,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5209098447872239,
+        "loss_total": 0.48071509322448486,
+        "match": 3.3068058297254037,
+        "mse": 0.3583129501537136,
+        "rank": 0.41592640047488005,
+        "residue_contact": 1.2987502459166707,
+        "smooth_l1": 0.26059758529822896
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.48071509322448486,
+    "validation_metrics": {
+      "CI": 0.6933633133352594,
+      "MAE": 1.0418248601945077,
+      "Pearson": 0.585062225437747,
+      "RMSE": 1.3322203566054875,
+      "Spearman": 0.5490890655910958
+    }
+  },
+  {
+    "epoch": 10,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6840930375500002,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.236232494616854,
+        "distogram": 2.340572382056195,
+        "interface_contact": 1.2542466472888338,
+        "interface_distogram": 2.607065010761869,
+        "loss_affinity": 0.45928155968802564,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5199689711280486,
+        "loss_total": 0.45928155968802564,
+        "match": 3.345086111193118,
+        "mse": 0.334455546711747,
+        "rank": 0.40652826575265416,
+        "residue_contact": 1.2987330476442973,
+        "smooth_l1": 0.24650191524524945
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.45928155968802564,
+    "validation_metrics": {
+      "CI": 0.6887836395125965,
+      "MAE": 1.0562788564244752,
+      "Pearson": 0.5783494836325763,
+      "RMSE": 1.3485742056289338,
+      "Spearman": 0.5367343568607393
+    }
+  },
+  {
+    "epoch": 11,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6830170965713004,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.253538704091224,
+        "distogram": 2.3425734754921734,
+        "interface_contact": 1.2582627184149149,
+        "interface_distogram": 2.6154513521470886,
+        "loss_affinity": 0.4383920314505804,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5224181246869812,
+        "loss_total": 0.4383920314505804,
+        "match": 3.3785648263019064,
+        "mse": 0.3125804048395999,
+        "rank": 0.39758686881134475,
+        "residue_contact": 1.3006108175153317,
+        "smooth_l1": 0.23247021754825678
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.4383920314505804,
+    "validation_metrics": {
+      "CI": 0.6872515211196966,
+      "MAE": 1.0634738855210566,
+      "Pearson": 0.5752796356281827,
+      "RMSE": 1.3604840171834724,
+      "Spearman": 0.5321782703825106
+    }
+  },
+  {
+    "epoch": 12,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6837695991647417,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2497001475182132,
+        "distogram": 2.3539265660272126,
+        "interface_contact": 1.2478104964546535,
+        "interface_distogram": 2.6080168692961982,
+        "loss_affinity": 0.4217440359753327,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5224080019817835,
+        "loss_total": 0.4217440359753327,
+        "match": 3.431182791530222,
+        "mse": 0.2947311068831039,
+        "rank": 0.3918459906310275,
+        "residue_contact": 1.3000151043352874,
+        "smooth_l1": 0.22079596845973012
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.4217440359753327,
+    "validation_metrics": {
+      "CI": 0.6849359289278911,
+      "MAE": 1.0673528170485218,
+      "Pearson": 0.5680302747842756,
+      "RMSE": 1.3645066706034978,
+      "Spearman": 0.527564917250758
+    }
+  },
+  {
+    "epoch": 13,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6825002373992533,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2353411106095797,
+        "distogram": 2.3540330033371415,
+        "interface_contact": 1.2396851397942805,
+        "interface_distogram": 2.612015608428181,
+        "loss_affinity": 0.3997807486279719,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5218500812235084,
+        "loss_total": 0.3997807486279719,
+        "match": 3.442787515944329,
+        "mse": 0.27011573651832516,
+        "rank": 0.384733886865602,
+        "residue_contact": 1.3025365924489671,
+        "smooth_l1": 0.2053698289896483
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.3997807486279719,
+    "validation_metrics": {
+      "CI": 0.6887449607639841,
+      "MAE": 1.0640953281836543,
+      "Pearson": 0.5773954090004565,
+      "RMSE": 1.3615318683726922,
+      "Spearman": 0.5366120566947362
+    }
+  },
+  {
+    "epoch": 14,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6839025925035062,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2387974616410076,
+        "distogram": 2.3513738186463065,
+        "interface_contact": 1.2366936229277348,
+        "interface_distogram": 2.643425461174785,
+        "loss_affinity": 0.3851552220736293,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5251015718942104,
+        "loss_total": 0.3851552220736293,
+        "match": 3.4786758526511816,
+        "mse": 0.25650272548630615,
+        "rank": 0.37622516496457914,
+        "residue_contact": 1.3018952573555103,
+        "smooth_l1": 0.19618974325881489
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.3851552220736293,
+    "validation_metrics": {
+      "CI": 0.6862379912567697,
+      "MAE": 1.079218730737988,
+      "Pearson": 0.5732874493480953,
+      "RMSE": 1.3764440904179558,
+      "Spearman": 0.5307446007511151
+    }
+  },
+  {
+    "epoch": 15,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6861424212006555,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2494612032952517,
+        "distogram": 2.350096733328225,
+        "interface_contact": 1.2457503519196442,
+        "interface_distogram": 2.6443163063215174,
+        "loss_affinity": 0.36161960244745667,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5264803145104561,
+        "loss_total": 0.36161960244745667,
+        "match": 3.4882011285726575,
+        "mse": 0.23023842830561858,
+        "rank": 0.3691855523033418,
+        "residue_contact": 1.3033784648646478,
+        "smooth_l1": 0.17940961258971821
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.36161960244745667,
+    "validation_metrics": {
+      "CI": 0.684761049656914,
+      "MAE": 1.0919299160123015,
+      "Pearson": 0.5688560732975176,
+      "RMSE": 1.3906131217739783,
+      "Spearman": 0.5260920808472045
+    }
+  },
+  {
+    "epoch": 16,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6860678081063257,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2623109276743902,
+        "distogram": 2.3557020719500557,
+        "interface_contact": 1.249806745501532,
+        "interface_distogram": 2.643249879712644,
+        "loss_affinity": 0.34935649090271065,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5280318360320044,
+        "loss_total": 0.34935649090271065,
+        "match": 3.520875837146372,
+        "mse": 0.21894739405184552,
+        "rank": 0.3632463222828464,
+        "residue_contact": 1.3043671136317045,
+        "smooth_l1": 0.1712158488460641
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.34935649090271065,
+    "validation_metrics": {
+      "CI": 0.6836353330918509,
+      "MAE": 1.1001140912364342,
+      "Pearson": 0.5665295684285332,
+      "RMSE": 1.4010596136811189,
+      "Spearman": 0.5239253697667106
+    }
+  },
+  {
+    "epoch": 17,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6853475334851639,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2598793012508447,
+        "distogram": 2.362675925614177,
+        "interface_contact": 1.2480297245841094,
+        "interface_distogram": 2.6481558630431907,
+        "loss_affinity": 0.3289294529166343,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.52830000208167,
+        "loss_total": 0.3289294529166343,
+        "match": 3.521608881328417,
+        "mse": 0.19817831112152856,
+        "rank": 0.35653836480949236,
+        "residue_contact": 1.3033002977785857,
+        "smooth_l1": 0.1565873568661619
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.3289294529166343,
+    "validation_metrics": {
+      "CI": 0.6845658227978043,
+      "MAE": 1.0998222287799542,
+      "Pearson": 0.5672609154555788,
+      "RMSE": 1.4006403095741053,
+      "Spearman": 0.5272099784460532
+    }
+  },
+  {
+    "epoch": 18,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6869735004245371,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2466535554415938,
+        "distogram": 2.361987717600836,
+        "interface_contact": 1.2366370358328889,
+        "interface_distogram": 2.6449624541876973,
+        "loss_affinity": 0.317277177563612,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.526797175101612,
+        "loss_total": 0.317277177563612,
+        "match": 3.5190750426140385,
+        "mse": 0.18608124791172104,
+        "rank": 0.3533138421782549,
+        "residue_contact": 1.3021906325782555,
+        "smooth_l1": 0.14803944957861
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.317277177563612,
+    "validation_metrics": {
+      "CI": 0.6800532410224974,
+      "MAE": 1.129587407132561,
+      "Pearson": 0.5553095271884152,
+      "RMSE": 1.4406374618128712,
+      "Spearman": 0.5144860016041051
+    }
+  },
+  {
+    "epoch": 19,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6881820125856262,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2566175821034804,
+        "distogram": 2.3652292348336483,
+        "interface_contact": 1.2473501309104589,
+        "interface_distogram": 2.644988275265348,
+        "loss_affinity": 0.30206154448830563,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5280354307017473,
+        "loss_total": 0.30206154448830563,
+        "match": 3.522787807298743,
+        "mse": 0.17055324344099432,
+        "rank": 0.3477718858183294,
+        "residue_contact": 1.302284718596417,
+        "smooth_l1": 0.13736979954376602
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.30206154448830563,
+    "validation_metrics": {
+      "CI": 0.6794550952560423,
+      "MAE": 1.1305455322738236,
+      "Pearson": 0.5537100383141469,
+      "RMSE": 1.441065433067028,
+      "Spearman": 0.5132773667132009
+    }
+  },
+  {
+    "epoch": 20,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6883462573307148,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2502748103245445,
+        "distogram": 2.3664287010828655,
+        "interface_contact": 1.2379589193972989,
+        "interface_distogram": 2.6482626147892163,
+        "loss_affinity": 0.2897763564588799,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5279455478079073,
+        "loss_total": 0.2897763564588799,
+        "match": 3.543376720124397,
+        "mse": 0.15978645882366793,
+        "rank": 0.34318236704321875,
+        "residue_contact": 1.3019810282665751,
+        "smooth_l1": 0.1285354369063524
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.2897763564588799,
+    "validation_metrics": {
+      "CI": 0.6778874144118118,
+      "MAE": 1.1373060853187973,
+      "Pearson": 0.5499896751398545,
+      "RMSE": 1.4493969833441205,
+      "Spearman": 0.5091338762370553
+    }
+  },
+  {
+    "epoch": 21,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6878937684971353,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.255289303910905,
+        "distogram": 2.3678479623103486,
+        "interface_contact": 1.2377892164216526,
+        "interface_distogram": 2.6598645054775734,
+        "loss_affinity": 0.27685072432285635,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5289974710526675,
+        "loss_total": 0.27685072432285635,
+        "match": 3.5362997058509054,
+        "mse": 0.14620005183353804,
+        "rank": 0.3395492899892987,
+        "residue_contact": 1.302558093658392,
+        "smooth_l1": 0.11910099734322749
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.27685072432285635,
+    "validation_metrics": {
+      "CI": 0.6788120381464117,
+      "MAE": 1.1472061754134422,
+      "Pearson": 0.5498660656991833,
+      "RMSE": 1.4648984022789722,
+      "Spearman": 0.5112426800597173
+    }
+  },
+  {
+    "epoch": 22,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6875509732011436,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2544421573479971,
+        "distogram": 2.3661407221918522,
+        "interface_contact": 1.2433825992155767,
+        "interface_distogram": 2.656119006267492,
+        "loss_affinity": 0.2649283518663783,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5290001394152639,
+        "loss_total": 0.2649283518663783,
+        "match": 3.5415578081987906,
+        "mse": 0.13471164537890665,
+        "rank": 0.33530283768971764,
+        "residue_contact": 1.3029287272605343,
+        "smooth_l1": 0.11060046653222778
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.2649283518663783,
+    "validation_metrics": {
+      "CI": 0.6776549752969281,
+      "MAE": 1.1537356789746394,
+      "Pearson": 0.5481571215052398,
+      "RMSE": 1.4668621066277774,
+      "Spearman": 0.5089414027392137
+    }
+  },
+  {
+    "epoch": 23,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6872162137342536,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.251987832179968,
+        "distogram": 2.3677262036696725,
+        "interface_contact": 1.237588838217915,
+        "interface_distogram": 2.6501225423121797,
+        "loss_affinity": 0.2547815723965565,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5281164868940476,
+        "loss_total": 0.2547815723965565,
+        "match": 3.542198717766914,
+        "mse": 0.1252215944028095,
+        "rank": 0.33261293304571204,
+        "residue_contact": 1.3022846957911616,
+        "smooth_l1": 0.102953156841028
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.2547815723965565,
+    "validation_metrics": {
+      "CI": 0.6767294350043042,
+      "MAE": 1.166514779819572,
+      "Pearson": 0.5434658017232408,
+      "RMSE": 1.4858569921649747,
+      "Spearman": 0.5067827816294971
+    }
+  },
+  {
+    "epoch": 24,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6864064965559089,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2533327973407247,
+        "distogram": 2.3688589033873186,
+        "interface_contact": 1.238854528164518,
+        "interface_distogram": 2.653339315497357,
+        "loss_affinity": 0.24581692523282508,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5286909075880392,
+        "loss_total": 0.24581692523282508,
+        "match": 3.551947804119276,
+        "mse": 0.11793362274765969,
+        "rank": 0.32862200834181,
+        "residue_contact": 1.3025979031687198,
+        "smooth_l1": 0.09667807566946832
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.24581692523282508,
+    "validation_metrics": {
+      "CI": 0.6767569317450238,
+      "MAE": 1.1697941888224779,
+      "Pearson": 0.54206791092182,
+      "RMSE": 1.4892948944461124,
+      "Spearman": 0.5066537073539047
+    }
+  },
+  {
+    "epoch": 25,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6863922094953233,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2552024739376013,
+        "distogram": 2.3693074330039647,
+        "interface_contact": 1.234263847703519,
+        "interface_distogram": 2.650753122481747,
+        "loss_affinity": 0.23934945892272652,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5285782856647525,
+        "loss_total": 0.23934945892272652,
+        "match": 3.5632170566614123,
+        "mse": 0.11116605748192987,
+        "rank": 0.32762059677338257,
+        "residue_contact": 1.3024873172027478,
+        "smooth_l1": 0.09162630806474582
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.23934945892272652,
+    "validation_metrics": {
+      "CI": 0.6758235090533935,
+      "MAE": 1.1729617238018333,
+      "Pearson": 0.5423577446512844,
+      "RMSE": 1.491563658609708,
+      "Spearman": 0.5044920667876257
+    }
+  },
+  {
+    "epoch": 26,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6862590490044027,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2566340046516362,
+        "distogram": 2.3707432104193646,
+        "interface_contact": 1.2361369113991225,
+        "interface_distogram": 2.6525442779928015,
+        "loss_affinity": 0.2338539438025243,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.529059661184532,
+        "loss_total": 0.2338539438025243,
+        "match": 3.571403540390125,
+        "mse": 0.10665021196709595,
+        "rank": 0.32465354206337443,
+        "residue_contact": 1.3020561892053355,
+        "smooth_l1": 0.08799499175308839
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.2338539438025243,
+    "validation_metrics": {
+      "CI": 0.6740891979604018,
+      "MAE": 1.175914963827437,
+      "Pearson": 0.5376688216903855,
+      "RMSE": 1.4967430705145042,
+      "Spearman": 0.5000025956649697
+    }
+  },
+  {
+    "epoch": 27,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6863386297571487,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2558638082034346,
+        "distogram": 2.370565226458121,
+        "interface_contact": 1.2325451757596886,
+        "interface_distogram": 2.6525023664253347,
+        "loss_affinity": 0.22807790707202924,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5287275518766344,
+        "loss_total": 0.22807790707202924,
+        "match": 3.565470602201379,
+        "mse": 0.10130474802808485,
+        "rank": 0.32323381699945614,
+        "residue_contact": 1.3023088434468144,
+        "smooth_l1": 0.08358866492475288
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.22807790707202924,
+    "validation_metrics": {
+      "CI": 0.6748580068309237,
+      "MAE": 1.1758828082303818,
+      "Pearson": 0.539117643911126,
+      "RMSE": 1.4973007605559372,
+      "Spearman": 0.5019193521227728
+    }
+  },
+  {
+    "epoch": 28,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6863078161426213,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.260799553428871,
+        "distogram": 2.3708494618319085,
+        "interface_contact": 1.2378326276074285,
+        "interface_distogram": 2.6507758244224218,
+        "loss_affinity": 0.22622222866917002,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5290669885657835,
+        "loss_total": 0.22622222866917002,
+        "match": 3.5638304610183273,
+        "mse": 0.09947224582235019,
+        "rank": 0.3226062220507774,
+        "residue_contact": 1.3021441432013028,
+        "smooth_l1": 0.082258899277751
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.22622222866917002,
+    "validation_metrics": {
+      "CI": 0.6752425945777893,
+      "MAE": 1.180177188487106,
+      "Pearson": 0.5390703794020559,
+      "RMSE": 1.5037539793603838,
+      "Spearman": 0.5029380525191668
+    }
+  },
+  {
+    "epoch": 29,
+    "mode": "aligned_msa",
+    "selected_variant": "ema",
+    "train_components": {
+      "batch_count": 690,
+      "means": {
+        "affinity_class": 0.6861723287381988,
+        "aux_diagnostic_valid_components": 7.0,
+        "contact": 1.2588660191798555,
+        "distogram": 2.371700255421625,
+        "interface_contact": 1.2339112781096195,
+        "interface_distogram": 2.651969772145368,
+        "loss_affinity": 0.2238512595332619,
+        "loss_auxiliary_effective": 0.0,
+        "loss_auxiliary_original": 0.5289527230841534,
+        "loss_total": 0.2238512595332619,
+        "match": 3.5670712201491646,
+        "mse": 0.09715788962616437,
+        "rank": 0.3228207850369854,
+        "residue_contact": 1.3024076833241227,
+        "smooth_l1": 0.08014925934266354
+      },
+      "valid_counts": {
+        "affinity_class": 690,
+        "aux_diagnostic_valid_components": 690,
+        "contact": 690,
+        "distogram": 690,
+        "interface_contact": 690,
+        "interface_distogram": 690,
+        "loss_affinity": 690,
+        "loss_auxiliary_effective": 690,
+        "loss_auxiliary_original": 690,
+        "loss_total": 690,
+        "match": 690,
+        "mse": 690,
+        "rank": 690,
+        "residue_contact": 690,
+        "smooth_l1": 690
+      }
+    },
+    "train_loss": 0.2238512595332619,
+    "validation_metrics": {
+      "CI": 0.6735948065622621,
+      "MAE": 1.1889614279662448,
+      "Pearson": 0.5345142682069495,
+      "RMSE": 1.5139358023461784,
+      "Spearman": 0.498604277276565
+    }
+  }
+]

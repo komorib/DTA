@@ -1,0 +1,114 @@
+{
+  "cohort": "union_of_existing_lp_pdbbind_canonical_manifests",
+  "cohort_count": 18128,
+  "counts": {
+    "test": 1813,
+    "train": 14502,
+    "valid": 1813
+  },
+  "dataset_level_input_exclusions": 0,
+  "dataset_root": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104",
+  "files": {
+    "input_qualification": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/input_qualification.json",
+      "sha256": "97c2a34c7088a3abe9f4393e894c81d06ce72ae75e7326322e9b90a09278994a"
+    },
+    "membership": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/membership.json",
+      "sha256": "cb1bdddc95099592ad62e34bdfc692fa3ba5f29f3b521bf05cef3639e42bcf45"
+    },
+    "test_inputs_csv": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/test_inputs.csv",
+      "sha256": "6b97d09faec97118564ae541b94dfd4d3f4e35f8de2431fd89613cca7aae6e29"
+    },
+    "test_manifest": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/test_manifest.json",
+      "sha256": "c7cefe58331945b8b29a9dcb656d4232ae6a14e16a92351bc96ed70f0b2b584d"
+    },
+    "train_manifest": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/train_manifest.json",
+      "sha256": "963aaf702ccab442994c4d19db50c4af278a7458393b75606953cc5ca6615473"
+    },
+    "train_val_csv": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/train_val.csv",
+      "sha256": "e91bc3fb04242d2c7d2624e8ad118fb03dc4428a1bd368c90fc0bc89361c07e4"
+    },
+    "valid_manifest": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/valid_manifest.json",
+      "sha256": "9965a4c8d34d83f47fdbc3efe1b1c2f940bffdf77ccb8b8b047889c384396d22"
+    }
+  },
+  "full_database_hash": false,
+  "gpu_used": false,
+  "input_qualification_counts": {
+    "missing_any": 299,
+    "missing_fields": {
+      "seq": 0,
+      "smiles": 299
+    },
+    "total": 18128
+  },
+  "label_source": "original_canonical_manifest_label",
+  "label_tolerance": 1e-06,
+  "new_test_used_for_training_or_selection": false,
+  "origin_split_matrix": {
+    "test": {
+      "test": 475,
+      "train": 1109,
+      "valid": 229
+    },
+    "train": {
+      "test": 3794,
+      "train": 8838,
+      "valid": 1870
+    },
+    "valid": {
+      "test": 482,
+      "train": 1090,
+      "valid": 241
+    }
+  },
+  "original_features_modified": false,
+  "original_payloads_copied": false,
+  "original_test_read_for_authorized_resplit": true,
+  "protein_or_ligand_cold_split": false,
+  "ratios": {
+    "test": 0.1,
+    "train": 0.8,
+    "valid": 0.1
+  },
+  "sample_based_random": true,
+  "source_csv": {
+    "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind.csv",
+    "sha256": "121ca090fede90ec87b214ddae939f2c37803b2ab7b36be6933819b29216f93a"
+  },
+  "source_lmdb_payload_read": false,
+  "source_manifests": {
+    "test": {
+      "count": 4751,
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/PDBbind_chain_esm_residue_DTA/lp_pdbbind/test_manifest.json",
+      "sha256": "f8741d40837568c552ca0bd3725e0b079ba855d56d2a663c0bb95c4bc09c95b8"
+    },
+    "train": {
+      "count": 11037,
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/PDBbind_chain_esm_residue_DTA/lp_pdbbind/train_manifest.json",
+      "sha256": "def47b0307750099bcd8accc17ac5c6960d4d92ffc789daac2cadb10faf55213"
+    },
+    "valid": {
+      "count": 2340,
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/PDBbind_chain_esm_residue_DTA/lp_pdbbind/valid_manifest.json",
+      "sha256": "dc996a2665a07a3a708b7a5b7624f27f8ba3bde881bd18fe4569a2d65e3943d8"
+    }
+  },
+  "source_unchanged": true,
+  "split_algorithm": "sorted_canonical_keys_then_python_random_shuffle_round_counts_v1",
+  "split_seed": 42,
+  "status": "dataset_ready",
+  "test_inputs_label_free": true,
+  "train_val_csv_counts": {
+    "train": 14502,
+    "val": 1813
+  },
+  "version": "lp-pdbbind-random-v1",
+  "workspace": "/home/user/wangzhiwen/GerNA-Bind"
+}

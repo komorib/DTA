@@ -1,0 +1,30 @@
+{
+  "arms": {
+    "no3d_sequence_linear": {
+      "arm": "no3d_sequence_linear",
+      "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v2-sequence-linear-gpu7/no3d_sequence_linear/best.pt",
+      "checkpoint_sha256": "175fdc627634d9f005fd6fb4586f58aa7048e3dc8ad04bf2efdc9cbb59c6e02d",
+      "count": 4751,
+      "metrics": {
+        "CI": 0.6745802700015766,
+        "MAE": 1.1791787541045697,
+        "Pearson": 0.5314392697381415,
+        "RMSE": 1.4974733721855225,
+        "Spearman": 0.5000879231782088
+      },
+      "prediction_keys_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+      "prediction_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/modality-ablation-lp-v2-sequence-linear-test-gpu7/no3d_sequence_linear/test_predictions.npz",
+      "summary_sha256": "77b5f08a2c66a2b44f54df87fbc6fe2f93f5b81140eaa1bdcae0b3b1c4acefda"
+    }
+  },
+  "split_counts": {
+    "test": 4751,
+    "train": 11037,
+    "valid": 2340
+  },
+  "split_method": "lp_pdbbind_official",
+  "status": "complete",
+  "test_used_for_selection": false,
+  "training_or_optimizer_steps": 0,
+  "version": "lp-pdbbind-modality-ablation-official-v2-test"
+}

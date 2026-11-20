@@ -1,0 +1,21 @@
+{
+  "arm": "no3d_sequence_linear",
+  "initial_weight_fingerprint": "83dcbc73a35b327610eded6955b3e3efc1d287e25c0ec520dd6465fa5bc897a3",
+  "optimizer_steps": 20700,
+  "physical_gpu": "7",
+  "readiness_sha256": "2848bf18ed08a9f42d43c295ce7b67c0f60e4d64a98bac4792384d9f8cb5b862",
+  "selected_epoch": 3,
+  "selected_variant": "ema",
+  "split_method": "lp_pdbbind_official",
+  "status": "training_complete",
+  "test_manifest_read": false,
+  "test_used_for_selection": false,
+  "validation_metrics": {
+    "CI": 0.6903766173582891,
+    "MAE": 1.0722653447562813,
+    "Pearson": 0.5596090986662016,
+    "RMSE": 1.3881396228100622,
+    "Spearman": 0.5455300019839534
+  },
+  "version": "lp-pdbbind-modality-ablation-official-v2"
+}

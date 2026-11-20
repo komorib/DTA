@@ -1,0 +1,321 @@
+{
+  "schema": "lp-pdbbind-recent-experiment-evidence-v1",
+  "captured_at_utc": "2026-11-08T02:43:03.921379+00:00",
+  "artifact_count": 39,
+  "test_row_labels_or_predictions_read": false,
+  "gpu_used": false,
+  "artifacts": [
+    {
+      "archive": "sources/annotation_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104_coldstart_repaired_v3_20261106/summary.json",
+      "bytes": 4756,
+      "sha256": "7dd4c87551d1bf5924654cc56816eb207db841f69116dfde6940a0dc66e79b40",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/coldstart_cpu_verification.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-coldstart-eval-20261106/cpu_result_verification.json",
+      "bytes": 1798,
+      "sha256": "ceacce338a4841e78ff02102bd9abc0ab9aeea939887cd786c38ba357493fcca",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/coldstart_group_metrics.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-coldstart-eval-20261106/group_metrics.json",
+      "bytes": 5894,
+      "sha256": "e37257b35afb01c42be5e38c04dfff4407b744de06c624a9d135892508594f7e",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/common_validation_three.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-20261107/experiments/lp_pdbbind/random_full_v2/review_20261106/validation_completed_three.json",
+      "bytes": 5436,
+      "sha256": "056751b099a8b54f8ee2e1dfde21590ce64c9210d0a8cb44b45eea5ce493a343",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/depth4_history.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainAffinityDepth4_v1/fullchain_affinity_depth4_b16_20261021_215826/aligned_msa/history.json",
+      "bytes": 46634,
+      "sha256": "2668913685c1b679175108cc0e74a33bc74e0a83774fbf6c38936a338978169a",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/depth4_selection.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainAffinityDepth4_v1/fullchain_affinity_depth4_b16_20261021_215826/aligned_msa/selection.json",
+      "bytes": 4906,
+      "sha256": "94e3d7d421bd2be421cec29b4b52a87a8657e9822215053210c5a64c99b5bff6",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/depth4_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainAffinityDepth4_v1/fullchain_affinity_depth4_b16_20261021_215826/summary.json",
+      "bytes": 12348,
+      "sha256": "a8cf775506a2fb59c6021ce5c83dedb548887ba244fdf7301428a3a83e3df80c",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/esm_only_comparison.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/results-comparison-20261107/experiments/lp_pdbbind/results_comparison_20261107/esm_only_followup/comparison.json",
+      "bytes": 3728,
+      "sha256": "d3a49a48ccc1fdb2a8ffd2bd312083a43b3987f7f0122d04b0d0c31d2fb5b90d",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/external_3dprot_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/3dprot/summary.json",
+      "bytes": 1719,
+      "sha256": "72c2d0402df90f2647abb9a35bde366bf6b1feaabff5b8c375c5ec696357c8b4",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/external_deepdtagen_stopped_best_metrics.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/deepdtagen/best_metrics.json",
+      "bytes": 497,
+      "sha256": "a7b367e5bf4589bdf61aea35a917a19515f4b1034a6aa1aa98bb65ad57096734",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/external_graphdta_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/graphdta/summary.json",
+      "bytes": 1804,
+      "sha256": "f56dfe3d91d44c4c50b6ed8fc473941d0cca43bcfe7534e405f7358d6db9adf8",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/fixed_checkpoint_train_eval.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/depth4-fixed-checkpoint-diagnostic-20261022-cpu3/train_eval_once/evaluation_summary.json",
+      "bytes": 3372,
+      "sha256": "cb2b14eda71d946f07dd585458bfd0fd4799379e9d97f9bdae84d36f17bc3edc",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/joint32_failure.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/joint-pair-d32-blocks4-single-keyfix-gpu7-20261107_181921-83204/candidate4/training/failure.json",
+      "bytes": 55,
+      "sha256": "32d73d9610877a820ff3c2f6d32cf2e40247e3faa88003420a33ac7d747daf5d",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/joint32_history_snapshot.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/joint-pair-d32-blocks4-single-keyfix-gpu7-20261107_181921-83204/candidate4/training/aligned_msa/history.json",
+      "bytes": 5240,
+      "sha256": "6033e14e97a0b136efe3f9725c5d4fe87b53b728559c0127bb970f79e8321db3",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": true
+    },
+    {
+      "archive": "sources/joint32_smoke.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/joint-pair-d32-blocks4-single-keyfix-gpu7-20261107_181921-83204/candidate4/smoke.json",
+      "bytes": 74088,
+      "sha256": "b43e16d045168473001e11574c3f0625996310ebb40146062e6c27fe695bb103",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/joint8_history.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/persistent-joint-pair-aligned-gpu4-20261106_201437-83204/aligned_msa/aligned_msa/history.json",
+      "bytes": 9853,
+      "sha256": "7ed382c18d3a56ff4a9d82fb0ec460ed270ae3f478acf9a07d6f86dd5078abc5",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/joint8_selection.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/persistent-joint-pair-aligned-gpu4-20261106_201437-83204/aligned_msa/aligned_msa/selection.json",
+      "bytes": 10264,
+      "sha256": "4c9d958cf39b648a890f8dba03eb48cdbc9b1eb7c3dde2a66e9409d34d5251cb",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/joint8_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/persistent-joint-pair-aligned-gpu4-20261106_201437-83204/aligned_msa/summary.json",
+      "bytes": 56452,
+      "sha256": "2e6841b76c3e36c03763cb98b7c1d907a7deb91f27024a60df4012b52a747def",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/kermt_gpu5_smoke_passed.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainKERMT2D_v1/fullchain_kermt2d_b16_gpu5_20261108_085657-16506_cuda_init_fix/training/smoke/result.json",
+      "bytes": 1133,
+      "sha256": "7019f3a892f7602caa86b901aeb57be24ae37794511ca40bddad1d819b4c938c",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/msa_context_comparison.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-gpu6-20261104_151052/validation_comparison.json",
+      "bytes": 10331,
+      "sha256": "bf8b1e630a875339aed7b3c117fc9ba42f758b06d08d800504e7cb329554a1e4",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/msa_context_history.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-gpu6-20261104_151052/candidate/aligned_msa/history.json",
+      "bytes": 9839,
+      "sha256": "6474a7b8653c1d8974995f2e780789b839973b754833332aea802cc90a80fc15",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/msa_context_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/fullchain-msa-only-context-gpu6-20261104_151052/candidate/summary.json",
+      "bytes": 42462,
+      "sha256": "72fc54e85f4ebab683bd1023b721c28437bd7052eb704d72db131bfa6f49ae08",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/no1d_history_snapshot.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-gpu7-20261108_074857-83204/no_1d/train/history.json",
+      "bytes": 1311,
+      "sha256": "fa01144fe10d7a3df96d77072acc41b4226d5a8c25e5df5ac890d1cb46cfd0a3",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": true
+    },
+    {
+      "archive": "sources/no3d_history.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-gpu7-20261108_074857-83204/no_3d/train/history.json",
+      "bytes": 9845,
+      "sha256": "29c765c9bad5c26d076b3e263cb7b9b625848cce6134c5493db63ed1920b0d5f",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/no3d_selection.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-gpu7-20261108_074857-83204/no_3d/train/selection.json",
+      "bytes": 2721,
+      "sha256": "ca49038f423a02ac239b254ad8d462f00420ed5a65850f782f4e4f3605f3a509",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/no3d_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-ablations-gpu7-20261108_074857-83204/no_3d/train/summary.json",
+      "bytes": 63735,
+      "sha256": "d3e70d4b8dab44dcfdb0dc8b7b8594eaac21ed70aba90a676ea021cfdf0c319a",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/random_full_history.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/internal/train/aligned_msa/history.json",
+      "bytes": 9833,
+      "sha256": "ca726afa3ab94379325a9da8d43b5661f246b4036f57337ed637238458a5cb22",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/random_full_selection.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/internal/train/aligned_msa/selection.json",
+      "bytes": 2782,
+      "sha256": "9a784cf0b8d217d1757e6cc5b17b717770899bea5176622f97a3b38739e5e616",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/random_full_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/internal/train/summary.json",
+      "bytes": 7595,
+      "sha256": "b11534a3ed3a7d21299baf1996de26232971bab51202b198642b1dfe0c8d09f7",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/random_msa_history.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/internal/train/aligned_msa/history.json",
+      "bytes": 9841,
+      "sha256": "2c03df76e5a546d3aec84288a5c3e3cd954dc56a9e9107033c044be48e5b8ecb",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/random_msa_selection.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/internal/train/aligned_msa/selection.json",
+      "bytes": 2585,
+      "sha256": "1519ec595e9cbb195dd8c146e2f7be6acc9ee42aa08341ba6e3c14e13489fed8",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/random_msa_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/internal/train/summary.json",
+      "bytes": 22388,
+      "sha256": "0e2d77f03d70c94de49fd3c7f22afb9f06ec0851bdc99e8c0924fb3f3c9f142f",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/random_protocol.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/protocol.json",
+      "bytes": 4093,
+      "sha256": "ab40709e0fd67c1d3cf8cffb015a6d0b5e1e15bc0d21a0101284851f57696c24",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/random_validation_ablation.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/results-comparison-20261107/experiments/lp_pdbbind/results_comparison_20261107/random_validation_ablation.json",
+      "bytes": 1705,
+      "sha256": "11e4e688999e3ba795e999311e01f40acb51f65aec59b278c80af872c7db877d",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/sam_comparison.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainAffinityDepth4SAM_v1/fullchain_affinity_depth4_sam_b16_20261024_143212/validation_comparison.json",
+      "bytes": 2066,
+      "sha256": "9dad791b73f91a15ac5f58c42ef4c83a48e8df3b1b9bbcb22f0655af471a7d95",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/sam_history.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainAffinityDepth4SAM_v1/fullchain_affinity_depth4_sam_b16_20261024_143212/aligned_msa/history.json",
+      "bytes": 56332,
+      "sha256": "b29ec889040d3f8e696d6459b46c99415c32c5bacfd10d6ed967ec94512a7cc6",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/sam_summary.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainAffinityDepth4SAM_v1/fullchain_affinity_depth4_sam_b16_20261024_143212/summary.json",
+      "bytes": 13554,
+      "sha256": "1a6709237a70de96e656f553e84f08433aa0397e6acb17b61bf8c82d6b0e4a1d",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/tankbind_gpu4_exception.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-external-retry-gpu4-20261106_120536-16506/stages/tankbind_train.json.exception.json",
+      "bytes": 1918,
+      "sha256": "97b9c2f37a31fecca6c5d612a13700ed4c0d6e8bc0eb6799eca0085330872860",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    },
+    {
+      "archive": "sources/tankbind_gpu6_exception.json",
+      "original_path": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/random-full-v2-all-gpu6-20261105_231034-16506/external/stages/tankbind_train.json.exception.json",
+      "bytes": 1919,
+      "sha256": "6d365e8444da26be2e638296a83636bf48717758ca2c54c0d3b07aec73d09f92",
+      "matches_original_at_capture": true,
+      "incremental_history_snapshot": false
+    }
+  ]
+}

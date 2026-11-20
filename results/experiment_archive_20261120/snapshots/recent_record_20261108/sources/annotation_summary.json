@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "inputs": {
+    "train_manifest": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/train_manifest.json",
+      "sha256": "963aaf702ccab442994c4d19db50c4af278a7458393b75606953cc5ca6615473"
+    },
+    "test_manifest": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/test_manifest.json",
+      "sha256": "c7cefe58331945b8b29a9dcb656d4232ae6a14e16a92351bc96ed70f0b2b584d"
+    },
+    "membership": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/membership.json",
+      "sha256": "cb1bdddc95099592ad62e34bdfc692fa3ba5f29f3b521bf05cef3639e42bcf45"
+    },
+    "test_inputs_csv": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/test_inputs.csv",
+      "sha256": "6b97d09faec97118564ae541b94dfd4d3f4e35f8de2431fd89613cca7aae6e29"
+    },
+    "train_val_csv": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/train_val.csv",
+      "sha256": "e91bc3fb04242d2c7d2624e8ad118fb03dc4428a1bd368c90fc0bc89361c07e4"
+    },
+    "protocol": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104/protocol.json",
+      "sha256": "ab40709e0fd67c1d3cf8cffb015a6d0b5e1e15bc0d21a0101284851f57696c24"
+    },
+    "sequence_inventory": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_MSA_v9/sequences/sequence_manifest.json",
+      "sha256": "f5d1171d7d675b75995bf2539357417144c175dee59a0eeed5b30402e2551125"
+    },
+    "previous_summary": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104_coldstart_annotation_v1_20261106/summary.json",
+      "sha256": "9b501625865e2c240e40399bbc00828a903125c67533e900da73dc84d4bdc8e4"
+    },
+    "targeted_exception_keys": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104_coldstart_exceptions_dropped_v2_20261106/excluded_train_identity.csv",
+      "sha256": "506f77355ed0c4b4f893d85302601c801a148580e40e57490a0ba0e8fb604e3a"
+    }
+  },
+  "train_reference_count": 14502,
+  "original_training_count": 14502,
+  "excluded_train_records": 0,
+  "moved_or_deleted_samples": 0,
+  "target_repaired": {
+    "1cps_protein": true,
+    "1mmr_protein": true,
+    "2bdj_protein": true,
+    "4oho_protein": true
+  },
+  "unknown_train_identities": {
+    "protein": 0,
+    "ligand": 0
+  },
+  "counts": {
+    "test_total": 1813,
+    "cold_ligand": 804,
+    "cold_protein": 253,
+    "cold_both": 565,
+    "both_seen_unmarked": 191,
+    "identity_unknown": 0
+  },
+  "unknown_reason_counts": {},
+  "rules": {
+    "protein": "Exact sorted full-target chain sequence tuples, retaining chain boundaries and multiplicity; whitespace/case normalization only.",
+    "ligand": "Same native-SDF rule for all train/test: sanitize, AssignStereochemistry(cleanIt=True,force=True), ordinary-H removal, AssignStereochemistry, canonical isomeric SMILES. No neutralization, desalting, tautomer merging or stereo removal.",
+    "native_sdf_authoritative": true,
+    "csv_or_mol2_not_substituted": true,
+    "rdkit_version": "2023.09.5",
+    "validation_used_as_reference": false
+  },
+  "ligand_input_aggregate_sha256": "7f161e10da9f9354b6deb9b1bb0b44428c7f6e8787f144b8f90a93c6e33ca1d0",
+  "invalid_ligand_reason_counts": {},
+  "outputs": {
+    "test_annotated": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104_coldstart_repaired_v3_20261106/test_annotated.json",
+      "sha256": "e23722b31b2fd2e0d6c0111bcfd8285f0df1f513b39b03d9c0d842ee4d372f55"
+    },
+    "identity_unknown": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104_coldstart_repaired_v3_20261106/identity_unknown.csv",
+      "sha256": "e5fb0163c2abd0d5c161b1c749f321660161035cde85279509fad86e1317bc4e"
+    },
+    "train_identity_index": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104_coldstart_repaired_v3_20261106/train_identity_index.jsonl",
+      "sha256": "23eca2756b30321d746a3caf8a264b3af429f0e49e04fd6e966b2bfd0c0baeef"
+    },
+    "four_train_identity_diagnostic": {
+      "path": "/home/user/wangzhiwen/GerNA-Bind/data/LP_PDBBind_random_v1_seed42_20261104_coldstart_repaired_v3_20261106/four_train_identity_diagnostic.json",
+      "sha256": "5e8066fea012c52cd517c33e961a45db897c0da1a6317d173420c5ee925fd21a"
+    }
+  },
+  "checks": {
+    "original_test_bytes_preserved_except_two_inserted_fields": true,
+    "test_label_values_decoded_or_used": false,
+    "complete_original_train_reference": true,
+    "original_split_and_payloads_unchanged": true,
+    "training_or_inference_executed": false
+  }
+}

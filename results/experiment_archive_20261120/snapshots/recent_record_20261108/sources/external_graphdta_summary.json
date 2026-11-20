@@ -1,0 +1,49 @@
+{
+  "adapter_sha256": "fa8cbf7f73b856d28d4cee7d2c4838c8d8ecbf1fe76820b0f6856a1b116c6bd4",
+  "model": "graphdta",
+  "new_test_manifest_read": false,
+  "output": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/graphdta",
+  "pretrained_task_checkpoint_loaded": false,
+  "protocol_sha256": "ab40709e0fd67c1d3cf8cffb015a6d0b5e1e15bc0d21a0101284851f57696c24",
+  "selection": {
+    "checkpoint": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/graphdta/best_model.pt",
+    "checkpoint_sha256": "84bab318cd0e1e90a016fb1ac6a2b570e3e1df5d274c31364ee9d89ff76c3007",
+    "epoch": 198,
+    "valid_predictions": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp-pdbbind-random-run-gpu6-20261104_212728/models/graphdta/valid_predictions.npz",
+    "valid_predictions_sha256": "d71ac7810f0aa2a864e0a2a56cadffa0826aadc40bbcc4bd093d6ca7be2a07e8",
+    "variant": "raw"
+  },
+  "split_seed": 42,
+  "status": "random_external_training_complete",
+  "test_used_for_selection": false,
+  "training_budget_args": [
+    "--model",
+    "gin",
+    "--epochs",
+    "300",
+    "--batch-size",
+    "256",
+    "--lr",
+    "0.0005",
+    "--weight-decay",
+    "0",
+    "--patience",
+    "30",
+    "--num-workers",
+    "4",
+    "--device",
+    "cuda"
+  ],
+  "training_seed": 42,
+  "training_source": {
+    "new_test_manifest_read": false,
+    "protocol_sha256": "ab40709e0fd67c1d3cf8cffb015a6d0b5e1e15bc0d21a0101284851f57696c24",
+    "protocol_version": "lp-pdbbind-random-v1",
+    "random_split_seed": 42,
+    "source_sha256": "e91bc3fb04242d2c7d2624e8ad118fb03dc4428a1bd368c90fc0bc89361c07e4",
+    "test_used_for_selection": false,
+    "train_count": 14502,
+    "val_count": 1813
+  },
+  "version": "lp-pdbbind-random-external-run-v1"
+}
