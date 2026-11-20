@@ -103,7 +103,8 @@ class InterfacePairBlockV13(nn.Module):
         self.residue_gate = nn.Sequential(nn.Linear(int(width), int(width)), nn.Sigmoid())
         self.ligand_gate = nn.Sequential(nn.Linear(int(width), int(width)), nn.Sigmoid())
 
-    def forward(self, residue, ligand, distance_features, pair_mask):
+    def forward(self, residue, ligand, distance_features, pair_mask,
+                interface_message=None, relation_inputs=None):
         pair_mask_float = pair_mask[..., None].to(residue.dtype)
         pair = (
             self.residue_pair(self.residue_norm(residue))[:, :, None, :]
@@ -112,6 +113,8 @@ class InterfacePairBlockV13(nn.Module):
         )
         pair = pair + self.transition(pair)
         pair = pair * pair_mask_float
+        if interface_message is not None:
+            pair = pair + interface_message(pair, relation_inputs, pair_mask)
         residue_message = _masked_mean(pair, pair_mask, dimension=2)
         ligand_message = _masked_mean(pair, pair_mask, dimension=1)
         residue = residue + self.residue_gate(residue) * self.residue_update(residue_message)
@@ -385,6 +388,10 @@ class MSAInterfaceExpertV13(MSAPairExpertV11):
         evolutionary = self.msa_pair_encoder(batch)
         return self._forward_with_evolutionary(batch, evolutionary)
 
+    def _fuse_molecule_latent(self, latent, batch):
+        """Default identity; molecule subclasses may opt in before the main head."""
+        return latent
+
     def _forward_with_evolutionary(self, batch, evolutionary):
         states, mask, token_types, gate = self._tokens(batch, evolutionary)
         pocket_count = batch["pocket_mask"].shape[1]
@@ -418,6 +425,7 @@ class MSAInterfaceExpertV13(MSAPairExpertV11):
         latent = self.latent_head(
             torch.cat((global_state, pocket_pool, ligand_pool), dim=-1)
         )
+        latent = self._fuse_molecule_latent(latent, batch)
         prediction = self.affinity_head(latent).squeeze(-1)
         affinity_class_logits = self.affinity_class_head(latent).squeeze(-1)
         contact_logits = torch.einsum(

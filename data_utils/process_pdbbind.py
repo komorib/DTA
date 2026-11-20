@@ -641,7 +641,7 @@ def build_dataset(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Convert PDBbind v2020.R1 protein-ligand data to GerNA-Bind-style pkl."
+        description="Convert PDBbind v2020.R1 protein-ligand data to DTA pickle format."
     )
     parser.add_argument("--pdbbind_dir", default="PDBbind")
     parser.add_argument("--output", default="data/pdbbind_protein_ligand.pkl")

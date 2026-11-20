@@ -295,6 +295,7 @@ def predict_model(model, dataset, config, label_mean, label_std, subsets=None):
     model.eval()
     prediction_runs = []
     latent_runs = []
+    fusion_feature_runs = []
     reference_keys = None
     reference_labels = None
     with torch.no_grad():
@@ -310,6 +311,8 @@ def predict_model(model, dataset, config, label_mean, label_std, subsets=None):
             labels = []
             predictions = []
             latents = []
+            fusion_features = []
+            exports_fusion_features = None
             for batch in loader:
                 keys.extend(batch["keys"])
                 labels.append(batch["labels"].numpy().astype(np.float64))
@@ -320,9 +323,20 @@ def predict_model(model, dataset, config, label_mean, label_std, subsets=None):
                 prediction = prediction * float(label_std) + float(label_mean)
                 predictions.append(prediction.astype(np.float64))
                 latents.append(output.latent.float().cpu().numpy().astype(np.float32))
+                has_fusion_features = hasattr(output, "fusion_features")
+                if exports_fusion_features is None:
+                    exports_fusion_features = has_fusion_features
+                elif exports_fusion_features != has_fusion_features:
+                    raise ValueError("model fusion-feature output changed within inference")
+                if has_fusion_features:
+                    fusion_features.append(
+                        output.fusion_features.float().cpu().numpy().astype(np.float32)
+                    )
             labels = np.concatenate(labels)
             predictions = np.concatenate(predictions)
             latents = np.concatenate(latents)
+            if exports_fusion_features:
+                fusion_features = np.concatenate(fusion_features)
             if reference_keys is None:
                 reference_keys = tuple(keys)
                 reference_labels = labels
@@ -330,17 +344,27 @@ def predict_model(model, dataset, config, label_mean, label_std, subsets=None):
                 raise ValueError("inference subset order changed")
             prediction_runs.append(predictions)
             latent_runs.append(latents)
+            if exports_fusion_features:
+                fusion_feature_runs.append(fusion_features)
+            elif fusion_feature_runs:
+                raise ValueError("model fusion-feature output changed across subsets")
     predictions = np.mean(np.stack(prediction_runs), axis=0)
     latents = np.mean(np.stack(latent_runs), axis=0).astype(np.float32)
     if not np.isfinite(predictions).all() or not np.isfinite(latents).all():
         raise RuntimeError("V18 prediction contains non-finite values")
-    return {
+    result = {
         "keys": reference_keys,
         "labels": reference_labels,
         "predictions": predictions,
         "latents": latents,
         "metrics": affinity_metrics(reference_labels, predictions),
     }
+    if fusion_feature_runs:
+        features = np.mean(np.stack(fusion_feature_runs), axis=0).astype(np.float32)
+        if not np.isfinite(features).all():
+            raise RuntimeError("V18 fusion-feature export contains non-finite values")
+        result["fusion_features"] = features
+    return result
 
 
 def _atomic_torch_save(value, path):
@@ -356,11 +380,12 @@ def _atomic_torch_save(value, path):
             os.unlink(temporary)
 
 
-def _load_pretrained_encoder(model, checkpoint_path):
+def _load_pretrained_encoder(model, checkpoint_path, checkpoint=None):
     checkpoint_path = Path(checkpoint_path).expanduser().resolve()
     if not checkpoint_path.is_file():
         raise FileNotFoundError("V18 pretraining checkpoint does not exist: %s" % checkpoint_path)
-    checkpoint = torch.load(str(checkpoint_path), map_location="cpu")
+    if checkpoint is None:
+        checkpoint = torch.load(str(checkpoint_path), map_location="cpu")
     if not isinstance(checkpoint, dict) or int(checkpoint.get("schema_version", -1)) != 1:
         raise ValueError("V18 pretraining checkpoint schema is invalid")
     encoder_state = checkpoint.get("encoder_state")
@@ -381,7 +406,7 @@ def _load_pretrained_encoder(model, checkpoint_path):
     }
 
 
-def _load_affinity_initialization(model, checkpoint_path):
+def _load_affinity_initialization(model, checkpoint_path, checkpoint=None):
     if checkpoint_path is None:
         return None
     checkpoint_path = Path(checkpoint_path).expanduser().resolve()
@@ -389,7 +414,8 @@ def _load_affinity_initialization(model, checkpoint_path):
         raise FileNotFoundError(
             "V18 affinity initialization does not exist: %s" % checkpoint_path
         )
-    checkpoint = torch.load(str(checkpoint_path), map_location="cpu")
+    if checkpoint is None:
+        checkpoint = torch.load(str(checkpoint_path), map_location="cpu")
     if not isinstance(checkpoint, dict) or int(checkpoint.get("schema_version", -1)) != 1:
         raise ValueError("V18 affinity initialization schema is invalid")
     source = checkpoint.get("model_state")
@@ -423,7 +449,18 @@ def _load_affinity_initialization(model, checkpoint_path):
     }
 
 
-def fit_msa_interface_expert(train_dataset, valid_dataset, output, config):
+def fit_msa_interface_expert(
+    train_dataset,
+    valid_dataset,
+    output,
+    config,
+    model_class=MSAInterfacePairPoolExpertV18,
+    model_kwargs_extra=None,
+    freeze_fusion_head=False,
+    model_version="msa-interface-pair-pooling-v18",
+    initial_model_state=None,
+    initialization_lineage=None,
+):
     _seed_everything(config.seed)
     output = Path(output).expanduser().resolve()
     output.mkdir(parents=True, exist_ok=True)
@@ -434,11 +471,25 @@ def fit_msa_interface_expert(train_dataset, valid_dataset, output, config):
         raise ValueError("training labels have zero or invalid variance")
     if not 0.0 < float(config.encoder_learning_rate_scale) <= 1.0:
         raise ValueError("encoder_learning_rate_scale must be in (0, 1]")
-    model = MSAInterfacePairPoolExpertV18(**config.model_kwargs())
-    affinity_initialization_lineage = _load_affinity_initialization(
-        model, config.affinity_initial_checkpoint
-    )
-    pretraining_lineage = _load_pretrained_encoder(model, config.pretrained_checkpoint)
+    model_kwargs = config.model_kwargs()
+    model_kwargs.update(model_kwargs_extra or {})
+    model = model_class(**model_kwargs)
+    if initial_model_state is None:
+        affinity_initialization_lineage = _load_affinity_initialization(
+            model, config.affinity_initial_checkpoint
+        )
+        pretraining_lineage = _load_pretrained_encoder(
+            model, config.pretrained_checkpoint
+        )
+    else:
+        model.load_state_dict(initial_model_state, strict=True)
+        lineage = dict(initialization_lineage or {})
+        affinity_initialization_lineage = lineage.get(
+            "affinity_initialization_lineage"
+        )
+        pretraining_lineage = lineage.get("pretraining_lineage")
+    if freeze_fusion_head and hasattr(model, "freeze_fusion_head"):
+        model.freeze_fusion_head()
     model = model.to(device)
     ema_model = deepcopy(model).to(device).eval()
     for parameter in ema_model.parameters():
@@ -448,7 +499,7 @@ def fit_msa_interface_expert(train_dataset, valid_dataset, output, config):
     task_parameters = [
         parameter
         for parameter in model.parameters()
-        if id(parameter) not in encoder_parameter_ids
+        if id(parameter) not in encoder_parameter_ids and parameter.requires_grad
     ]
     optimizer = torch.optim.AdamW(
         [
@@ -557,7 +608,9 @@ def fit_msa_interface_expert(train_dataset, valid_dataset, output, config):
             chosen_model = model if variant_name == "raw" else ema_model
             checkpoint = {
                 "schema_version": 1,
+                "model_version": str(model_version),
                 "config": asdict(config),
+                "model_kwargs": dict(model_kwargs),
                 "epoch": epoch,
                 "label_mean": label_mean,
                 "label_std": label_std,
@@ -565,7 +618,8 @@ def fit_msa_interface_expert(train_dataset, valid_dataset, output, config):
                 "pretraining_lineage": pretraining_lineage,
                 "affinity_initialization_lineage": affinity_initialization_lineage,
                 "model_state": {
-                    key: value.detach().cpu() for key, value in chosen_model.state_dict().items()
+                    key: value.detach().cpu().clone()
+                    for key, value in chosen_model.state_dict().items()
                 },
                 "variant": variant_name,
             }
@@ -581,7 +635,7 @@ def fit_msa_interface_expert(train_dataset, valid_dataset, output, config):
     with (output / "history.json").open("w", encoding="utf-8") as handle:
         json.dump(history, handle, indent=2, sort_keys=True)
         handle.write("\n")
-    selected_model = MSAInterfacePairPoolExpertV18(**config.model_kwargs()).to(device)
+    selected_model = model_class(**model_kwargs).to(device)
     selected_model.load_state_dict(best["checkpoint"]["model_state"])
     return selected_model, best["checkpoint"], history
 

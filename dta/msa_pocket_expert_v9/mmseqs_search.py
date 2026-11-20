@@ -239,7 +239,7 @@ def build_arg_parser():
     parser.add_argument("--query-fasta", required=True)
     parser.add_argument("--database-prefix", required=True)
     parser.add_argument("--output", required=True)
-    parser.add_argument("--mmseqs", default="/home/user/wangzhiwen/miniconda3/envs/msa_v9/bin/mmseqs")
+    parser.add_argument("--mmseqs", default="mmseqs")
     parser.add_argument("--threads", type=int, default=32)
     parser.add_argument("--sensitivity", type=float, default=8.0)
     parser.add_argument("--unpack", type=int, choices=(0, 1), default=1)

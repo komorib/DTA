@@ -28,12 +28,12 @@ def unique_key_index(samples, source_name):
     return index
 
 
-def validate_inventory(manifest_samples, gerna_index, interface_index):
+def validate_inventory(manifest_samples, source_index, interface_index):
     manifest_index = unique_key_index(manifest_samples, "canonical manifest")
     keys = list(manifest_index)
     for key in keys:
-        if key not in gerna_index:
-            raise ValueError(f"GerNA is missing key {key}")
+        if key not in source_index:
+            raise ValueError(f"source dataset is missing key {key}")
         if key not in interface_index:
             raise ValueError(f"interface is missing key {key}")
     return keys
@@ -61,7 +61,7 @@ class HybridAffinityDataset(torch.utils.data.Dataset):
     def __init__(
         self,
         manifest_samples,
-        gerna_dataset,
+        source_dataset,
         interface_dataset,
         label_tolerance=1e-6,
     ):
@@ -73,14 +73,14 @@ class HybridAffinityDataset(torch.utils.data.Dataset):
             raise ValueError("label_tolerance must be finite and nonnegative")
 
         self.samples = list(manifest_samples)
-        self.gerna_dataset = gerna_dataset
+        self.source_dataset = source_dataset
         self.interface_dataset = interface_dataset
-        self.gerna_index = unique_key_index(gerna_dataset.samples, "GerNA")
+        self.source_index = unique_key_index(source_dataset.samples, "source")
         self.interface_index = unique_key_index(
             interface_dataset.samples, "interface"
         )
         self.keys = validate_inventory(
-            self.samples, self.gerna_index, self.interface_index
+            self.samples, self.source_index, self.interface_index
         )
 
         labels = []
@@ -97,14 +97,14 @@ class HybridAffinityDataset(torch.utils.data.Dataset):
     def __getitem__(self, index):
         key = self.keys[index]
         label = float(self.labels[index])
-        gerna_item = self.gerna_dataset[self.gerna_index[key]]
+        source_item = self.source_dataset[self.source_index[key]]
         interface_item = self.interface_dataset[self.interface_index[key]]
 
-        if not isinstance(gerna_item, (tuple, list)) or len(gerna_item) <= 9:
+        if not isinstance(source_item, (tuple, list)) or len(source_item) <= 9:
             raise ValueError(
-                f"GerNA item for key {key} must be a tuple or list with label at index 9"
+                f"source item for key {key} must be a tuple or list with label at index 9"
             )
-        gerna_label = _scalar_label(gerna_item[9], "GerNA", key)
+        source_label = _scalar_label(source_item[9], "source", key)
 
         if not isinstance(interface_item, dict):
             raise ValueError(f"interface item for key {key} must be a dict")
@@ -115,7 +115,7 @@ class HybridAffinityDataset(torch.utils.data.Dataset):
         interface_label = _scalar_label(interface_item["label"], "interface", key)
 
         for source, actual in (
-            ("GerNA", gerna_label),
+            ("source", source_label),
             ("interface", interface_label),
         ):
             if abs(actual - label) > self.label_tolerance:
@@ -126,7 +126,7 @@ class HybridAffinityDataset(torch.utils.data.Dataset):
         return {
             "key": key,
             "label": label,
-            "gerna": gerna_item,
+            "source": source_item,
             "interface": interface_item,
         }
 

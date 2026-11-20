@@ -254,7 +254,7 @@ def normalize_dti_fusion_payload(payload, expected_protein_length=None):
             raise ValueError(f"DTI protein_tokens must have shape [L, D], got {protein_tokens.shape}")
         if expected_protein_length is not None and protein_tokens.shape[0] != int(expected_protein_length):
             raise ValueError(
-                "DTI protein_tokens length must match GerNA residue length: "
+                "DTI protein_tokens length must match source residue length: "
                 f"got {protein_tokens.shape[0]}, expected {int(expected_protein_length)}"
             )
         if protein_mask is None:
@@ -327,14 +327,14 @@ def normalize_ligand_unimol_payload(payload, expected_ligand_length=None):
     # Normalize every supported ligand-pretrain cache into the same contract:
     #   old Uni-Mol token cache: ligand_tokens [A, 512], ligand_mask [A]
     #   Uni-Mol2 token cache: ligand_tokens [A, 768], ligand_mask [A]
-    # A is the GerNA ligand atom count after optional alignment below.
+    # A is the source ligand atom count after optional alignment below.
     if isinstance(payload, (bytes, bytearray)) and is_embedding_cache_payload(payload):
         ligand_tokens, ligand_mask, _ = deserialize_embedding_cache_payload(bytes(payload))
         ligand_tokens = np.asarray(ligand_tokens, dtype=np.float32)
         ligand_mask = np.asarray(ligand_mask).astype(bool).reshape(-1)
         if expected_ligand_length is not None and ligand_tokens.shape[0] != int(expected_ligand_length):
             raise ValueError(
-                "Ligand Uni-Mol token length must match GerNA ligand atom length: "
+                "Ligand Uni-Mol token length must match source ligand atom length: "
                 f"got {ligand_tokens.shape[0]}, expected {int(expected_ligand_length)}"
             )
         if ligand_mask.shape[0] != ligand_tokens.shape[0]:
@@ -363,7 +363,7 @@ def normalize_ligand_unimol_payload(payload, expected_ligand_length=None):
         raise ValueError(f"Ligand Uni-Mol tokens must have shape [A, D], got {ligand_tokens.shape}")
     if expected_ligand_length is not None and ligand_tokens.shape[0] != int(expected_ligand_length):
         raise ValueError(
-            "Ligand Uni-Mol token length must match GerNA ligand atom length: "
+            "Ligand Uni-Mol token length must match source ligand atom length: "
             f"got {ligand_tokens.shape[0]}, expected {int(expected_ligand_length)}"
         )
     if ligand_mask is None:
@@ -377,8 +377,8 @@ def normalize_ligand_unimol_payload(payload, expected_ligand_length=None):
     return normalized
 
 
-def align_ligand_unimol_to_gerna_atoms(ligand_unimol, mol, expected_ligand_length):
-    # GerNA ligand atoms are the training-time atom order. Shape flow:
+def align_ligand_unimol_to_source_atoms(ligand_unimol, mol, expected_ligand_length):
+    # Source ligand atoms define the training-time atom order. Shape flow:
     #   already aligned: tokens [A, D] -> [A, D]
     #   heavy-atom cache: tokens [A_heavy, D] -> expanded_tokens [A_all, D]
     # If an external cache was extracted after removing H, features are placed on
@@ -391,25 +391,25 @@ def align_ligand_unimol_to_gerna_atoms(ligand_unimol, mol, expected_ligand_lengt
     atom_symbols = [atom.GetSymbol() for atom in mol.GetAtoms()]
     if tokens.shape[0] == expected_ligand_length:
         if cache_atoms is not None and cache_atoms != atom_symbols:
-            raise ValueError(f"Ligand Uni-Mol atom order mismatch: cache={cache_atoms[:20]} gerna={atom_symbols[:20]}")
+            raise ValueError(f"Ligand Uni-Mol atom order mismatch: cache={cache_atoms[:20]} source={atom_symbols[:20]}")
         ligand_unimol["ligand_tokens"] = tokens
         ligand_unimol["ligand_mask"] = mask
         return ligand_unimol
 
     if len(atom_symbols) != expected_ligand_length:
         raise ValueError(
-            "GerNA ligand atom count from RDKit mol does not match ligand feature length: "
+            "Source ligand atom count from RDKit mol does not match ligand feature length: "
             f"mol_atoms={len(atom_symbols)}, expected={expected_ligand_length}"
         )
     heavy_indices = [idx for idx, symbol in enumerate(atom_symbols) if symbol != "H"]
     heavy_symbols = [atom_symbols[idx] for idx in heavy_indices]
     if len(heavy_indices) != tokens.shape[0]:
         raise ValueError(
-            "Ligand Uni-Mol token length must match either GerNA all-atom length or GerNA heavy-atom length: "
+            "Ligand Uni-Mol token length must match either source all-atom length or source heavy-atom length: "
             f"got {tokens.shape[0]}, all_atoms {expected_ligand_length}, heavy_atoms {len(heavy_indices)}"
         )
     if cache_atoms is not None and cache_atoms != heavy_symbols:
-        raise ValueError(f"Ligand Uni-Mol heavy atom order mismatch: cache={cache_atoms[:20]} gerna={heavy_symbols[:20]}")
+        raise ValueError(f"Ligand Uni-Mol heavy atom order mismatch: cache={cache_atoms[:20]} source={heavy_symbols[:20]}")
 
     expanded_tokens = np.zeros((expected_ligand_length, tokens.shape[1]), dtype=np.float32)
     expanded_mask = np.zeros((expected_ligand_length,), dtype=bool)
@@ -1247,7 +1247,7 @@ class PDBbindLmdbDataset(data.Dataset):
             if ligand_payload is None:
                 raise KeyError(f"Ligand Uni-Mol LMDB key not found: {ligand_key}")
             ligand_unimol = normalize_ligand_unimol_payload(ligand_payload, expected_ligand_length=None)
-            ligand_unimol = align_ligand_unimol_to_gerna_atoms(
+            ligand_unimol = align_ligand_unimol_to_source_atoms(
                 ligand_unimol,
                 feature_item["ligand_features"]["mol"],
                 expected_ligand_length=len(mol_feats),
@@ -1262,7 +1262,7 @@ class PDBbindLmdbDataset(data.Dataset):
             if ligand_payload is None:
                 raise KeyError(f"Ligand Uni-Mol2 LMDB key not found: {ligand_key}")
             ligand_unimol2 = normalize_ligand_unimol_payload(ligand_payload, expected_ligand_length=None)
-            ligand_unimol2 = align_ligand_unimol_to_gerna_atoms(
+            ligand_unimol2 = align_ligand_unimol_to_source_atoms(
                 ligand_unimol2,
                 feature_item["ligand_features"]["mol"],
                 expected_ligand_length=len(mol_feats),

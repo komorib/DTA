@@ -1,1 +1,1 @@
-"""DTA/affinity regression extension for the protein-ligand GerNA-Bind adaptation."""
+"""Protein-ligand drug-target affinity regression models and utilities."""
