@@ -1,0 +1,2750 @@
+{
+  "blind_test": false,
+  "candidates": {
+    "3dprot": {
+      "archive_sha256": "778a813f3e388fffa6e453e0b0b57b4ff282ee1d776ad8815cc08235664a298a",
+      "common_count": 4291,
+      "common_metrics": {
+        "CI": 0.6457685958121125,
+        "MAE": 1.3530879176443646,
+        "Pearson": 0.4190609007658123,
+        "RMSE": 1.7778660424543682,
+        "Spearman": 0.41613529769574104
+      },
+      "native_count": 4730,
+      "native_coverage": 0.9955798779204378,
+      "native_metrics": {
+        "CI": 0.6465939991460092,
+        "MAE": 1.3452312410306226,
+        "Pearson": 0.42441895672199376,
+        "RMSE": 1.7618713920053082,
+        "Spearman": 0.41894821419666856
+      },
+      "provenance": {
+        "archive_sha256": "778a813f3e388fffa6e453e0b0b57b4ff282ee1d776ad8815cc08235664a298a",
+        "checkpoint_epoch": 390,
+        "checkpoint_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_ExternalFair_v1/3dprot_seed42/best_model.pt",
+        "checkpoint_sha256": "f24f1dd311d9d81e9843d64c3793ac2a146a04162a7ea4513724e669ab218c5e",
+        "excluded_count": 21,
+        "excluded_inputs": [
+          {
+            "lmdb_key": "1dmt_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "1h07_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "1tlp_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "2fou_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "2fov_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "3bwf_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "3kck_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "3qlb_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "3zp9_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "4ksy_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "4loh_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "4nxv_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "5aqk_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "6ak5_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "6apt_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "6aqo_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "6ar9_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "6hgs_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "6ipk_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "6ipm_protein",
+            "reason": "missing SMILES or PDBbind date"
+          },
+          {
+            "lmdb_key": "6mxc_protein",
+            "reason": "missing SMILES or PDBbind date"
+          }
+        ],
+        "excluded_key_sha256": "2e7a23ec98a03d62539a700735b482cf23052364a0b2f1473efd8a61ce2aa528",
+        "exported_count": 4730,
+        "exporter_sha256": "10bdde6df94841ed0c53fef847ef8b80e796d84e25f185575c859c0144dac580",
+        "fair_run_manifest_sha256": "556bed7e53a5f9f793378e3bc09ab9e5e2cb245b41d4088d4dc4cc42d13e2a6a",
+        "fair_source_sha256": "aeac31dd6306d6776a055e58ca572bf9d981d68af10a774e8997362faedeafd4",
+        "input_count": 4751,
+        "input_source_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+        "key_sha256": "2faf2a8b98d9130f6592adae196db583eee5e91637c8c37bcda4d5c037a585fe",
+        "missing_canonical_keys": [],
+        "model": "3DProtDTA",
+        "model_adapter_sha256": "3536bd92f4c6ce726a12b24bda6cb9617d3681576ef98eff6ddb6e5aa199e3b9",
+        "predicted_input_count": 4730,
+        "source_key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+        "source_keys_outside_canonical_manifest": [],
+        "split": "test",
+        "training_source_csv": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp_external_fair_source_v1/train_val.csv",
+        "training_source_sha256": "d57809d39cb68aa7ee84798ebe17b1366db44d6aa9dfab37b6e0bf5e9700f842",
+        "validation_manifest_sha256": null
+      }
+    },
+    "attentionmgt": {
+      "archive_sha256": "d0dbdbdd86fb87ecc0f4cff97048c69d7d584b170d13bbcbdf2a49b6d511f781",
+      "common_count": 4291,
+      "common_metrics": {
+        "CI": 0.5780460483708589,
+        "MAE": 1.3727032302348825,
+        "Pearson": 0.2399113641277599,
+        "RMSE": 1.7709954183035936,
+        "Spearman": 0.23303911773844838
+      },
+      "native_count": 4310,
+      "native_coverage": 0.9071774363291939,
+      "native_metrics": {
+        "CI": 0.5787537098333357,
+        "MAE": 1.370209214219361,
+        "Pearson": 0.24136156985207646,
+        "RMSE": 1.76838833833044,
+        "Spearman": 0.2351475561971694
+      },
+      "provenance": {
+        "archive_sha256": "d0dbdbdd86fb87ecc0f4cff97048c69d7d584b170d13bbcbdf2a49b6d511f781",
+        "checkpoint_epoch": 3,
+        "checkpoint_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_ExternalFair_v1/attentionmgt_seed42/best_model.pt",
+        "checkpoint_sha256": "29278893de4488179049b9957593e3ec35fbc3a1f6600bf38e8106b8a9f87111",
+        "excluded_count": 441,
+        "excluded_inputs": [
+          {
+            "lmdb_key": "1a46_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1ag9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1aw1_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1c1v_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1czq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1dhi_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1dhj_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1dmt_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "1e4h_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1e5a_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1g37_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1h07_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "1i7z_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1ii5_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1iig_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1iih_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1kv5_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1l5q_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1l5r_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1l5s_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1l7x_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1lcp_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1lzo_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1ml1_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1n0t_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1os0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1q3d_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1q3w_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1q4l_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1t4e_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1ths_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1tlp_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "1tmb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1tsi_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1udu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1uwh_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1uxa_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1uxb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1xxh_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "1xxi_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2cvd_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2drc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2e9v_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2ewb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2fb8_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2fou_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "2fov_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "2fpz_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2fs8_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2fs9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2fxr_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2gl0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2hz4_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2j27_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2j87_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2j9n_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2qg0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2r3c_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2r5b_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2r5d_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2rd6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2uw3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2uz6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2v2c_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2vcq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2vcw_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2vcx_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2vd0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2vd1_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2w1i_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2wd7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2wuf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2xdl_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2y8l_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2y8q_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2ybp_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2ybs_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2ye9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2yi0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2yi7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2ypi_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "2zdx_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ag9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3anq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3anr_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3axz_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3b25_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3bf1_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3bmo_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3bmq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3bwf_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "3c4e_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3cfn_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3d4q_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3dne_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3duy_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ee2_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3fl8_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ft5_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3h06_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3h0z_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3h9f_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3i4b_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3idp_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ii5_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ik3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3jpv_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3jq7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3jq9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3jqb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3jqg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3k41_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3k5f_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3kck_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "3kga_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3kgu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3kr4_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3kr8_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3kwb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3l1s_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3l3l_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ldq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3m1s_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3m6p_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3m6r_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ma3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3miy_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3nex_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3p23_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ppk_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3prf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3psb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3psd_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3qbh_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3qlb_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "3qri_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3qrj_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3std_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3t8w_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3ua9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3v3v_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3v5j_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3v5l_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3v8t_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3v8w_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3vhd_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3vi7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3wi6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3wmb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3x1k_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3zh8_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3zlq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "3zp9_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "4abu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4abv_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4aje_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4aji_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ajn_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ajo_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4al4_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4avu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4avw_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4awp_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4awq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4azi_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4bg1_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4bgk_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4bgm_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4bhf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4bhi_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4bi7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4bj9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4bs4_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4c35_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4c5w_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4c8r_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ch2_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4cwf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4cy1_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4d7b_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4e6q_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4elb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ele_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4elf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4elg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4elh_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4erq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4erz_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4esg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4fcq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4fcr_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4g9c_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4h3b_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4h58_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4hki_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4hlg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4hlh_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4hlk_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4hlm_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4i8x_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4i9h_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4io2_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4io3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4io4_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4io5_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4io7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4iq6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4j3m_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4je7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4k66_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4kp4_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ksy_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "4kzl_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4kzq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4kzu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l09_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l0b_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l0i_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l0s_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l0t_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l0v_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l10_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l2f_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l2g_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l2k_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l31_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l32_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l33_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4l34_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4lkg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4loh_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "4loo_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4lop_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4loq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4mcd_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4n1u_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4nct_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4nxu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4nxv_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "4oag_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4pp9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ptc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4pte_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ptg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4qkd_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4qp6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4qpa_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4r5y_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4r6t_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4r7m_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4std_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4tim_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4tju_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4tjy_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4tk0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4tkg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4trz_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4tvj_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ufu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ufy_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4uhg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ui3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ui7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4uvu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4uvv_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4uvx_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ux4_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ux9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4uxj_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4wbo_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4wpf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4x11_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4xip_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4xiq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4xj0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4xqu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4xs2_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4xv2_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4xv3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4y73_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4yb6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4yha_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4yht_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4yo6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4yz9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4zfi_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4zki_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4zla_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ztl_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ztm_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4ztn_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4zx6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4zx8_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4zx9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "4zy2_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5a3x_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5a4e_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5a6b_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5a6i_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5adq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5adr_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5ads_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5adt_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5akw_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5al1_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5al3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5al4_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5al5_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5aqg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5aqk_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "5ayt_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5c26_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5c4l_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5cbm_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5ct7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5dex_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5dqc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5fnc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5fwj_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5g2b_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5hln_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5htl_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5hv0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5j64_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5j6l_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5j6m_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5j6n_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5j82_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5j86_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5j8m_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5j9x_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5jid_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5jim_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5jsm_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5k76_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5kx8_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5l8c_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5l8y_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5lx6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5lxc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5lxd_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5ly2_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5mf6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5mkx_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5mme_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5mql_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5mqt_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5ngu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nih_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nsx_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nt0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nut_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nvc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nve_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nvf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nvh_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nwb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nwc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nwd_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nyh_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nzf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5nzn_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5ofu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5ot3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5ou3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5q0o_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5q10_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5q12_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5std_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5t1s_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5t1t_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5tt3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5tt8_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5tv3_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5vgi_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5vih_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5w85_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "5ztn_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6aah_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6ak5_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "6apt_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "6aqo_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "6ar9_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "6axq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6b8u_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6cve_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6cvf_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6czb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6czc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6e05_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6e06_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6e3z_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6ee2_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6eee_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6eiq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6eis_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6f3d_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6f3e_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6f3g_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6fcl_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6fe0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6fzu_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6g02_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6gnm_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6gnp_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6gnr_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6gnw_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6gr7_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6grp_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6h4r_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6hgr_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6hgs_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "6hoy_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6hp0_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6ilz_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6ipk_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "6ipm_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "6mh1_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6mom_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6mxc_protein",
+            "reason": "invalid SMILES: "
+          },
+          {
+            "lmdb_key": "6n0p_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6n0q_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6nsq_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6o8u_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6o9d_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6od6_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6q36_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6qau_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6qfg_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6qfh_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6qh9_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6qha_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6qhb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6qhc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6rfw_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6skb_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6skc_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6skd_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "6std_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "7std_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          },
+          {
+            "lmdb_key": "830c_protein",
+            "reason": "AttentionMGT fair input forbids an unmatched residue zero embedding"
+          }
+        ],
+        "excluded_key_sha256": "4a644630970d4b481baaec16261358b96ea6bb9f911530c295ecc4bc14ea9213",
+        "exported_count": 4310,
+        "exporter_sha256": "185ac7a2cd41bbd66c53c1bf8d7d88992987902a4a594344d5611256b114099e",
+        "fair_run_manifest_sha256": "0cebd62e15c031f6c53cf88d280c8193a15ab726f16eec385d877455d0f6593f",
+        "fair_source_sha256": "86462eda2454644adb2feda0609981159206e9c32b9b21b501ec603af766a05a",
+        "input_count": 4751,
+        "input_source_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+        "key_sha256": "196ad940b7ffad44f33dc93a973fc1ee42a665fb1a87f67da62203286a71b27d",
+        "missing_canonical_keys": [],
+        "model": "AttentionMGT-DTA",
+        "model_adapter_sha256": "05f9581dfb38e6e104b6c98c42c145f45605d5f291e379c01c717ba060bc8805",
+        "predicted_input_count": 4310,
+        "source_key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+        "source_keys_outside_canonical_manifest": [],
+        "split": "test",
+        "test_esm_data_mdb_sha256": "2dd4e1b7e88860a86dc66c74148f67e7229acb59c25813142189a289f210a76b",
+        "test_labels_read": false,
+        "training_esm_data_mdb_sha256": "b61e11129ed0382171c36ca2f0f5e373d3dcd3317fd30b3f26b72c2bbcc85181",
+        "training_source_csv": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp_external_fair_source_v1/train_val.csv",
+        "training_source_sha256": "d57809d39cb68aa7ee84798ebe17b1366db44d6aa9dfab37b6e0bf5e9700f842",
+        "validation_manifest_sha256": null
+      }
+    },
+    "caster": {
+      "archive_sha256": "c779a3e3a354471416b724fa7ca61092c561baa1ceb2a535bad0d65308d8ea71",
+      "common_count": 4291,
+      "common_metrics": {
+        "CI": 0.6606125916421808,
+        "MAE": 1.2194456664467437,
+        "Pearson": 0.48248064936116436,
+        "RMSE": 1.524568366013896,
+        "Spearman": 0.4660944874366712
+      },
+      "native_count": 4687,
+      "native_coverage": 0.9865291517575248,
+      "native_metrics": {
+        "CI": 0.6639514213681545,
+        "MAE": 1.2152125186993414,
+        "Pearson": 0.4897003146151181,
+        "RMSE": 1.519898695720267,
+        "Spearman": 0.4752493959035689
+      },
+      "provenance": {
+        "archive_sha256": "c779a3e3a354471416b724fa7ca61092c561baa1ceb2a535bad0d65308d8ea71",
+        "checkpoint_epoch": 21,
+        "checkpoint_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_ExternalFair_v1/caster_seed42/best_model.pt",
+        "checkpoint_sha256": "690509fe91bf8c7e3a97c5a438f4808d298dfcb010dc87895466041ae178d02c",
+        "excluded_count": 64,
+        "excluded_inputs": [
+          {
+            "lmdb_key": "1dmt_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "1h07_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "1tlp_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "2fou_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "2fov_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "3bwf_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "3kck_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "3qlb_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "3zp9_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "4ksy_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "4loh_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "4nxv_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "5aqk_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "6ak5_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "6apt_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "6aqo_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "6ar9_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "6hgs_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "6ipk_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "6ipm_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "6mxc_protein",
+            "reason": "missing structure, sequence, or SMILES"
+          },
+          {
+            "lmdb_key": "1czq_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "1ftj_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "1ftk_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "1ftl_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "1ftm_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "1fw0_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "1ms7_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "2hz0_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "2oq6_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "2r3c_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "2r5b_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "2r5d_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "3nyn_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "3pa4_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4avu_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4avw_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4bs4_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4idz_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4im0_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4nhx_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4nhy_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4ufu_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4ufy_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4uhg_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4uvu_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4uvv_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4uvx_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4xs2_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4ztl_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "4ztn_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5aku_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5akw_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5al1_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5al2_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5al3_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5al4_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5al5_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5f3e_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5kx8_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "5ou3_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "6h4r_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "6h4t_protein",
+            "reason": "upstream graph preparation excluded pair"
+          },
+          {
+            "lmdb_key": "6h4y_protein",
+            "reason": "upstream graph preparation excluded pair"
+          }
+        ],
+        "excluded_key_sha256": "ca8bd466fd213ee09d61a77646cb2daceadda462910cbf884d4b1a80946ac6a6",
+        "exported_count": 4687,
+        "exporter_sha256": "5d908d8f9a9efbb69bbda5dc4157bc455dc3221ca8f5c3456e70bd7e497e5b43",
+        "fair_run_manifest_sha256": "ec70c033dafc559f9383c0b569d21c2ad44b23f89f34e823ec831c7d3deb3db4",
+        "fair_source_sha256": "095f6c69bc2534bd4b3489aa2c9af7550dcd51b539dafba1fac4720825205a8c",
+        "input_count": 4751,
+        "input_source_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+        "key_sha256": "e9c74b4f9543b6520baf5a2b6feda7b41ed2d3020b274feb300df4a49621ce1c",
+        "missing_canonical_keys": [],
+        "model": "CASTER_DTA_JointGNN",
+        "model_adapter_sha256": "442833d84706a46a4a1e2c7120b3dd0c646bbaafe1e654a7c7c5be1da50c183a",
+        "model_kwargs_sha256": "121166ce5a33151d4fa3c41b670f448b2f7b1fea92c31f0929444840ecc3675b",
+        "predicted_input_count": 4687,
+        "source_key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+        "source_keys_outside_canonical_manifest": [],
+        "split": "test",
+        "test_placeholder_affinity": 0.0,
+        "training_cache_sha256": {
+          "train_val_graph_cache": "b5985c7d5ebd6ffab578bc7a4414ba94920040b0af79d769ac843f9defacb1ab",
+          "training_dataframe": "867ca030f6cb41f2f816171776fbbd49f1e6fc33e1c5f8e7678083b86e1d230a"
+        },
+        "training_source_csv": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp_external_fair_source_v1/train_val.csv",
+        "training_source_sha256": "d57809d39cb68aa7ee84798ebe17b1366db44d6aa9dfab37b6e0bf5e9700f842",
+        "validation_manifest_sha256": null
+      }
+    },
+    "deepdtagen": {
+      "archive_sha256": "1faaf15fe1cb276c2f234220d6e71cc4f38f79424b7207ff24faa5431db7fafe",
+      "common_count": 4291,
+      "common_metrics": {
+        "CI": 0.6131921485172075,
+        "MAE": 1.3627012538265386,
+        "Pearson": 0.35481931424845287,
+        "RMSE": 1.7252656677809763,
+        "Spearman": 0.3298025045001476
+      },
+      "native_count": 4730,
+      "native_coverage": 0.9955798779204378,
+      "native_metrics": {
+        "CI": 0.6153880537781019,
+        "MAE": 1.3537596593679384,
+        "Pearson": 0.35846986533235903,
+        "RMSE": 1.7172300076380842,
+        "Spearman": 0.3366315536158297
+      },
+      "provenance": {
+        "archive_sha256": "1faaf15fe1cb276c2f234220d6e71cc4f38f79424b7207ff24faa5431db7fafe",
+        "checkpoint_epoch": 44,
+        "checkpoint_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_ExternalFair_v1/deepdtagen_seed42/best_model.pt",
+        "checkpoint_sha256": "5af5e4b458fc515ed9871c21517344bfeb45285a69172a0bb313ac54ed3aceec",
+        "different_label_affinity_witness_max_delta": 0.0,
+        "excluded_count": 21,
+        "excluded_inputs": [
+          {
+            "lmdb_key": "1dmt_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "1h07_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "1tlp_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "2fou_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "2fov_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "3bwf_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "3kck_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "3qlb_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "3zp9_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "4ksy_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "4loh_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "4nxv_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "5aqk_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6ak5_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6apt_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6aqo_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6ar9_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6hgs_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6ipk_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6ipm_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6mxc_protein",
+            "reason": "missing SMILES or protein sequence"
+          }
+        ],
+        "excluded_key_sha256": "2e7a23ec98a03d62539a700735b482cf23052364a0b2f1473efd8a61ce2aa528",
+        "exported_count": 4730,
+        "exporter_sha256": "b22365d743f047d46d50e28133ce943fbe9f1a2b468c240b667c8a68c053f639",
+        "fair_run_manifest_sha256": "231432e2e5b0a5692cf844e61650b9e5270292a998f49ea0f20b0047b41320aa",
+        "fair_source_sha256": "aeac31dd6306d6776a055e58ca572bf9d981d68af10a774e8997362faedeafd4",
+        "input_count": 4751,
+        "input_source_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+        "key_sha256": "2faf2a8b98d9130f6592adae196db583eee5e91637c8c37bcda4d5c037a585fe",
+        "label_free_affinity_witness_max_delta": 0.0,
+        "missing_canonical_keys": [],
+        "model": "DeepDTAGen",
+        "model_adapter_sha256": "ecf5cf26b7ad6c63a7ba2867fd5bf3523b81540d3ac8e244e0344b55d4ca106d",
+        "predicted_input_count": 4730,
+        "source_key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+        "source_keys_outside_canonical_manifest": [],
+        "split": "test",
+        "tokenizer_sha256": "40acbd0e7f5323ed9648ea69cefdaa68456bda83683f75429740fe164cc2b1f5",
+        "training_source_csv": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp_external_fair_source_v1/train_val.csv",
+        "training_source_sha256": "d57809d39cb68aa7ee84798ebe17b1366db44d6aa9dfab37b6e0bf5e9700f842",
+        "validation_manifest_sha256": null
+      }
+    },
+    "fullchain_all_v2_aligned": {
+      "archive_sha256": "b5e21d1a5e174d9d1566b57dd749daebfd66ac5058d205713dc907e8b775b37b",
+      "common_count": 4291,
+      "common_metrics": {
+        "CI": 0.6938742034288623,
+        "MAE": 1.1090514226805739,
+        "Pearson": 0.5848848952932176,
+        "RMSE": 1.411700889343566,
+        "Spearman": 0.5502581954851743
+      },
+      "native_count": 4751,
+      "native_coverage": 1.0,
+      "native_metrics": {
+        "CI": 0.6941909702391776,
+        "MAE": 1.117604007406011,
+        "Pearson": 0.5825685882502712,
+        "RMSE": 1.4171580943541802,
+        "Spearman": 0.552058753237098
+      },
+      "provenance": {
+        "archive_sha256": "b5e21d1a5e174d9d1566b57dd749daebfd66ac5058d205713dc907e8b775b37b",
+        "checkpoint_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainESMMSAAll_v2/fullchain_all_pair_b16_20261002_152353/aligned_msa/best.pt",
+        "checkpoint_sha256": "da4f99714113525be239811e7068bf73219d0e474e580a51e83db0e3056852f7",
+        "exported_count": 4751,
+        "feature_metadata_sha256": "3ecde6092c73a07ed571016d0d14c111b9e35688b3fc7d4e40746954b3daa879",
+        "feature_preflight_sha256": "b25a429238401a4396e2e82207c127c99841a3ae281fb3ffae1fd917cb4831a1",
+        "geometry_source_sha256": "16182da923f66684dac7009832206510a0f30e42a8b1792cf6901e44cf984082",
+        "key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+        "legacy_source_record_may_contain_affinity": true,
+        "local_msa_input": false,
+        "mode": "aligned_msa",
+        "model": "lp-pdbbind-fullchain-esm-msa-all-v2",
+        "model_source_sha256": "7fa7bb9dd0cac75e9403fdb780687dd925857eb1ec102305d842223177ca192f",
+        "producer_sha256": "3b6cc9a02ba3591466724f6071be1276960556282a795f59c347ebd6274b8cbf",
+        "released_input_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+        "selection_sha256": "62cc9071350f616fa6d9196f140ab876dadb8606addd66c9cfe02ba70d1a00c9",
+        "source_affinity_field_used": false,
+        "source_lmdb": "/home/user/wangzhiwen/GerNA-Bind/data/PDBbind_chain_lmdb_esm_gernabind_v2",
+        "source_manifest_sha256": "4f212b050eeb4e658d8438af9f6d09d516ff5c763832a616ff1b27c1537618a4",
+        "split": "test",
+        "status": "label_free_single_model_test_export_complete",
+        "test_label_values_used_for_model_input": false,
+        "test_labels_read": false,
+        "test_manifest_read": false,
+        "test_used_for_selection": false,
+        "training_run": false
+      }
+    },
+    "graphdta": {
+      "archive_sha256": "34a2a9a4a234010de1d633f7a0ce3c3c7dd8cc0c38a1f21b851c408f0c2ad7b6",
+      "common_count": 4291,
+      "common_metrics": {
+        "CI": 0.6487791901755573,
+        "MAE": 1.2709084400122772,
+        "Pearson": 0.3961975943217237,
+        "RMSE": 1.6115084987340422,
+        "Spearman": 0.43815980993232506
+      },
+      "native_count": 4730,
+      "native_coverage": 0.9955798779204378,
+      "native_metrics": {
+        "CI": 0.6489626487556968,
+        "MAE": 1.2723167561698412,
+        "Pearson": 0.39765169450175875,
+        "RMSE": 1.6106754126003897,
+        "Spearman": 0.43849947158967534
+      },
+      "provenance": {
+        "archive_sha256": "34a2a9a4a234010de1d633f7a0ce3c3c7dd8cc0c38a1f21b851c408f0c2ad7b6",
+        "checkpoint_epoch": 3,
+        "checkpoint_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_ExternalFair_v1/graphdta_seed42/best_model.pt",
+        "checkpoint_sha256": "13add9d912d267e010a9f15b66eed73408498661cc313f7a3e555ea0bee606c5",
+        "excluded_count": 21,
+        "excluded_inputs": [
+          {
+            "lmdb_key": "1dmt_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "1h07_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "1tlp_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "2fou_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "2fov_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "3bwf_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "3kck_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "3qlb_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "3zp9_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "4ksy_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "4loh_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "4nxv_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "5aqk_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6ak5_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6apt_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6aqo_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6ar9_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6hgs_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6ipk_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6ipm_protein",
+            "reason": "missing SMILES or protein sequence"
+          },
+          {
+            "lmdb_key": "6mxc_protein",
+            "reason": "missing SMILES or protein sequence"
+          }
+        ],
+        "excluded_key_sha256": "2e7a23ec98a03d62539a700735b482cf23052364a0b2f1473efd8a61ce2aa528",
+        "exported_count": 4730,
+        "exporter_sha256": "eb46e40738857a6d75e44e20dc59c1389c07c231ced32ba7790ccd71331c6cbe",
+        "fair_run_manifest_sha256": "c032ee157176c23cbdcc0fcc6b3acb33be27b9f647005b929e673aca10a2e965",
+        "fair_source_sha256": "aeac31dd6306d6776a055e58ca572bf9d981d68af10a774e8997362faedeafd4",
+        "input_count": 4751,
+        "input_source_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+        "key_sha256": "2faf2a8b98d9130f6592adae196db583eee5e91637c8c37bcda4d5c037a585fe",
+        "missing_canonical_keys": [],
+        "model": "GraphDTA_GIN",
+        "model_adapter_sha256": "3417add41281ccc2c783bf7dfe0c59a3618ef71964fa43944644c7b259b83274",
+        "predicted_input_count": 4730,
+        "source_key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+        "source_keys_outside_canonical_manifest": [],
+        "split": "test",
+        "training_source_csv": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp_external_fair_source_v1/train_val.csv",
+        "training_source_sha256": "d57809d39cb68aa7ee84798ebe17b1366db44d6aa9dfab37b6e0bf5e9700f842",
+        "validation_manifest_sha256": null
+      }
+    },
+    "tankbind": {
+      "archive_sha256": "698b85b39b016ce741149a74716b1a89b630d117fbc46783ec6fc348880ca617",
+      "common_count": 4291,
+      "common_metrics": {
+        "CI": 0.6834562928575102,
+        "MAE": 1.2553886650314812,
+        "Pearson": 0.5595313545637388,
+        "RMSE": 1.594228798371676,
+        "Spearman": 0.5247010695511568
+      },
+      "native_count": 4751,
+      "native_coverage": 1.0,
+      "native_metrics": {
+        "CI": 0.6840004984163195,
+        "MAE": 1.2603442164276355,
+        "Pearson": 0.5596852195750994,
+        "RMSE": 1.5997045776969498,
+        "Spearman": 0.5261028703098517
+      },
+      "provenance": {
+        "archive_sha256": "698b85b39b016ce741149a74716b1a89b630d117fbc46783ec6fc348880ca617",
+        "checkpoint_epoch": 65,
+        "checkpoint_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_ExternalFair_v1/tankbind_seed42/best_model.pt",
+        "checkpoint_sha256": "b86ed13de6ce10cd3df87848f3576e284a4ab7394deb79aca89e1a4e18dd4145",
+        "excluded_count": 0,
+        "excluded_inputs": [],
+        "excluded_key_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "exported_count": 4751,
+        "exporter_sha256": "6e725e63657ab084aae690e1f545c11fc5f224298f7467375a50386fe1fd6be3",
+        "fair_run_manifest_sha256": "7d7b2d4c602e9818ba0a698fdcd499b6e8f602863df79d60487de039bb4ee8c1",
+        "fair_source_sha256": "aeac31dd6306d6776a055e58ca572bf9d981d68af10a774e8997362faedeafd4",
+        "input_count": 4751,
+        "input_source_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+        "key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+        "missing_canonical_keys": [],
+        "model": "TankBind_mode0",
+        "model_adapter_sha256": "add56c2e018b375a9badcad56d7ef70cd0f68b8ed9a34da6523a9b5c8931107b",
+        "predicted_input_count": 4751,
+        "source_key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+        "source_keys_outside_canonical_manifest": [],
+        "split": "test",
+        "test_placeholder_affinity": 0.0,
+        "training_cache_sha256": {},
+        "training_source_csv": "/home/user/wangzhiwen/GerNA-Bind/.codex_runtime/lp_external_fair_source_v1/train_val.csv",
+        "training_source_sha256": "d57809d39cb68aa7ee84798ebe17b1366db44d6aa9dfab37b6e0bf5e9700f842",
+        "validation_manifest_sha256": null
+      }
+    }
+  },
+  "canonical_count": 4751,
+  "common_count": 4291,
+  "common_key_sha256": "c4a475c98d08b6c347c8fc0c4298c7d2c4197e7400bc47733b7c98087df0517f",
+  "dataset": "LP-PDBBind",
+  "independent_single_model_reference": "fullchain_all_v2_aligned",
+  "input_strata": {
+    "3dprot": [
+      "protein_structure",
+      "ligand_smiles_graph"
+    ],
+    "attentionmgt": [
+      "pocket_structure",
+      "pretrained_esm2_8m_input",
+      "ligand_smiles_graph"
+    ],
+    "caster": [
+      "protein_structure",
+      "ligand_smiles_graph"
+    ],
+    "deepdtagen": [
+      "protein_sequence",
+      "ligand_smiles_graph"
+    ],
+    "fullchain_all_v2_aligned": [
+      "protein_structure",
+      "precomputed_fullchain_esm",
+      "precomputed_windowed_aligned_msa",
+      "ligand_structure"
+    ],
+    "graphdta": [
+      "protein_sequence",
+      "ligand_smiles_graph"
+    ],
+    "tankbind": [
+      "protein_structure",
+      "native_ligand_pose",
+      "native_binding_site"
+    ]
+  },
+  "interpretation": "Retrospective common-key comparison, not blind and not an equal-input architecture ranking; seven candidates have different native coverage and training pools. The independent reference is one clean-start network with pretrained ESM/MSA inputs, not the V20 fusion system. Legacy chain LMDB records may contain an affinity field, but the test input paths do not access it for predictions or selection.",
+  "manifest_sha256": "f8741d40837568c552ca0bd3725e0b079ba855d56d2a663c0bb95c4bc09c95b8",
+  "sealed_six_external_comparison": true,
+  "sealed_six_provenance": {
+    "frozen_validation_exports": {
+      "3dprot": {
+        "archive_sha256": "06b72b5d1dd20110eece89cd30ce3469427b6ca8157c65e1dc13814157ede980",
+        "count": 2326
+      },
+      "attentionmgt": {
+        "archive_sha256": "29560aac3d6119ceb00a74b0733f54a318f3d4d962383bee09cd77c7fedb030b",
+        "count": 2115
+      },
+      "caster": {
+        "archive_sha256": "b31016433efcac13bf96e4948dbe6d3a7b089d5f82c7d75bf3c0c539fce7c108",
+        "count": 2316
+      },
+      "deepdtagen": {
+        "archive_sha256": "09b8354a09a847dffa6a29ae70874a7bac768f1f85532373b7fa6a28fa09fc8b",
+        "count": 2326
+      },
+      "graphdta": {
+        "archive_sha256": "a8a6c59222cfdfb2d927c00bc078ccf1a2f9045fae2ba3f8a38cfd0e6d55feb6",
+        "count": 2326
+      },
+      "tankbind": {
+        "archive_sha256": "06a4da558fc57d588de0a9ce79f631855ffdd8a3bf0ffd3c20d17ac4117e58a2",
+        "count": 2324
+      }
+    },
+    "input_strata": {
+      "3dprot": [
+        "protein_structure",
+        "ligand_smiles_graph"
+      ],
+      "attentionmgt": [
+        "pocket_structure",
+        "pretrained_esm2_8m_input",
+        "ligand_smiles_graph"
+      ],
+      "caster": [
+        "protein_structure",
+        "ligand_smiles_graph"
+      ],
+      "deepdtagen": [
+        "protein_sequence",
+        "ligand_smiles_graph"
+      ],
+      "graphdta": [
+        "protein_sequence",
+        "ligand_smiles_graph"
+      ],
+      "tankbind": [
+        "protein_structure",
+        "native_ligand_pose",
+        "native_binding_site"
+      ]
+    },
+    "release_csv_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+    "release_manifest_sha256": "f8741d40837568c552ca0bd3725e0b079ba855d56d2a663c0bb95c4bc09c95b8"
+  },
+  "single_model_provenance": {
+    "archive_sha256": "b5e21d1a5e174d9d1566b57dd749daebfd66ac5058d205713dc907e8b775b37b",
+    "checkpoint_path": "/home/user/wangzhiwen/GerNA-Bind/Model/LP_PDBBind_FullChainESMMSAAll_v2/fullchain_all_pair_b16_20261002_152353/aligned_msa/best.pt",
+    "checkpoint_sha256": "da4f99714113525be239811e7068bf73219d0e474e580a51e83db0e3056852f7",
+    "exported_count": 4751,
+    "feature_metadata_sha256": "3ecde6092c73a07ed571016d0d14c111b9e35688b3fc7d4e40746954b3daa879",
+    "feature_preflight_sha256": "b25a429238401a4396e2e82207c127c99841a3ae281fb3ffae1fd917cb4831a1",
+    "geometry_source_sha256": "16182da923f66684dac7009832206510a0f30e42a8b1792cf6901e44cf984082",
+    "key_sha256": "f3ee30f57dfb0d2198040e64a129235dce93b4880a5dc637bbd708c30c37a6b5",
+    "legacy_source_record_may_contain_affinity": true,
+    "local_msa_input": false,
+    "mode": "aligned_msa",
+    "model": "lp-pdbbind-fullchain-esm-msa-all-v2",
+    "model_source_sha256": "7fa7bb9dd0cac75e9403fdb780687dd925857eb1ec102305d842223177ca192f",
+    "producer_sha256": "3b6cc9a02ba3591466724f6071be1276960556282a795f59c347ebd6274b8cbf",
+    "released_input_sha256": "86abb653714b3accdde20294129adcbd32685329345a1ed76151b1f16bc91a7e",
+    "selection_sha256": "62cc9071350f616fa6d9196f140ab876dadb8606addd66c9cfe02ba70d1a00c9",
+    "source_affinity_field_used": false,
+    "source_lmdb": "/home/user/wangzhiwen/GerNA-Bind/data/PDBbind_chain_lmdb_esm_gernabind_v2",
+    "source_manifest_sha256": "4f212b050eeb4e658d8438af9f6d09d516ff5c763832a616ff1b27c1537618a4",
+    "split": "test",
+    "status": "label_free_single_model_test_export_complete",
+    "test_label_values_used_for_model_input": false,
+    "test_labels_read": false,
+    "test_manifest_read": false,
+    "test_used_for_selection": false,
+    "training_run": false
+  },
+  "split": "test",
+  "status": "retrospective_common_key_evaluation_complete"
+}

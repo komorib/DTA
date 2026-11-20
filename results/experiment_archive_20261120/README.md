@@ -17,9 +17,17 @@ a branch for future result reports. The model and training code remain on the
   cold-start test results grouped by test cohort.
 - `reports/LP_PDBBind_modality_ablation_official_v1_report.md`: original five
   official-split ablation protocol and validation results.
+- `reports/LP_PDBBind_external_model_comparison_20261120.md`: external model
+  comparison, including native historical scores and common-key validation/test
+  recomputation.
+- `reports/LP_PDBBind_external_fair_test_plan.md`: sealed external-model
+  protocol and provenance boundary.
 - `reports/pdbbind_protein_ligand_experiment_record.md`: earlier PDBbind
   protein-ligand setup and experiment record.
 - `snapshots/`: aggregate JSON/CSV evidence and historical source summaries.
+
+The external-model aggregate seal is stored at
+`snapshots/external_models/sealed_seven_test_20261017.json`.
 
 The snapshots contain aggregate metrics and protocol metadata only. Model
 checkpoints, feature caches, datasets, logs, and per-example prediction arrays

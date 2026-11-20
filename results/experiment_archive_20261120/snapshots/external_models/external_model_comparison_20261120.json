@@ -1,0 +1,50 @@
+{
+  "version": "lp-pdbbind-external-model-comparison-20261120",
+  "blind_test": false,
+  "scope": [
+    "3DProtDTA",
+    "GraphDTA GIN",
+    "DeepDTAGen",
+    "TankBind",
+    "CASTER-DTA",
+    "AttentionMGT-DTA"
+  ],
+  "historical_native_test": {
+    "full_model_early_fusion": {
+      "count": 4751,
+      "CI": 0.691291,
+      "RMSE": 1.442721,
+      "MAE": 1.142213,
+      "Pearson": 0.569881,
+      "Spearman": 0.545449
+    },
+    "3DProtDTA": {"count": 4775, "CI": 0.696331, "RMSE": 1.707948, "MAE": 1.328884, "Pearson": 0.436531, "Spearman": 0.413826},
+    "TankBind": {"count": 4775, "CI": 0.680960, "RMSE": 1.673226, "MAE": null, "Pearson": 0.544692, "Spearman": 0.517133},
+    "CASTER-DTA": {"count": 4732, "CI": 0.651060, "RMSE": 1.575569, "MAE": null, "Pearson": 0.461938, "Spearman": 0.441575},
+    "GraphDTA_GIN": {"count": 4838, "CI": 0.639861, "RMSE": 1.654261, "MAE": null, "Pearson": 0.365233, "Spearman": 0.410469},
+    "DeepDTAGen": {"count": 4716, "CI": 0.634574, "RMSE": 1.730362, "MAE": null, "Pearson": 0.408597, "Spearman": 0.392472},
+    "AttentionMGT-DTA": {"count": 4741, "CI": 0.604407, "RMSE": 1.720493, "MAE": null, "Pearson": 0.288959, "Spearman": 0.310719}
+  },
+  "common_validation": {
+    "count": 2105,
+    "FullChainESMMSAAll_v2": {"native_count": 2340, "CI": 0.703112, "RMSE": 1.305138, "MAE": 1.011539, "Pearson": 0.604401, "Spearman": 0.572202},
+    "3DProtDTA": {"native_count": 2326, "CI": 0.651811, "RMSE": 1.616199, "MAE": 1.266197, "Pearson": 0.446047, "Spearman": 0.441942},
+    "GraphDTA_GIN": {"native_count": 2326, "CI": 0.660981, "RMSE": 1.520009, "MAE": 1.203856, "Pearson": 0.440324, "Spearman": 0.469419},
+    "DeepDTAGen": {"native_count": 2326, "CI": 0.622455, "RMSE": 1.618936, "MAE": 1.271610, "Pearson": 0.375340, "Spearman": 0.357297},
+    "TankBind": {"native_count": 2324, "CI": 0.691345, "RMSE": 1.569259, "MAE": 1.208997, "Pearson": 0.567242, "Spearman": 0.543425},
+    "CASTER-DTA": {"native_count": 2316, "CI": 0.660639, "RMSE": 1.472473, "MAE": 1.156126, "Pearson": 0.478616, "Spearman": 0.463716},
+    "AttentionMGT-DTA": {"native_count": 2115, "CI": 0.605751, "RMSE": 1.529426, "MAE": 1.207391, "Pearson": 0.366469, "Spearman": 0.310445}
+  },
+  "common_test": {
+    "canonical_count": 4751,
+    "common_count": 4291,
+    "FullChainESMMSAAll_v2": {"native_count": 4751, "CI": 0.693874, "RMSE": 1.411701, "MAE": 1.109051, "Pearson": 0.584885, "Spearman": 0.550258},
+    "3DProtDTA": {"native_count": 4730, "CI": 0.645769, "RMSE": 1.777866, "MAE": 1.353088, "Pearson": 0.419061, "Spearman": 0.416135},
+    "GraphDTA_GIN": {"native_count": 4730, "CI": 0.648779, "RMSE": 1.611508, "MAE": 1.270908, "Pearson": 0.396198, "Spearman": 0.438160},
+    "DeepDTAGen": {"native_count": 4730, "CI": 0.613192, "RMSE": 1.725266, "MAE": 1.362701, "Pearson": 0.354819, "Spearman": 0.329803},
+    "TankBind": {"native_count": 4751, "CI": 0.683456, "RMSE": 1.594229, "MAE": 1.255389, "Pearson": 0.559531, "Spearman": 0.524701},
+    "CASTER-DTA": {"native_count": 4687, "CI": 0.660613, "RMSE": 1.524568, "MAE": 1.219446, "Pearson": 0.482481, "Spearman": 0.466094},
+    "AttentionMGT-DTA": {"native_count": 4310, "CI": 0.578046, "RMSE": 1.770995, "MAE": 1.372703, "Pearson": 0.239911, "Spearman": 0.233039}
+  },
+  "source_seal": "sealed_seven_test_20261017.json"
+}
